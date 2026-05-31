@@ -161,6 +161,60 @@ h1{font-size:2.2rem}
 </div>
 </section>
 
+<h3 style="text-align:center;margin-top:50px;color:#f27a0b;">
+Solicită o discuție despre oportunitatea de colaborare
+</h3>
+
+<form action="https://api.web3forms.com/submit"
+      method="POST"
+      style="max-width:700px;margin:30px auto;">
+
+<input type="hidden"
+       name="access_key"
+       value="bcd6c8cc-434b-46ca-9a79-9badbe879789">
+
+<input type="hidden"
+       name="subject"
+       value="Aplicație recrutare">
+
+<input type="text"
+       name="name"
+       placeholder="Nume și prenume"
+       required>
+
+<input type="email"
+       name="email"
+       placeholder="Email"
+       required>
+
+<input type="tel"
+       name="phone"
+       placeholder="Telefon"
+       required>
+
+<select name="ocupatie" required
+        style="width:100%;padding:14px;border-radius:10px;margin-bottom:12px;">
+
+<option value="">Ocupația actuală</option>
+<option>Angajat</option>
+<option>Antreprenor</option>
+<option>Student</option>
+<option>Pensionar</option>
+<option>Altă situație</option>
+
+</select>
+
+<textarea name="motiv"
+          rows="5"
+          placeholder="De ce te interesează această oportunitate?">
+</textarea>
+
+<button type="submit">
+Trimite aplicația
+</button>
+
+</form>
+
 <section id="testimoniale">
     <div class="container">
     
@@ -204,12 +258,46 @@ h1{font-size:2.2rem}
 <div>
 <p><strong>Telefon:</strong> 0759 012 119</p>
 <p><strong>Email:</strong> office@gherasimmarius.com</p>
-<p><strong>Facebook:</strong> https://www.facebook.com/profile.php?id=61587765542911</p>
+<div style="display:flex;align-items:center;gap:20px;margin-top:15px;">
+
+    <!-- Facebook Asigurări -->
+    <div style="display:flex;gap:40px;align-items:center;flex-wrap:wrap;">
+
+    <div style="text-align:center;">
+        <a href="https://www.facebook.com/profile.php?id=61587765542911"
+           target="_blank">
+            <img class="facebook-icon"
+                 src="images/facebook.png.png"
+                 alt="Facebook Asigurări"
+                 width="50">
+        </a>
+        <div style="font-size:14px;margin-top:5px;">
+            Asigurări
+        </div>
+    </div>
+
+    <div style="text-align:center;">
+        <a href="https://www.facebook.com/profile.php?id=61585331109994"
+           target="_blank">
+            <img class="facebook-icon"
+                 src="images/facebook.png.png"
+                 alt="Facebook Vacanțe"
+                 width="50">
+        </a>
+        <div style="font-size:14px;margin-top:5px;">
+            Vacanțe
+        </div>
+    </div>
+
+</div>
+
+</div>
+
 <p><strong>Domeniu:</strong> gherasimmarius.com</p>
 </div>
 <div>
 <form action="https://api.web3forms.com/submit" method="POST">
-<input type="hidden" name="access_key" value="INLOCUIESTE_CHEIA_WEB3FORMS">
+<input type="hidden" name="access_key" value="bcd6c8cc-434b-46ca-9a79-9badbe879789">
 <input type="text" name="name" placeholder="Nume" required>
 <input type="email" name="email" placeholder="Email" required>
 <input type="tel" name="phone" placeholder="Telefon">
