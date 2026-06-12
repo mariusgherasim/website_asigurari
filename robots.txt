@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mariusgherasim.github.io/IncaUnCapitol/sitemap.xml
+Sitemap: https://mariusgherasim.github.io/website_asigurari/sitemap.xml
