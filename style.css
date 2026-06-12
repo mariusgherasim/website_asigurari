@@ -225,6 +225,7 @@ footer{
 .mag-arrow.left{left:10px;}
 .mag-arrow.right{right:10px;}
 
+
 @media(max-width:768px){
 
     .magazine-grid{padding:30px;}
