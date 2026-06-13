@@ -173,10 +173,14 @@ gtag('js', new Date());
 gtag('config', 'G-EGCN54DFFD');
 
 /* Conversie formular contact */
-gtag('event', 'lead_contact', {
-    event_category: 'Lead',
-    event_label: 'Formular Contact'
-});
+setTimeout(function(){
+
+    gtag('event', 'lead_contact', {
+        event_category: 'Lead',
+        event_label: 'Formular Contact'
+    });
+
+}, 3000);
 </script>
 
 </body>
