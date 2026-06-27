@@ -18,6 +18,7 @@ function trackEvent(eventName, parameters = {}) {
 
 }
 
+
 // ========================================
 // VARIABILE GLOBALE
 // ========================================
@@ -52,4 +53,22 @@ Deschide revista
 });
 });
 
+// ========================================
+// CONTACT FORM
+// ========================================
 
+const contactForm = document.querySelector("form");
+
+if(contactForm){
+
+    contactForm.addEventListener("submit",function(){
+
+        trackEvent("generate_lead",{
+
+            form:"contact"
+
+        });
+
+    });
+
+}
