@@ -59,15 +59,52 @@ Deschide revista
 
 const contactForm = document.querySelector("form");
 
-if(contactForm){
+if (contactForm) {
 
-    contactForm.addEventListener("submit",function(){
+    contactForm.addEventListener("submit", async function (e) {
 
-        trackEvent("generate_lead",{
+        e.preventDefault();
 
-            form:"contact"
+        const formData = new FormData(contactForm);
 
-        });
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        try {
+
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: json
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+
+                trackEvent("generate_lead", {
+                    form: "contact"
+                });
+
+                window.location.href =
+                    "https://gherasimmarius.com/contact-multumesc.html";
+
+            } else {
+
+                alert("A apărut o eroare. Încearcă din nou.");
+
+            }
+
+        } catch (error) {
+
+            console.error(error);
+
+            alert("A apărut o eroare de conexiune.");
+
+        }
 
     });
 
