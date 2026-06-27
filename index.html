@@ -206,7 +206,8 @@ Copywriting
 
 <a href="solicita-oferta.html"
 target="_blank"
-class="holiday-btn">
+class="holiday-btn"
+onclick="trackEvent('travel_offer')">
 Găsește vacanța potrivită pentru tine
 </a>
 </div>
@@ -234,7 +235,10 @@ Găsește vacanța potrivită pentru tine
     target="_blank"
     rel="noopener noreferrer"
     class="btn"
-    style="margin-right:15px;">
+    style="margin-right:15px;"
+    onclick="trackEvent('polisafe_click',{
+        destination:'PoliSafe'
+    })">
     Realizează Analiza Gratuită
     </a>
     
@@ -298,10 +302,11 @@ Dacă îți dorești un venit suplimentar, o schimbare de carieră sau dezvoltar
 
 <div style="text-align:center;margin-top:30px;">
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHgL6nGrXMZdMZLX_g4_ZbBEY9-A2JDzj2BfW1KoiRRP-ysw/viewform?usp=header"
-   target="_blank"
-   class="btn">
+    target="_blank"
+    class="btn"
+    onclick="trackEvent('career_apply')">
     Aplică acum
-</a>
+    </a>
 </div>
 
 </div>
@@ -382,8 +387,8 @@ Dacă îți dorești un venit suplimentar, o schimbare de carieră sau dezvoltar
 <h2>Contact</h2>
 <div class="contact-grid">
 <div>
-<p><strong>Telefon:</strong> 0759 012 119</p>
-<p><strong>Email:</strong> office@gherasimmarius.com</p>
+<p><strong>Telefon:</strong><a href="tel:+40759012119"onclick="trackEvent('click_tel')">0759 012 119</a></p>
+<p><strong>Email:</strong><a href="mailto:office@gherasimmarius.com" onclick="trackEvent('click_email')">office@gherasimmarius.com</a></p>
 <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:15px;">
 
     <!-- Facebook Asigurări -->
@@ -591,7 +596,7 @@ Servicii Copywriting & Digital Marketing
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/40759012119">💬</a>
+<a class="whatsapp" href="https://wa.me/40759012119" onclick="trackEvent('click_whatsapp')">💬</a>
 
 <script src="script.js"></script>
 <script src="reviste.js"></script>
