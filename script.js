@@ -86,7 +86,7 @@ if (contactForm) {
             if (result.success) {
 
                 trackEvent("generate_lead", {
-                    form: "contact"
+                    form_name: "contact_asigurari"
                 });
 
                 window.location.href =
