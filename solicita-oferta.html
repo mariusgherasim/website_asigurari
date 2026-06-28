@@ -61,6 +61,37 @@ content="Completează formularul și primești oferte personalizate adaptate bug
 <meta name="twitter:image"
 content="https://gherasimmarius.com/images/vacanta-share.jpg">
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HS59YL4Y3D"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-HS59YL4Y3D');
+
+/* Funcția pe care o vom folosi în toată pagina */
+function trackEvent(eventName, params = {}){
+
+    if(typeof gtag === "function"){
+
+        gtag("event", eventName, params);
+
+        console.log("GA4:", eventName, params);
+
+    }
+
+}
+
+</script>
+
+
 <link rel="stylesheet" href="style.css">
 
 <style>
@@ -296,7 +327,7 @@ body{
 
 <div class="offer-container">
 
-<a href="index.html" class="back-home">
+<a href="index.html" class="back-home"  onclick="trackEvent('back_home',{location:'offer_page'})">
 ← Înapoi la pagina principală
 </a>
 
@@ -349,9 +380,10 @@ body{
 </div>
 
 
-<form class="offer-form"
-      action="https://api.web3forms.com/submit"
-      method="POST">
+<form id="travelForm"
+        class="offer-form"
+        action="https://api.web3forms.com/submit"
+        method="POST">
 
 <input type="hidden"
        name="access_key"
@@ -536,7 +568,11 @@ Sunt de acord ca datele mele cu caracter personal să fie prelucrate în vederea
 </div>
 
 <button type="submit"
-        class="submit-btn">
+        class="submit-btn"
+
+        onclick="trackEvent('travel_offer',{
+            source:'offer_page'
+        })">
 Trimite cererea
 </button>
 
@@ -545,6 +581,23 @@ Trimite cererea
 </div>
 
 </section>
+
+<script>
+
+const form=document.getElementById("travelForm");
+
+form.addEventListener("submit",function(){
+
+    trackEvent("generate_lead",{
+
+        form_name:"Solicita oferta turism"
+
+    });
+
+});
+
+</script>
+
 
 </body>
 </html>
