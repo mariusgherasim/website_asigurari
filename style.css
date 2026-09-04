@@ -104,13 +104,14 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0
 }
 .juridic-img{
     position:absolute;
-    top:50%;
+    top:10px;
     left:50%;
-    transform:translate(-50%, -62%);
-    width:65%;
-    opacity:.22;
+    transform:translateX(-50%);
+    width:72%;
+    opacity:.55;
     pointer-events:none;
     z-index:1;
+    object-fit:contain;
 }
 .juridic .overlay{
     background:rgba(15,43,91,.93);
