@@ -94,6 +94,34 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0
 .travel{background-image:url("images/travel.jpg");}
 .holidays{background-image:url("images/vacanta.jpg");}
 
+/* Card Servicii Juridice */
+.juridic{
+    background-image:url("images/juridic.jpg");
+    background-color:#1a3a6b;
+}
+/* Fallback dacă imaginea lipsește: gradient cu simbolul justiției */
+.juridic:not([style*="background-image"]){
+    background:linear-gradient(145deg,#0F2B5B 0%,#1a4080 100%);
+}
+/* Badge vizual pe card */
+.juridic .overlay{
+    background:rgba(26,58,107,.95);
+}
+.juridic-badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#F28C28;
+    color:#fff;
+    font-size:.7rem;
+    font-weight:700;
+    padding:4px 12px;
+    border-radius:20px;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+    z-index:10;
+}
+
 /* =========================
    RECRUTARE
 ========================= */
