@@ -1,0 +1,3699 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghid Turistic Grecia — Destine Holidays</title>
+<meta name="description" content="Ghid complet Grecia: top destinații pentru familii, Halkidiki cele 3 brațe, hoteluri recomandate și sfaturi practice.">
+<link rel="canonical" href="https://gherasimmarius.com/grecia/ghid-turistic-grecia.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Ghid Turistic Grecia — Destine Holidays">
+<meta property="og:description" content="Top destinații, Halkidiki, hoteluri recomandate și sfaturi practice pentru vacanța ta în Grecia.">
+<meta property="og:image" content="https://gherasimmarius.com/grecia/halkidiki-brate.jpeg">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #0d2240;
+  --blue: #1a6fbf;
+  --blue-light: #e6f4ff;
+  --gold: #c89b3c;
+  --gold-light: #fff8e6;
+  --green: #2a9d60;
+  --green-light: #edf7f0;
+  --text: #2d3748;
+  --text-muted: #6b7280;
+  --border: #e2e8f0;
+  --bg: #f0f5fb;
+  --white: #ffffff;
+  --radius: 14px;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ══════════════════════════════
+   HERO
+══════════════════════════════ */
+.hero {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+  opacity: 0.55;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 20px;
+}
+
+.hero-logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  color: #7ab3e0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(28px, 5vw, 46px);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.hero h1 span { color: #7ab3e0; }
+
+.hero-sub {
+  font-size: 15px;
+  color: rgba(255,255,255,0.80);
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+/* ══════════════════════════════
+   CONTAINER
+══════════════════════════════ */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ══════════════════════════════
+   SECTIONS
+══════════════════════════════ */
+.section {
+  padding: 52px 0 40px;
+}
+
+.section + .section {
+  border-top: 1px solid var(--border);
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(22px, 3.5vw, 30px);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+
+.section-intro {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+/* ══════════════════════════════
+   DESTINAȚII GRID (6 carduri)
+══════════════════════════════ */
+.dest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.dest-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1.5px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.dest-card:hover {
+  box-shadow: 0 8px 28px rgba(13,34,64,.12);
+  transform: translateY(-2px);
+}
+
+.dest-card-num {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.num-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dest-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.dest-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.dest-card-body {
+  padding: 12px 16px 14px;
+}
+
+.dest-check {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.dest-check::before {
+  content: "✔";
+  color: var(--blue);
+  font-size: 11px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.dest-tag {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--blue);
+  background: var(--blue-light);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* ══════════════════════════════
+   CHECKLIST VACANȚĂ CU COPIII
+══════════════════════════════ */
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.check-item {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 16px;
+  border: 1.5px solid var(--border);
+  text-align: center;
+}
+
+.check-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.check-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+/* ══════════════════════════════
+   HALKIDIKI — 3 BRAȚE
+══════════════════════════════ */
+.brat-img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 28px;
+  display: block;
+}
+
+.brate-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.brat-card {
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  border-left: 5px solid;
+}
+
+.brat-kassandra {
+  background: var(--gold-light);
+  border-color: var(--gold);
+}
+
+.brat-sithonia {
+  background: var(--blue-light);
+  border-color: var(--blue);
+}
+
+.brat-athos {
+  background: var(--green-light);
+  border-color: var(--green);
+}
+
+.brat-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.brat-kassandra .brat-title { color: #8a5f00; }
+.brat-sithonia  .brat-title { color: #0d4080; }
+.brat-athos     .brat-title { color: #1a5c38; }
+
+.brat-tagline {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.brat-kassandra .brat-tagline { color: #b07a00; }
+.brat-sithonia  .brat-tagline { color: #1a5080; }
+.brat-athos     .brat-tagline { color: #2a7a50; }
+
+.brat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+.brat-list li {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.6;
+  padding: 3px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.brat-list li::before {
+  content: "✔";
+  font-size: 11px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.brat-kassandra .brat-list li::before { color: #8a5f00; }
+.brat-sithonia  .brat-list li::before { color: var(--blue); }
+.brat-athos     .brat-list li::before { color: var(--green); }
+
+.brat-cta {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.brat-kassandra .brat-cta { color: #8a5f00; }
+.brat-sithonia  .brat-cta { color: #0d4080; }
+.brat-athos     .brat-cta { color: #1a5c38; }
+
+/* ══════════════════════════════
+   HOTELURI TABLE
+══════════════════════════════ */
+.hotel-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hotel-row {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 14px 18px;
+  border: 1.5px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.hotel-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.hotel-info { flex: 1; }
+
+.hotel-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.hotel-stars {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--gold);
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.hotel-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.hotel-check {
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--bg);
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
+/* ══════════════════════════════
+   CONCLUZIE BOX
+══════════════════════════════ */
+.concluzie-box {
+  background: var(--navy);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  text-align: center;
+  margin: 8px 0 0;
+}
+
+.concluzie-box p {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--white);
+  line-height: 1.6;
+  margin: 0 0 20px;
+  font-style: italic;
+}
+
+.concluzie-box strong { color: #7ab3e0; font-style: normal; }
+
+/* ══════════════════════════════
+   CTA PRINCIPAL
+══════════════════════════════ */
+.cta-section {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+  border: 1.5px solid var(--border);
+}
+
+.cta-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.cta-text {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.cta-item {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.btn-main {
+  display: inline-block;
+  background: var(--blue);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px 36px;
+  border-radius: 10px;
+  letter-spacing: 0.3px;
+  margin-top: 8px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-main:hover {
+  background: #155da0;
+  transform: translateY(-1px);
+}
+
+.cta-disclaimer {
+  font-size: 12px;
+  color: #9aabbc;
+  margin-top: 12px;
+}
+
+/* ══════════════════════════════
+   FOOTER
+══════════════════════════════ */
+.site-footer {
+  background: var(--navy);
+  padding: 28px 20px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 10px;
+  display: block;
+  opacity: 0.9;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #5a7a9a;
+  line-height: 1.7;
+}
+
+.footer-text a { color: #7ab3e0; text-decoration: none; }
+
+/* ══════════════════════════════
+   RESPONSIVE
+══════════════════════════════ */
+@media (max-width: 680px) {
+  .dest-grid { grid-template-columns: 1fr 1fr; }
+  .checklist-grid { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: 26px; }
+}
+
+@media (max-width: 480px) {
+  .dest-grid { grid-template-columns: 1fr; }
+  .checklist-grid { grid-template-columns: 1fr 1fr; }
+  .section { padding: 36px 0 28px; }
+  .cta-section { padding: 24px 20px; }
+  .concluzie-box { padding: 22px 20px; }
+  .hotel-row { flex-direction: column; gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<div class="hero">
+  <img class="hero-img"
+       src="https://gherasimmarius.com/grecia/grecia-destinatie-potrivita.jpeg"
+       alt="Ce destinație din Grecia ți se potrivește — Destine Holidays">
+  <div class="hero-content">
+    <img class="hero-logo"
+         src="https://storage.mlcdn.com/account_image/1999265/Dj71QqCQohnQFPKcr6c5MC8x8dNfYg7G1vncv4Wz.png"
+         alt="Destine Holidays">
+    <p class="hero-eyebrow">Vacanțe Topic · Ghid destinație</p>
+    <h1>Ghid Turistic<br><span>Grecia</span></h1>
+    <p class="hero-sub">
+      Top destinații pentru familii · Halkidiki cele 3 brațe ·
+      Hoteluri recomandate · Sfaturi practice
+    </p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 0 — CE DESTINAȚIE ȚI SE POTRIVEȘTE?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Introducere</p>
+  <h2 class="section-title">Ce destinație din Grecia ți se potrivește?</h2>
+  <p class="section-intro">
+    Când spunem Grecia, nu vorbim despre un singur tip de vacanță. Fiecare insulă și
+    fiecare zonă are personalitatea ei. Destinația care a fost perfectă pentru prietenii
+    tăi s-ar putea să nu fie neapărat cea potrivită pentru tine. 😊
+  </p>
+
+  <!--
+    INSTRUCȚIUNE: Înlocuiește src-ul cu URL-ul real după ce încarci imaginea
+    grecia-destinatie-potrivita.jpeg pe gherasimmarius.com sau în MailerLite File Manager
+  -->
+  <img src="https://gherasimmarius.com/grecia/grecia-destinatie-potrivita.jpeg"
+       alt="Ce destinație din Grecia ți se potrivește — Destine Holidays"
+       style="width:100%;border-radius:14px;margin-bottom:28px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div class="dest-grid" style="grid-template-columns:repeat(4,1fr);">
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#1a6fbf;">1</div>
+        <div><div class="dest-name">Halkidiki</div></div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">3 brațe de pământ cu plaje pentru toate gusturile</div>
+        <div class="dest-check">Intrare lină în mare</div>
+        <div class="dest-check">Hoteluri pentru familii</div>
+        <span class="dest-tag">👨‍👩‍👧‍👦 Perfect pentru familii</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#2a9d60;">2</div>
+        <div><div class="dest-name">Thassos</div></div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Insulă aproape de România</div>
+        <div class="dest-check">Plaje frumoase și prețuri bune</div>
+        <div class="dest-check">Ideală pentru road trip</div>
+        <span class="dest-tag">🚗 Perfect pentru road trip</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#0891b2;">3</div>
+        <div><div class="dest-name">Lefkada</div></div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Plaje de vis cu apă turcoaz</div>
+        <div class="dest-check">Peisaje montane impresionante</div>
+        <div class="dest-check">Ideală pentru aventură</div>
+        <span class="dest-tag">📸 Perfect pentru exploratori</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#7c3aed;">4</div>
+        <div><div class="dest-name">Zakynthos</div></div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Unele dintre cele mai faimoase plaje din Grecia</div>
+        <div class="dest-check">Viață de noapte animată</div>
+        <div class="dest-check">Distracție pentru toate vârstele</div>
+        <span class="dest-tag">🎉 Perfect pentru distracție</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#059669;">5</div>
+        <div><div class="dest-name">Corfu</div></div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Peisaje verzi și sate pitorești</div>
+        <div class="dest-check">Plaje variate — nisip la pietriș fin</div>
+        <div class="dest-check">Istorie venețiană fascinantă</div>
+        <span class="dest-tag">🌿 Perfect pentru explorare</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#d97706;">6</div>
+        <div><div class="dest-name">Creta</div></div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Cea mai mare insulă a Greciei</div>
+        <div class="dest-check">Plaje pentru toate gusturile</div>
+        <div class="dest-check">Excursii și atracții diverse</div>
+        <span class="dest-tag">☀️ Perfect pentru aventură</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#b45309;">7</div>
+        <div><div class="dest-name">Rhodos</div></div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Combină relaxarea cu istoria</div>
+        <div class="dest-check">Plaje superbe și hoteluri bune</div>
+        <div class="dest-check">Ideală pentru familii și cupluri</div>
+        <span class="dest-tag">🏛️ Perfect pentru cultură</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#0369a1;">8</div>
+        <div><div class="dest-name">Kos</div></div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Plaje liniștite și ape calme</div>
+        <div class="dest-check">Hoteluri pentru familii</div>
+        <div class="dest-check">Atmosferă relaxată</div>
+        <span class="dest-tag">💙 Perfect pentru relaxare</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="concluzie-box" style="margin-top:24px;">
+    <p>
+      Nu există cea mai frumoasă insulă din Grecia.<br>
+      Există <strong>destinația potrivită pentru vacanța TA.</strong>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 1 — GRECIA CU COPIII
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 1</p>
+  <h2 class="section-title">Grecia cu copiii — unde mergem?</h2>
+  <p class="section-intro">
+    Când plecăm cu cei mici, nu mai alegem hotelul doar pentru că arată frumos în poze.
+    Contează plaja, vârsta copiilor, piscina, spațiul camerei, mâncarea, distanța reală
+    până la mare și siguranța. Iată destinațiile din Grecia pe care le recomandăm pentru familii:
+  </p>
+
+  <!--
+    INSTRUCȚIUNE: Înlocuiește src-ul imaginii cu URL-ul real după ce o încarci
+    pe gherasimmarius.com sau în MailerLite File Manager
+  -->
+  <img src="https://gherasimmarius.com/grecia/grecia-cu-copii.jpg"
+       alt="Top destinații Grecia pentru familii cu copii"
+       style="width:100%;border-radius:14px;margin-bottom:28px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div class="dest-grid">
+
+    <!-- 1. CRETA -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">1</div>
+        <div>
+          <div class="dest-name">Creta</div>
+          <div class="dest-sub">Heraklion · Chania</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Plaje lungi cu nisip și intrare lină în mare</div>
+        <div class="dest-check">Hoteluri mari cu facilități pentru copii</div>
+        <div class="dest-check">Activități și excursii pentru toate vârstele</div>
+        <div class="dest-check">Aeroport direct din București</div>
+        <span class="dest-tag">👨‍👩‍👧‍👦 Familii cu copii de toate vârstele</span>
+      </div>
+    </div>
+
+    <!-- 2. RHODOS -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">2</div>
+        <div>
+          <div class="dest-name">Rhodos</div>
+          <div class="dest-sub">Resorturi + Explorare</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Plaje cu nisip și ape liniștite</div>
+        <div class="dest-check">Resorturi excelente pentru familii</div>
+        <div class="dest-check">Parcuri acvatice și activități diverse</div>
+        <div class="dest-check">Aeroport direct din București</div>
+        <span class="dest-tag">🎯 Familii cu copii activi și curioși</span>
+      </div>
+    </div>
+
+    <!-- 3. HALKIDIKI -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">3</div>
+        <div>
+          <div class="dest-name">Halkidiki</div>
+          <div class="dest-sub">Kassandra (recomandat)</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Plaje cu nisip fin și intrare lină în mare</div>
+        <div class="dest-check">Distanțe scurte între hotel și plajă</div>
+        <div class="dest-check">Ideal pentru vacanțe cu mașina</div>
+        <div class="dest-check">Atmosferă relaxată și sigură</div>
+        <span class="dest-tag">👶 Familii cu copii mici</span>
+      </div>
+    </div>
+
+    <!-- 4. THASSOS -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">4</div>
+        <div>
+          <div class="dest-name">Thassos</div>
+          <div class="dest-sub">Insulă · Mașina proprie</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Plaje cu nisip și ape cristaline</div>
+        <div class="dest-check">Insulă aproape de România — ideală cu mașina</div>
+        <div class="dest-check">Atmosferă liniștită și natură superbă</div>
+        <div class="dest-check">Prețuri prietenoase</div>
+        <span class="dest-tag">🌿 Familii care caută liniște și natură</span>
+      </div>
+    </div>
+
+    <!-- 5. KOS -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">5</div>
+        <div>
+          <div class="dest-name">Kos</div>
+          <div class="dest-sub">Insulă relaxată</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Plaje cu nisip și intrare lină</div>
+        <div class="dest-check">Resorturi pentru familii cu copii</div>
+        <div class="dest-check">Atmosferă relaxată și prietenoasă</div>
+        <div class="dest-check">Zbor direct din București</div>
+        <span class="dest-tag">👶 Familii cu copii mici și școlari</span>
+      </div>
+    </div>
+
+    <!-- 6. CORFU -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">6</div>
+        <div>
+          <div class="dest-name">Corfu</div>
+          <div class="dest-sub">Natură + Explorare</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Plaje frumoase și ape liniștite</div>
+        <div class="dest-check">Natură, sate pitorești și cultură</div>
+        <div class="dest-check">Excursii cu barca și activități pentru copii</div>
+        <div class="dest-check">Zbor direct din București</div>
+        <span class="dest-tag">🗺️ Familii care vor și explorare</span>
+      </div>
+    </div>
+
+  </div><!-- /dest-grid -->
+
+  <!-- CHECKLIST -->
+  <h3 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);
+              margin:36px 0 16px;text-align:center;">
+    Ce verificăm pentru o vacanță perfectă cu copiii?
+  </h3>
+
+  <div class="checklist-grid">
+    <div class="check-item">
+      <div class="check-icon">🏖️</div>
+      <div class="check-label">Plajă cu nisip și intrare lină în mare</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🛏️</div>
+      <div class="check-label">Cameră spațioasă sau family room</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🍽️</div>
+      <div class="check-label">Meniu pentru copii și scaune înalte</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🏊</div>
+      <div class="check-label">Piscină pentru copii și loc de joacă</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">📍</div>
+      <div class="check-label">Distanța reală până la plajă</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🛡️</div>
+      <div class="check-label">Siguranță și curățenie</div>
+    </div>
+  </div>
+
+</div><!-- /container -->
+</div><!-- /section -->
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 2 — HALKIDIKI
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 2</p>
+  <h2 class="section-title">Halkidiki — care braț ți se potrivește?</h2>
+  <p class="section-intro">
+    Halkidiki nu înseamnă o singură destinație. Cele 3 brațe ale peninsulei au personalități
+    complet diferite. Alegerea zonei poate schimba radical experiența vacanței tale.
+  </p>
+
+  <img class="brat-img"
+       src="https://gherasimmarius.com/grecia/halkidiki-brate.jpeg"
+       alt="Halkidiki — Kassandra, Sithonia, Athos">
+
+  <div class="brate-stack">
+
+    <div class="brat-card brat-kassandra">
+      <p class="brat-title">🍹 KASSANDRA — Mai animată</p>
+      <p class="brat-tagline">Cel mai accesibil și mai popular braț</p>
+      <ul class="brat-list">
+        <li>Multe hoteluri, taverne și beach baruri</li>
+        <li>Potrivită pentru familii, cupluri și cei care vor și plajă, și atmosferă</li>
+        <li>Accesibilă și foarte populară — mulți români aleg Kassandra</li>
+        <li>Plaje late, cu nisip fin și ape cristaline</li>
+      </ul>
+      <p class="brat-cta">👉 Alege Kassandra dacă vrei totul aproape și o vacanță fără bătăi de cap.</p>
+    </div>
+
+    <div class="brat-card brat-sithonia">
+      <p class="brat-title">🌊 SITHONIA — Natură spectaculoasă</p>
+      <p class="brat-tagline">Brațul de mijloc — pentru cei care vor să descopere</p>
+      <ul class="brat-list">
+        <li>Peisaje superbe și apă spectaculoasă</li>
+        <li>Golfulețe și plaje mai sălbatice — o plajă nouă în fiecare zi</li>
+        <li>Mai liniștită și ideală pentru relaxare</li>
+        <li>Excelentă pentru cei care vor să exploreze cu mașina</li>
+      </ul>
+      <p class="brat-cta">👉 Alege Sithonia dacă vrei să te pierzi pe drumuri mici și să descoperi golfuri ascunse.</p>
+    </div>
+
+    <div class="brat-card brat-athos">
+      <p class="brat-title">🌿 ATHOS — Liniște și autenticitate</p>
+      <p class="brat-tagline">Brațul estic — cel mai puțin comercial</p>
+      <ul class="brat-list">
+        <li>Mai liniștit și mai puțin comercial</li>
+        <li>Peisaje superbe spre Muntele Athos</li>
+        <li>Potrivit pentru relaxare și o vacanță tihnită</li>
+        <li>Răsărituri spectaculoase și atmosferă autentică grecească</li>
+      </ul>
+      <p class="brat-cta">👉 Alege Athos dacă vrei să rupi de aglomerație și să găsești Grecia autentică.</p>
+    </div>
+
+  </div><!-- /brate-stack -->
+
+  <div class="concluzie-box" style="margin-top:24px;">
+    <p>
+      Nu există „cel mai bun braț". Există brațul care se potrivește
+      <strong>stilului tău de vacanță</strong>. Kassandra pentru atmosferă,
+      Sithonia pentru plaje sălbatice, Athos pentru liniște.
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 3 — HOTELURI
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 3</p>
+  <h2 class="section-title">Hoteluri recomandate în Halkidiki</h2>
+  <p class="section-intro">
+    O selecție de hoteluri verificate, potrivite pentru diferite stiluri de vacanță
+    și bugete — de la familie la cuplu, de la apartamente independente la resorturi cu piscină.
+  </p>
+
+  <div class="hotel-grid">
+
+    <div class="hotel-row">
+      <div class="hotel-icon">🏨</div>
+      <div class="hotel-info">
+        <div class="hotel-name">Simotel Ermis Hotel <span class="hotel-stars">3★</span></div>
+        <div class="hotel-checks">
+          <span class="hotel-check">Aproape de plajă</span>
+          <span class="hotel-check">Camere confortabile</span>
+          <span class="hotel-check">Familii + cupluri</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-row">
+      <div class="hotel-icon">🏨</div>
+      <div class="hotel-info">
+        <div class="hotel-name">Hotel Sun <span class="hotel-stars">3★</span></div>
+        <div class="hotel-checks">
+          <span class="hotel-check">Atmosferă relaxantă</span>
+          <span class="hotel-check">Piscină exterioară</span>
+          <span class="hotel-check">Raport bun calitate-preț</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-row">
+      <div class="hotel-icon">🏨</div>
+      <div class="hotel-info">
+        <div class="hotel-name">Halkidiki Palace <span class="hotel-stars">4★</span></div>
+        <div class="hotel-checks">
+          <span class="hotel-check">Modern și elegant</span>
+          <span class="hotel-check">Piscină + facilități familii</span>
+          <span class="hotel-check">Aproape de plajă</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-row">
+      <div class="hotel-icon">🏨</div>
+      <div class="hotel-info">
+        <div class="hotel-name">Hilltop Hotel <span class="hotel-stars">3★</span></div>
+        <div class="hotel-checks">
+          <span class="hotel-check">Locație liniștită</span>
+          <span class="hotel-check">Vederi frumoase</span>
+          <span class="hotel-check">Ideal pentru relaxare</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-row">
+      <div class="hotel-icon">🏨</div>
+      <div class="hotel-info">
+        <div class="hotel-name">Kassandra Mare Hotel <span class="hotel-stars">4★</span></div>
+        <div class="hotel-checks">
+          <span class="hotel-check">Direct pe plajă</span>
+          <span class="hotel-check">Piscină + servicii excelente</span>
+          <span class="hotel-check">Vacanță liniștită</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-row">
+      <div class="hotel-icon">🏠</div>
+      <div class="hotel-info">
+        <div class="hotel-name">4 You Apartments</div>
+        <div class="hotel-checks">
+          <span class="hotel-check">Apartamente spațioase</span>
+          <span class="hotel-check">Recomandat familii</span>
+          <span class="hotel-check">Confort și independență</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-row">
+      <div class="hotel-icon">🏨</div>
+      <div class="hotel-info">
+        <div class="hotel-name">Tropical Hanioti Hotel <span class="hotel-stars">4★</span></div>
+        <div class="hotel-checks">
+          <span class="hotel-check">Locație excelentă Hanioti</span>
+          <span class="hotel-check">Piscină + camere moderne</span>
+          <span class="hotel-check">Aproape de centrul stațiunii</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-row">
+      <div class="hotel-icon">🏨</div>
+      <div class="hotel-info">
+        <div class="hotel-name">Melissa Gold Coast <span class="hotel-stars">3★</span></div>
+        <div class="hotel-checks">
+          <span class="hotel-check">Aproape de plajă</span>
+          <span class="hotel-check">Atmosferă prietenoasă</span>
+          <span class="hotel-check">Vacanțe relaxante</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-row">
+      <div class="hotel-icon">🏠</div>
+      <div class="hotel-info">
+        <div class="hotel-name">Memento Moustakas Studios</div>
+        <div class="hotel-checks">
+          <span class="hotel-check">Studiouri confortabile</span>
+          <span class="hotel-check">Raport excelent calitate-preț</span>
+          <span class="hotel-check">Cupluri + familii</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-row">
+      <div class="hotel-icon">🏨</div>
+      <div class="hotel-info">
+        <div class="hotel-name">Polychrono Beach Hotel <span class="hotel-stars">3★</span></div>
+        <div class="hotel-checks">
+          <span class="hotel-check">Foarte aproape de mare</span>
+          <span class="hotel-check">Camere confortabile</span>
+          <span class="hotel-check">Iubitorii de plajă</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hotel-grid -->
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 4 — INSULĂ SAU CONTINENT?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 4</p>
+  <h2 class="section-title">Grecia: Insulă sau Continent?</h2>
+  <p class="section-intro">
+    Când ne gândim la Grecia, mulți ne imaginăm imediat o insulă cu apă turcoaz și
+    căsuțe albe. Dar adevărul este că și Grecia continentală poate oferi vacanțe superbe —
+    iar uneori poate fi chiar alegerea mai potrivită. 🌊☀️
+  </p>
+
+  <!--
+    INSTRUCȚIUNE: Înlocuiește src-ul cu URL-ul real după upload pe gherasimmarius.com
+  -->
+  <img src="https://gherasimmarius.com/grecia/grecia-insula-vs-continent.jpeg"
+       alt="Grecia: Insulă vs Continent — ce alegere ți se potrivește?"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- GRID COMPARATIV -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+
+    <!-- INSULĂ -->
+    <div style="background:#e6f4ff;border-radius:14px;padding:24px;
+                border-top:5px solid #1a6fbf;">
+      <p style="font-family:'Playfair Display',Georgia,serif;font-size:18px;
+                 font-weight:700;color:#0d2240;margin:0 0 16px;">
+        🏝️ Vacanță pe insulă
+      </p>
+
+      <p style="font-size:12px;font-weight:700;color:#1a6fbf;letter-spacing:1px;
+                 text-transform:uppercase;margin:0 0 6px;">Acces</p>
+      <p style="font-size:13px;color:#2d3748;line-height:1.6;margin:0 0 14px;">
+        De obicei cu avionul până pe insulă. Uneori este nevoie și de transfer cu ferry/ambarcațiune.
+      </p>
+
+      <p style="font-size:12px;font-weight:700;color:#1a6fbf;letter-spacing:1px;
+                 text-transform:uppercase;margin:0 0 6px;">Peisaje & Plaje</p>
+      <p style="font-size:13px;color:#2d3748;line-height:1.6;margin:0 0 14px;">
+        Plaje spectaculoase, ape turcoaz, peisaje de vis și apusuri memorabile.
+      </p>
+
+      <p style="font-size:12px;font-weight:700;color:#1a6fbf;letter-spacing:1px;
+                 text-transform:uppercase;margin:0 0 6px;">Experiențe</p>
+      <p style="font-size:13px;color:#2d3748;line-height:1.6;margin:0 0 14px;">
+        Atmosferă autentică, sate pitorești, taverne tradiționale, explorare și excursii cu barca.
+      </p>
+
+      <p style="font-size:12px;font-weight:700;color:#e74c3c;letter-spacing:1px;
+                 text-transform:uppercase;margin:0 0 6px;">⚠️ De reținut</p>
+      <p style="font-size:13px;color:#2d3748;line-height:1.6;margin:0 0 16px;">
+        Deplasările pe insulă pot fi mai lungi, iar unele plaje sunt mai greu accesibile.
+        Prețurile pot fi mai ridicate în vârf de sezon.
+      </p>
+
+      <div style="background:#0d2240;border-radius:10px;padding:14px 16px;">
+        <p style="font-family:Georgia,serif;font-size:13px;color:#7ab3e0;
+                   font-style:italic;margin:0;">
+          ❤️ Ideal pentru tine dacă: îți dorești peisaje de vis, liniște,
+          explorare și o experiență autentică.
+        </p>
+      </div>
+
+      <div style="margin-top:14px;">
+        <p style="font-size:12px;font-weight:600;color:#0d2240;margin:0 0 6px;">
+          Insule recomandate:
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="font-size:11px;background:#fff;border:1px solid #1a6fbf;
+                        color:#1a6fbf;padding:3px 10px;border-radius:20px;">Creta</span>
+          <span style="font-size:11px;background:#fff;border:1px solid #1a6fbf;
+                        color:#1a6fbf;padding:3px 10px;border-radius:20px;">Rhodos</span>
+          <span style="font-size:11px;background:#fff;border:1px solid #1a6fbf;
+                        color:#1a6fbf;padding:3px 10px;border-radius:20px;">Corfu</span>
+          <span style="font-size:11px;background:#fff;border:1px solid #1a6fbf;
+                        color:#1a6fbf;padding:3px 10px;border-radius:20px;">Zakynthos</span>
+          <span style="font-size:11px;background:#fff;border:1px solid #1a6fbf;
+                        color:#1a6fbf;padding:3px 10px;border-radius:20px;">Kos</span>
+          <span style="font-size:11px;background:#fff;border:1px solid #1a6fbf;
+                        color:#1a6fbf;padding:3px 10px;border-radius:20px;">Thassos</span>
+          <span style="font-size:11px;background:#fff;border:1px solid #1a6fbf;
+                        color:#1a6fbf;padding:3px 10px;border-radius:20px;">Lefkada</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTINENT -->
+    <div style="background:#edf7f0;border-radius:14px;padding:24px;
+                border-top:5px solid #2a9d60;">
+      <p style="font-family:'Playfair Display',Georgia,serif;font-size:18px;
+                 font-weight:700;color:#0d2240;margin:0 0 16px;">
+        🌿 Vacanță în Grecia Continentală
+      </p>
+
+      <p style="font-size:12px;font-weight:700;color:#2a9d60;letter-spacing:1px;
+                 text-transform:uppercase;margin:0 0 6px;">Acces</p>
+      <p style="font-size:13px;color:#2d3748;line-height:1.6;margin:0 0 14px;">
+        Cu mașina personală, autocar sau avion până în orașele mari, apoi transfer scurt la hotel.
+      </p>
+
+      <p style="font-size:12px;font-weight:700;color:#2a9d60;letter-spacing:1px;
+                 text-transform:uppercase;margin:0 0 6px;">Diversitate</p>
+      <p style="font-size:13px;color:#2d3748;line-height:1.6;margin:0 0 14px;">
+        Poți combina plaja cu muntele, orașe frumoase, istorie și cultură.
+      </p>
+
+      <p style="font-size:12px;font-weight:700;color:#2a9d60;letter-spacing:1px;
+                 text-transform:uppercase;margin:0 0 6px;">Confort & Conectivitate</p>
+      <p style="font-size:13px;color:#2d3748;line-height:1.6;margin:0 0 14px;">
+        Drumuri mai bune, transferuri mai scurte, infrastructură bine dezvoltată,
+        mai multe opțiuni de hotel pentru diferite bugete.
+      </p>
+
+      <p style="font-size:12px;font-weight:700;color:#e74c3c;letter-spacing:1px;
+                 text-transform:uppercase;margin:0 0 6px;">⚠️ De reținut</p>
+      <p style="font-size:13px;color:#2d3748;line-height:1.6;margin:0 0 16px;">
+        Plajele pot fi diferite (nisip, pietriș), nu toate zonele au apa la fel de
+        turcoaz ca pe insule.
+      </p>
+
+      <div style="background:#1a5c38;border-radius:10px;padding:14px 16px;">
+        <p style="font-family:Georgia,serif;font-size:13px;color:#a8e6c8;
+                   font-style:italic;margin:0;">
+          ❤️ Ideal pentru tine dacă: vrei acces ușor, combinație între relaxare,
+          explorare, orașe și natură.
+        </p>
+      </div>
+
+      <div style="margin-top:14px;">
+        <p style="font-size:12px;font-weight:600;color:#0d2240;margin:0 0 6px;">
+          Destinații recomandate:
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="font-size:11px;background:#fff;border:1px solid #2a9d60;
+                        color:#2a9d60;padding:3px 10px;border-radius:20px;">Halkidiki</span>
+          <span style="font-size:11px;background:#fff;border:1px solid #2a9d60;
+                        color:#2a9d60;padding:3px 10px;border-radius:20px;">Riviera Olimpului</span>
+          <span style="font-size:11px;background:#fff;border:1px solid #2a9d60;
+                        color:#2a9d60;padding:3px 10px;border-radius:20px;">Parga</span>
+          <span style="font-size:11px;background:#fff;border:1px solid #2a9d60;
+                        color:#2a9d60;padding:3px 10px;border-radius:20px;">Sivota</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /grid comparativ -->
+
+  <div class="concluzie-box" style="margin-top:24px;">
+    <p>
+      În ambele cazuri, te așteaptă <strong>o vacanță de neuitat!</strong><br>
+      Totul depinde de stilul tău de vacanță și de ceea ce îți dorești să experimentezi.
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 5 — PLAJE PENTRU COPII
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 5</p>
+  <h2 class="section-title">Grecia cu copiii — cum alegem plaja potrivită?</h2>
+  <p class="section-intro">
+    Când plecăm în vacanță cu cei mici, un hotel frumos nu este suficient. Uneori,
+    plaja și intrarea în mare pot face diferența dintre o vacanță relaxantă și una în
+    care părinții stau permanent cu grijă.
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/grecia-plaje-copii.jpeg"
+       alt="Grecia cu copiii — Top plaje cu nisip și intrare lină în mare"
+       style="width:100%;border-radius:14px;margin-bottom:28px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- CE VERIFICĂM -->
+  <h3 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);
+              margin:0 0 16px;">Ce verificăm pentru o plajă perfectă cu copiii?</h3>
+
+  <div class="checklist-grid" style="margin-bottom:32px;">
+    <div class="check-item">
+      <div class="check-icon">🌊</div>
+      <div class="check-label">Intrare lină în mare</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🏖️</div>
+      <div class="check-label">Nisip fin și curat</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">☂️</div>
+      <div class="check-label">Umbră naturală disponibilă</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🛡️</div>
+      <div class="check-label">Siguranță și curățenie</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🍽️</div>
+      <div class="check-label">Facilități în apropiere</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🚗</div>
+      <div class="check-label">Acces ușor și parcare</div>
+    </div>
+  </div>
+
+  <!-- TOP 8 PLAJE -->
+  <h3 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);
+              margin:0 0 16px;">Top 8 plaje recomandate pentru familii</h3>
+
+  <div class="dest-grid">
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">1</div>
+        <div>
+          <div class="dest-name">Golden Beach</div>
+          <div class="dest-sub">Thassos</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Nisip fin, auriu · intrare lină, treptată</div>
+        <div class="dest-check">Potrivită: 0–10+ ani</div>
+        <div class="dest-check">Apă limpede, puțin adâncă, plajă lată</div>
+        <span class="dest-tag">👨‍👩‍👧‍👦 Perfectă pentru familii</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">2</div>
+        <div>
+          <div class="dest-name">Agios Georgios</div>
+          <div class="dest-sub">Corfu</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Nisip auriu · intrare foarte lină</div>
+        <div class="dest-check">Potrivită: 0–8 ani</div>
+        <div class="dest-check">Una dintre cele mai sigure plaje, apă puțin adâncă</div>
+        <span class="dest-tag">👶 Copii mici</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">3</div>
+        <div>
+          <div class="dest-name">Tsambika Beach</div>
+          <div class="dest-sub">Rhodos</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Nisip fin, auriu · intrare lină, clară</div>
+        <div class="dest-check">Potrivită: 2–10+ ani</div>
+        <div class="dest-check">Plajă mare, bine organizată, apă limpede</div>
+        <span class="dest-tag">👨‍👩‍👧‍👦 Familii cu copii</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">4</div>
+        <div>
+          <div class="dest-name">Tigaki Beach</div>
+          <div class="dest-sub">Kos</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Nisip fin · intrare foarte lină</div>
+        <div class="dest-check">Potrivită: 0–10+ ani</div>
+        <div class="dest-check">Plajă lungă, liniștită, apă foarte puțin adâncă</div>
+        <span class="dest-tag">👶 Ideală pentru cei mici</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">5</div>
+        <div>
+          <div class="dest-name">Faliraki Beach</div>
+          <div class="dest-sub">Rhodos</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Nisip fin · intrare lină, treptată</div>
+        <div class="dest-check">Potrivită: 0–8 ani</div>
+        <div class="dest-check">Plajă amenajată, aproape de restaurante și hoteluri</div>
+        <span class="dest-tag">🏨 Resort + plajă</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">6</div>
+        <div>
+          <div class="dest-name">Elafonissi Beach</div>
+          <div class="dest-sub">Creta</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Nisip roz + alb · intrare lină, apă foarte clară</div>
+        <div class="dest-check">Potrivită: 2–10+ ani</div>
+        <div class="dest-check">Peisaj spectaculos — ⚠️ poate fi aglomerată în sezon</div>
+        <span class="dest-tag">📸 Plajă de poveste</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">7</div>
+        <div>
+          <div class="dest-name">Kalogria Beach</div>
+          <div class="dest-sub">Halkidiki — Sithonia</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Nisip fin · intrare lină, treptată</div>
+        <div class="dest-check">Potrivită: 0–10+ ani</div>
+        <div class="dest-check">Apă cristalină, plajă curată, zone umbroase</div>
+        <span class="dest-tag">🌿 Familii cu copii mici</span>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">8</div>
+        <div>
+          <div class="dest-name">Nikiti Beach</div>
+          <div class="dest-sub">Halkidiki — Sithonia</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Nisip fin · intrare lină, sigură</div>
+        <div class="dest-check">Potrivită: 0–10+ ani</div>
+        <div class="dest-check">Plajă lată, facilități în apropiere, atmosferă relaxantă</div>
+        <span class="dest-tag">👨‍👩‍👧‍👦 Practică pentru familie</span>
+      </div>
+    </div>
+
+  </div><!-- /dest-grid -->
+
+  <!-- AVERTISMENT IMPORTANT -->
+  <div style="background:#fff8e6;border-left:5px solid #c89b3c;border-radius:0 12px 12px 0;
+               padding:18px 22px;margin-top:24px;">
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:14px;
+               line-height:1.7;margin:0;">
+      ⚠️ <strong>Important:</strong> Chiar și pe aceeași plajă, intrarea în apă și condițiile
+      pot diferi de la o zonă la alta, iar valurile și vremea se pot schimba. De aceea verific
+      întotdeauna și poziția exactă a hotelului față de plajă, nu doar numele plajei.
+    </p>
+  </div>
+
+  <div class="concluzie-box" style="margin-top:20px;">
+    <p>
+      Atunci când călătorești cu un copil, nu alegem doar Grecia.<br>
+      Alegem <strong>zona, hotelul și plaja potrivite familiei.</strong>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 6 — GRECIA CU MAȘINA
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 6</p>
+  <h2 class="section-title">Grecia cu mașina — unde mergem?</h2>
+  <p class="section-intro">
+    Pentru unii vacanța începe în momentul în care urcă în avion. Pentru alții, începe
+    când pun bagajele în portbagaj, pornesc GPS-ul și aud: „Ați intrat în Grecia!" 😍
+    Grecia are câteva destinații superbe în care mașina personală poate fi chiar un avantaj.
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/grecia-cu-masina.jpeg"
+       alt="Grecia cu mașina — 6 destinații care merită drumul"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- 6 DESTINAȚII GRID -->
+  <div class="dest-grid" style="grid-template-columns:repeat(3,1fr);margin-bottom:28px;">
+
+    <!-- 1. HALKIDIKI -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">1</div>
+        <div>
+          <div class="dest-name">Halkidiki</div>
+          <div class="dest-sub">Sithonia · Kassandra</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">~620 km din București</div>
+        <div class="dest-check">Ferry: NU este necesar</div>
+        <div class="dest-check">Familii cu copii, cupluri, grupuri de prieteni</div>
+        <div class="dest-check">Plaje superbe, multe stațiuni, fără ferry, acces ușor</div>
+        <span class="dest-tag">🏖️ Relaxare, plajă și peisaje</span>
+      </div>
+    </div>
+
+    <!-- 2. THASSOS -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">2</div>
+        <div>
+          <div class="dest-name">Thassos</div>
+          <div class="dest-sub">Insula de Smarald</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">~680 km din București</div>
+        <div class="dest-check">Ferry: DA — din Keramoti (30 min)</div>
+        <div class="dest-check">Familii, cupluri, iubitori de natură și liniște</div>
+        <div class="dest-check">Plaje cu apă cristalină, mâncare bună, atmosferă grecească</div>
+        <span class="dest-tag">🌿 Insula aproape de tine</span>
+      </div>
+    </div>
+
+    <!-- 3. RIVIERA OLIMPULUI -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">3</div>
+        <div>
+          <div class="dest-name">Riviera Olimpului</div>
+          <div class="dest-sub">Paralia Katerini · Leptokarya</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">~540 km din București — cea mai apropiată</div>
+        <div class="dest-check">Ferry: NU este necesar</div>
+        <div class="dest-check">Familii, cupluri, vacanțe active</div>
+        <div class="dest-check">Aproape de casă, plaje lungi, munte și mare în același loc. Bonus: Meteora</div>
+        <span class="dest-tag">⛰️ Cea mai apropiată mare din Grecia</span>
+      </div>
+    </div>
+
+    <!-- 4. LEFKADA -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">4</div>
+        <div>
+          <div class="dest-name">Lefkada</div>
+          <div class="dest-sub">Perla Mării Ionice</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">~830 km din București</div>
+        <div class="dest-check">Ferry: NU este necesar (acces pe pod)</div>
+        <div class="dest-check">Cupluri, tineri, iubitori de plaje și peisaje spectaculoase</div>
+        <div class="dest-check">Plaje unice, apă turcoaz, peisaje de poveste, libertate totală cu mașina</div>
+        <span class="dest-tag">💙 Peisaje care îți taie respirația</span>
+      </div>
+    </div>
+
+    <!-- 5. PARGA -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">5</div>
+        <div>
+          <div class="dest-name">Parga</div>
+          <div class="dest-sub">Pitoresc și romantic</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">~880 km din București</div>
+        <div class="dest-check">Ferry: NU este necesar</div>
+        <div class="dest-check">Cupluri, familii, iubitori de locuri pitorești</div>
+        <div class="dest-check">Orășel superb, plaje mici și frumoase, atmosferă romantică</div>
+        <span class="dest-tag">🌺 Un orășel de poveste</span>
+      </div>
+    </div>
+
+    <!-- 6. SIVOTA -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge">6</div>
+        <div>
+          <div class="dest-name">Sivota</div>
+          <div class="dest-sub">Golful albastru</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">~900 km din București</div>
+        <div class="dest-check">Ferry: NU este necesar</div>
+        <div class="dest-check">Cupluri, turiști în căutare de liniște și plaje superbe</div>
+        <div class="dest-check">Golfuri spectaculoase, apă incredibil de limpede, relaxare totală</div>
+        <span class="dest-tag">🌊 Liniște, natură și apă cristalină</span>
+      </div>
+    </div>
+
+  </div><!-- /dest-grid -->
+
+  <!-- DE REȚINUT -->
+  <h3 style="font-family:'Playfair Display',serif;font-size:17px;color:var(--navy);
+              margin:0 0 14px;">De reținut pentru o vacanță reușită cu mașina</h3>
+
+  <div class="checklist-grid" style="margin-bottom:24px;">
+    <div class="check-item">
+      <div class="check-icon">🚗</div>
+      <div class="check-label">Verifică mașina înainte de drum</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🪪</div>
+      <div class="check-label">Carte de identitate valabilă sau pașaport</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🏥</div>
+      <div class="check-label">Asigurare medicală recomandată</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🛣️</div>
+      <div class="check-label">Taxe de drum în Grecia</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">⛽</div>
+      <div class="check-label">Alimentează la prețuri mai bune în Bulgaria</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">❤️</div>
+      <div class="check-label">Răbdare și chef de aventură!</div>
+    </div>
+  </div>
+
+  <!-- AVANTAJ PRINCIPAL -->
+  <div style="background:#fff8e6;border-left:5px solid #c89b3c;border-radius:0 12px 12px 0;
+               padding:18px 22px;margin-bottom:20px;">
+    <p style="font-family:'Playfair Display',serif;color:#8a5f00;font-size:16px;
+               font-weight:700;margin:0 0 8px;">
+      🚗 De ce merită Grecia cu mașina?
+    </p>
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:13px;
+               line-height:1.7;margin:0;">
+      Poți lua mai multe bagaje, nu depinzi de transferuri, poți descoperi alte plaje
+      și stațiuni și îți organizezi zilele exact cum vrei tu.<br><br>
+      ⚠️ <strong>Atenție:</strong> Ia în calcul durata reală a drumului, taxele,
+      combustibilul, eventualul ferry, documentele necesare și oboseala șoferului.
+      Distanțele sunt orientative și diferă în funcție de traseul și punctul de plecare.
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Marele avantaj al Greciei cu mașina este unul singur: <strong>LIBERTATEA.</strong><br><br>
+      Dimineața poți spune: „Astăzi nu stăm la plaja hotelului. Hai să vedem ce găsim!"<br>
+      Și uneori exact așa descoperi cele mai frumoase locuri. 🥰
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 7 — GRECIA CU AVIONUL
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 7</p>
+  <h2 class="section-title">Grecia cu avionul — 6 insule, 6 stiluri de vacanță</h2>
+  <p class="section-intro">
+    Vrei Grecia, vrei avion, dar ce insulă alegi? Adevărul este că fiecare are farmecul
+    ei — și sunt foarte diferite. De aceea nu recomand o destinație doar pentru că este
+    frumoasă, ci în funcție de cine călătorește și ce își dorește de la vacanță. ❤️
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/grecia-cu-avionul.jpeg"
+       alt="Grecia cu avionul — 6 insule, 6 stiluri de vacanță"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div class="dest-grid" style="grid-template-columns:repeat(3,1fr);">
+
+    <!-- 1. CRETA -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#1a6fbf;">1</div>
+        <div>
+          <div class="dest-name">Creta</div>
+          <div class="dest-sub">Insula contrastelor</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Familii cu copii, cupluri, grupuri de prieteni, iubitori de natură și aventură</div>
+        <div class="dest-check">Plaje superbe și variate, istorie, gastronomie autentică, munte și mare în același loc</div>
+        <div class="dest-check">Tip vacanță: Relaxare + explorare + experiențe locale</div>
+        <span class="dest-tag">🌊 Vacanță completă și variată</span>
+      </div>
+    </div>
+
+    <!-- 2. RHODOS -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#2a9d60;">2</div>
+        <div>
+          <div class="dest-name">Rhodos</div>
+          <div class="dest-sub">Istorie și plaje de vis</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Cupluri, familii, pasionați de istorie și de plaje organizate</div>
+        <div class="dest-check">Orașul vechi medieval, plaje superbe, sate pitorești, multe atracții</div>
+        <div class="dest-check">Tip vacanță: Relaxare + cultură + distracție</div>
+        <span class="dest-tag">🏛️ Plajă ziua, oraș seara</span>
+      </div>
+    </div>
+
+    <!-- 3. CORFU -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#7c3aed;">3</div>
+        <div>
+          <div class="dest-name">Corfu</div>
+          <div class="dest-sub">Eleganță și natură</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Cupluri, familii, călători care iubesc natura și plimbările</div>
+        <div class="dest-check">Peisaje verzi, golfuri superbe, influențe venețiene, sate fermecătoare</div>
+        <div class="dest-check">Tip vacanță: Relaxare + natură + cultură</div>
+        <span class="dest-tag">🌿 Natură, sate frumoase, atmosferă relaxată</span>
+      </div>
+    </div>
+
+    <!-- 4. ZAKYNTHOS -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#0891b2;">4</div>
+        <div>
+          <div class="dest-name">Zakynthos</div>
+          <div class="dest-sub">Insula apelor turcoaz</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Cupluri, grupuri de prieteni, iubitori de peisaje spectaculoase</div>
+        <div class="dest-check">Plaja Navagio, Peșterile Albastre, apă incredibil de limpede, peisaje dramatice</div>
+        <div class="dest-check">Tip vacanță: Relaxare + aventură + experiențe de vis</div>
+        <span class="dest-tag">📸 Peisaje de poveste și experiențe unice</span>
+      </div>
+    </div>
+
+    <!-- 5. KOS -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#d97706;">5</div>
+        <div>
+          <div class="dest-name">Kos</div>
+          <div class="dest-sub">Relaxare și confort</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Familii cu copii, cupluri, seniori, iubitori de vacanțe relaxante</div>
+        <div class="dest-check">Plaje cu intrare lină, stațiuni pline de facilități, ideală pentru biciclete și plimbări</div>
+        <div class="dest-check">Tip vacanță: Relaxare + confort + plaje liniștite</div>
+        <span class="dest-tag">🏖️ Vacanță liniștită cu tot ce ai nevoie</span>
+      </div>
+    </div>
+
+    <!-- 6. SKIATHOS -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#be185d;">6</div>
+        <div>
+          <div class="dest-name">Skiathos</div>
+          <div class="dest-sub">Mică și cosmopolită</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <div class="dest-check">Cupluri tinere, grupuri de prieteni, iubitori de plaje frumoase și viață de noapte</div>
+        <div class="dest-check">Peste 60 de plaje superbe, atmosferă cosmopolită, foarte animată seara</div>
+        <div class="dest-check">Tip vacanță: Relaxare + distracție + viață de noapte</div>
+        <span class="dest-tag">💗 Plaje frumoase și seri animate</span>
+      </div>
+    </div>
+
+  </div><!-- /dest-grid -->
+
+  <!-- CE CONTEAZĂ ÎN ALEGERE -->
+  <h3 style="font-family:'Playfair Display',serif;font-size:17px;color:var(--navy);
+              margin:28px 0 14px;">Ce contează în alegerea insulei potrivite?</h3>
+
+  <div class="checklist-grid" style="margin-bottom:24px;">
+    <div class="check-item">
+      <div class="check-icon">👨‍👩‍👧‍👦</div>
+      <div class="check-label">Cu cine călătorești?</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">📅</div>
+      <div class="check-label">Perioada vacanței</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">💶</div>
+      <div class="check-label">Bugetul disponibil</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🏖️</div>
+      <div class="check-label">Tipul de vacanță dorit</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">✈️</div>
+      <div class="check-label">Durata zborului</div>
+    </div>
+    <div class="check-item">
+      <div class="check-icon">🎯</div>
+      <div class="check-label">Ce îți place să faci în vacanță?</div>
+    </div>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Nu există „cea mai frumoasă insulă".<br>
+      Există <strong>insula cea mai potrivită pentru vacanța TA.</strong><br><br>
+      O familie cu doi copii primește o recomandare, un cuplu care vrea liniște alta,
+      iar doi prieteni care vor să exploreze cu totul alta. 🇬🇷
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 8 — ALL INCLUSIVE ÎN GRECIA
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 8</p>
+  <h2 class="section-title">All Inclusive în Grecia — merită sau nu?</h2>
+  <p class="section-intro">
+    Când spunem vacanță, mulți ne gândim imediat la All Inclusive. Dar în Grecia
+    lucrurile stau puțin diferit. Uneori, cea mai frumoasă parte a vacanței este
+    tocmai să ieși din hotel, să descoperi o tavernă mică pe malul mării și să te
+    bucuri de atmosfera autentic grecească. 💙
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/grecia-all-inclusive.jpeg"
+       alt="All Inclusive în Grecia — merită sau nu?"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- GRID 4 TIPURI DE MASĂ -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px;">
+
+    <!-- ALL INCLUSIVE -->
+    <div style="background:#e6f4ff;border-radius:12px;padding:18px 16px;
+                border-top:4px solid #1a6fbf;text-align:center;">
+      <div style="font-size:28px;margin-bottom:8px;">🍹</div>
+      <p style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;
+                 color:#0d2240;margin:0 0 10px;">All Inclusive</p>
+      <ul style="list-style:none;padding:0;margin:0 0 12px;text-align:left;">
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Confort și comoditate</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Mese și băuturi incluse</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Buget mai ușor de controlat</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Ideal mai ales pentru familii cu copii</li>
+      </ul>
+      <div style="background:#0d2240;border-radius:8px;padding:8px;">
+        <p style="font-size:11px;color:#7ab3e0;font-weight:600;margin:0;line-height:1.4;">
+          Familii cu copii, vacanțe fără griji și relaxare maximă
+        </p>
+      </div>
+    </div>
+
+    <!-- MIC DEJUN -->
+    <div style="background:#edf7f0;border-radius:12px;padding:18px 16px;
+                border-top:4px solid #2a9d60;text-align:center;">
+      <div style="font-size:28px;margin-bottom:8px;">☕</div>
+      <p style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;
+                 color:#0d2240;margin:0 0 10px;">Mic Dejun</p>
+      <ul style="list-style:none;padding:0;margin:0 0 12px;text-align:left;">
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Libertate totală</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Descoperi tavernele locale</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Experiențe autentice</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Mai multă flexibilitate</li>
+      </ul>
+      <div style="background:#1a5c38;border-radius:8px;padding:8px;">
+        <p style="font-size:11px;color:#a8e6c8;font-weight:600;margin:0;line-height:1.4;">
+          Călători curioși, exploratori și iubitori de gastronomie
+        </p>
+      </div>
+    </div>
+
+    <!-- DEMIPENSIUNE -->
+    <div style="background:#fff8e6;border-radius:12px;padding:18px 16px;
+                border-top:4px solid #c89b3c;text-align:center;">
+      <div style="font-size:28px;margin-bottom:8px;">🍽️</div>
+      <p style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;
+                 color:#0d2240;margin:0 0 10px;">Demipensiune</p>
+      <ul style="list-style:none;padding:0;margin:0 0 12px;text-align:left;">
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Mic dejun + cină incluse</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Echilibru între confort și explorare</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Descoperi zona în timpul zilei</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Raport calitate-preț excelent</li>
+      </ul>
+      <div style="background:#8a5f00;border-radius:8px;padding:8px;">
+        <p style="font-size:11px;color:#fef3c7;font-weight:600;margin:0;line-height:1.4;">
+          Cupluri, familii sau călători care vor echilibru și confort
+        </p>
+      </div>
+    </div>
+
+    <!-- FĂRĂ MASĂ -->
+    <div style="background:#fce7f3;border-radius:12px;padding:18px 16px;
+                border-top:4px solid #be185d;text-align:center;">
+      <div style="font-size:28px;margin-bottom:8px;">🏠</div>
+      <p style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;
+                 color:#0d2240;margin:0 0 10px;">Fără Masă</p>
+      <ul style="list-style:none;padding:0;margin:0 0 12px;text-align:left;">
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Libertate totală în alegerea localurilor</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Trăiești Grecia „din tavernă în tavernă"</li>
+        <li style="font-size:12px;color:#2d3748;padding:3px 0;line-height:1.5;">✔ Ideal pentru sejururi active și explorări</li>
+      </ul>
+      <div style="background:#881337;border-radius:8px;padding:8px;">
+        <p style="font-size:11px;color:#fce7f3;font-weight:600;margin:0;line-height:1.4;">
+          Călători activi, food lovers și cei care vor autentic
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /grid tipuri masă -->
+
+  <!-- CÂND MERITĂ FIECARE -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;">
+
+    <div style="background:#e6f4ff;border-radius:12px;padding:18px 20px;">
+      <p style="font-size:13px;font-weight:700;color:#0d4080;margin:0 0 10px;">
+        ✅ Când merită All Inclusive în Grecia?
+      </p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:13px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;flex-shrink:0;">✔</span>
+          Când călătorești cu copii și vrei confort și mese sigure
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;flex-shrink:0;">✔</span>
+          Când vrei relaxare totală, fără grija cheltuielilor zilnice
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;flex-shrink:0;">✔</span>
+          Când hotelul are facilități foarte bune (piscine, aquapark, animație, plajă privată)
+        </li>
+      </ul>
+    </div>
+
+    <div style="background:#edf7f0;border-radius:12px;padding:18px 20px;">
+      <p style="font-size:13px;font-weight:700;color:#1a5c38;margin:0 0 10px;">
+        🍽️ Când alegi Mic dejun / Demipensiune / Fără masă?
+      </p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:13px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;flex-shrink:0;">✔</span>
+          Când vrei să descoperi gastronomia locală
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;flex-shrink:0;">✔</span>
+          Când îți place să explorezi și să încerci locuri noi
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;flex-shrink:0;">✔</span>
+          Când vrei o experiență autentică și conectare la cultura și tradițiile grecești
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- SFATUL CONSULTANTULUI -->
+  <div style="background:#fff8e6;border-left:5px solid #c89b3c;border-radius:0 12px 12px 0;
+               padding:18px 22px;margin-bottom:20px;">
+    <p style="font-family:'Playfair Display',serif;color:#8a5f00;font-size:15px;
+               font-weight:700;margin:0 0 8px;">
+      💡 Sfatul meu
+    </p>
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:13px;
+               line-height:1.75;margin:0;">
+      Nu aleg tipul de masă înainte să mă uit la destinație, poziția hotelului și
+      profilul turiștilor. Un resort izolat poate face All Inclusive-ul foarte util,
+      în timp ce un hotel aflat într-o stațiune plină de taverne poate merita rezervat
+      doar cu mic dejun.
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Nu există o variantă perfectă pentru toată lumea.<br>
+      Există <strong>varianta potrivită pentru vacanța TA în Grecia.</strong>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 9 — GRECIA CU COPIII: NU ALEGE DUPĂ POZE
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 9</p>
+  <h2 class="section-title">Grecia cu copiii — nu alege hotelul doar după poze!</h2>
+  <p class="section-intro">
+    Un hotel poate arăta superb în fotografii, dar când călătorești cu cei mici,
+    sunt câteva lucruri mult mai importante decât o piscină frumoasă. 😉
+    Iată ce verific eu înainte să recomand un hotel unei familii.
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/grecia-copii-hotel-poze.jpeg"
+       alt="Grecia cu copiii — 6 lucruri de verificat înainte să alegi hotelul"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- 6 CRITERII GRID -->
+  <div class="dest-grid" style="grid-template-columns:repeat(3,1fr);">
+
+    <!-- 1. INTRAREA ÎN MARE -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#0891b2;">1</div>
+        <div>
+          <div class="dest-name">Intrarea în mare</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <p style="font-size:13px;color:#2d3748;line-height:1.65;margin:0;">
+          Nisipul nu înseamnă automat intrare lină. Verificăm dacă sunt pietre,
+          valuri sau dacă apa se adâncește repede. Pentru copii mici, o intrare
+          lină și puțin adâncă poate schimba complet experiența vacanței.
+        </p>
+        <span class="dest-tag" style="margin-top:10px;">🌊 Criteriu #1 pentru copii mici</span>
+      </div>
+    </div>
+
+    <!-- 2. DISTANȚA REALĂ -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#d97706;">2</div>
+        <div>
+          <div class="dest-name">Distanța reală până la plajă</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <p style="font-size:13px;color:#2d3748;line-height:1.65;margin:0;">
+          „La 300 m de plajă" poate însemna o plimbare ușoară sau un drum în pantă,
+          cu scări și traversări. Cu un copil mic, un cărucior și bagaje de plajă,
+          diferența contează enorm.
+        </p>
+        <span class="dest-tag" style="margin-top:10px;">👣 Verifică pe Google Street View</span>
+      </div>
+    </div>
+
+    <!-- 3. TIPUL DE MASĂ -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#2a9d60;">3</div>
+        <div>
+          <div class="dest-name">Tipul de masă</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <p style="font-size:13px;color:#2d3748;line-height:1.65;margin:0;">
+          All Inclusive nu este obligatoriu în Grecia. Uneori demipensiunea sau
+          micul dejun sunt mult mai potrivite. Depinde de vârsta copiilor,
+          stilul familiei și poziția hotelului față de taverne.
+        </p>
+        <span class="dest-tag" style="margin-top:10px;">🍽️ Nu automat AI</span>
+      </div>
+    </div>
+
+    <!-- 4. CONFIGURAȚIA CAMEREI -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#7c3aed;">4</div>
+        <div>
+          <div class="dest-name">Configurația camerei</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <p style="font-size:13px;color:#2d3748;line-height:1.65;margin:0;">
+          Mai ales pentru 2 adulți + 2 copii, trebuie verificat dacă vorbim
+          despre paturi normale, extensibile, canapea sau chiar două camere.
+          „Cameră pentru 4 persoane" nu înseamnă întotdeauna 4 paturi normale.
+        </p>
+        <span class="dest-tag" style="margin-top:10px;">🛏️ Verifică configurația exactă</span>
+      </div>
+    </div>
+
+    <!-- 5. FACILITĂȚILE PENTRU COPII -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#be185d;">5</div>
+        <div>
+          <div class="dest-name">Facilitățile pentru copii</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <p style="font-size:13px;color:#2d3748;line-height:1.65;margin:0;">
+          Piscină pentru copii, loc de joacă, aquapark, animație — în funcție
+          de vârsta și nevoile lor. Un copil de 3 ani are alte nevoi față de
+          unul de 10 ani. Verificăm ce există efectiv, nu ce apare în poze.
+        </p>
+        <span class="dest-tag" style="margin-top:10px;">🛝 Adaptat vârstei copilului</span>
+      </div>
+    </div>
+
+    <!-- 6. POZIȚIA HOTELULUI -->
+    <div class="dest-card">
+      <div class="dest-card-num">
+        <div class="num-badge" style="background:#059669;">6</div>
+        <div>
+          <div class="dest-name">Poziția hotelului</div>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <p style="font-size:13px;color:#2d3748;line-height:1.65;margin:0;">
+          Dacă familia nu merge cu mașina, contează enorm să existe în apropiere
+          plajă, magazine și taverne. Un hotel izolat, oricât de frumos, poate
+          deveni inconfortabil fără transport propriu.
+        </p>
+        <span class="dest-tag" style="margin-top:10px;">📍 Locație = independență</span>
+      </div>
+    </div>
+
+  </div><!-- /6 criterii -->
+
+  <!-- PROMISIUNEA CONSULTANTULUI -->
+  <div style="background:#0d2240;border-radius:14px;padding:24px 28px;
+               margin-top:24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+    <div style="flex:1;min-width:200px;">
+      <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:16px;
+                 font-weight:700;margin:0 0 8px;">
+        Eu mă ocup de tot — tu te bucuri de vacanță!
+      </p>
+      <p style="font-family:Arial,sans-serif;color:#a8c8e8;font-size:13px;
+                 line-height:1.7;margin:0;">
+        ✔ Hoteluri testate și verificate<br>
+        ✔ Oferte potrivite pentru familii<br>
+        ✔ Suport și asistență înainte, în timpul și după sejur
+      </p>
+    </div>
+    <div style="text-align:center;flex-shrink:0;">
+      <p style="font-family:'Playfair Display',serif;color:#ffffff;font-size:14px;
+                 margin:0 0 6px;font-style:italic;">
+        Spune-mi ce cauți!
+      </p>
+      <p style="font-family:Arial,sans-serif;color:#7ab3e0;font-size:13px;margin:0;">
+        Îți găsesc vacanța perfectă pentru voi. ❤️
+      </p>
+    </div>
+  </div>
+
+  <div class="concluzie-box" style="margin-top:20px;">
+    <p>
+      O ofertă bună nu înseamnă doar „am găsit un hotel la un preț bun".<br>
+      Înseamnă să găsim <strong>hotelul potrivit pentru familia care va merge acolo.</strong>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 10 — CÂT COSTĂ GRECIA?
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 10</p>
+  <h2 class="section-title">Cât costă o vacanță în Grecia?</h2>
+  <p class="section-intro">
+    Este una dintre întrebările pe care le primesc cel mai des. 😊 Iar răspunsul
+    meu este: <strong>depinde ce fel de vacanță îți dorești!</strong> Două vacanțe
+    de 7 nopți în Grecia pot avea prețuri foarte diferite, chiar dacă la prima
+    vedere par asemănătoare.
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/grecia-cat-costa.jpeg"
+       alt="Cât costă Grecia — Grecia ieftină vs Grecia scumpă"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- TABEL COMPARATIV -->
+  <h3 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--navy);
+              margin:0 0 16px;text-align:center;">
+    Grecia ieftină vs Grecia scumpă — ce face diferența?
+  </h3>
+
+  <div style="border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:28px;">
+
+    <!-- HEADER -->
+    <div style="display:grid;grid-template-columns:1fr 80px 1fr;">
+      <div style="background:#2a6b2a;padding:14px 20px;text-align:center;">
+        <p style="font-family:'Playfair Display',serif;color:#fff;font-size:15px;
+                   font-weight:700;margin:0;">✅ GRECIA IEFTINĂ</p>
+      </div>
+      <div style="background:#1a2e4a;padding:14px 8px;text-align:center;display:flex;
+                   align-items:center;justify-content:center;">
+        <p style="color:#c89b3c;font-size:12px;font-weight:700;margin:0;">VS</p>
+      </div>
+      <div style="background:#8b1a1a;padding:14px 20px;text-align:center;">
+        <p style="font-family:'Playfair Display',serif;color:#fff;font-size:15px;
+                   font-weight:700;margin:0;">💎 GRECIA SCUMPĂ</p>
+      </div>
+    </div>
+
+    <!-- RÂND PERIOADĂ -->
+    <div style="display:grid;grid-template-columns:1fr 80px 1fr;border-top:1px solid var(--border);">
+      <div style="padding:14px 20px;background:#f0faf0;">
+        <p style="font-size:13px;font-weight:600;color:#2a6b2a;margin:0 0 4px;">Iunie și septembrie</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Tarife mult mai bune decât în vârful de sezon</p>
+      </div>
+      <div style="background:#f8f9fc;display:flex;align-items:center;justify-content:center;
+                   border-left:1px solid var(--border);border-right:1px solid var(--border);">
+        <p style="font-size:10px;font-weight:700;color:#1a6fbf;text-align:center;
+                   text-transform:uppercase;letter-spacing:0.5px;margin:0;padding:8px;">📅<br>PERIOADA</p>
+      </div>
+      <div style="padding:14px 20px;background:#fff5f5;">
+        <p style="font-size:13px;font-weight:600;color:#8b1a1a;margin:0 0 4px;">Iulie și august</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Vârf de sezon = cerere mare, tarife mai mari</p>
+      </div>
+    </div>
+
+    <!-- RÂND TRANSPORT -->
+    <div style="display:grid;grid-template-columns:1fr 80px 1fr;border-top:1px solid var(--border);">
+      <div style="padding:14px 20px;background:#f0faf0;">
+        <p style="font-size:13px;font-weight:600;color:#2a6b2a;margin:0 0 4px;">Mașină / Autocar</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Opțiuni mai accesibile pentru bugete reduse</p>
+      </div>
+      <div style="background:#f8f9fc;display:flex;align-items:center;justify-content:center;
+                   border-left:1px solid var(--border);border-right:1px solid var(--border);">
+        <p style="font-size:10px;font-weight:700;color:#1a6fbf;text-align:center;
+                   text-transform:uppercase;letter-spacing:0.5px;margin:0;padding:8px;">✈️<br>TRANSPORT</p>
+      </div>
+      <div style="padding:14px 20px;background:#fff5f5;">
+        <p style="font-size:13px;font-weight:600;color:#8b1a1a;margin:0 0 4px;">Avion</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Confort și rapiditate, dar tariful crește</p>
+      </div>
+    </div>
+
+    <!-- RÂND DESTINAȚIE -->
+    <div style="display:grid;grid-template-columns:1fr 80px 1fr;border-top:1px solid var(--border);">
+      <div style="padding:14px 20px;background:#f0faf0;">
+        <p style="font-size:13px;font-weight:600;color:#2a6b2a;margin:0 0 4px;">Destinații mai accesibile</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Halkidiki, Thassos, Paralia Katerini, Leptokaria, Nei Pori</p>
+      </div>
+      <div style="background:#f8f9fc;display:flex;align-items:center;justify-content:center;
+                   border-left:1px solid var(--border);border-right:1px solid var(--border);">
+        <p style="font-size:10px;font-weight:700;color:#1a6fbf;text-align:center;
+                   text-transform:uppercase;letter-spacing:0.5px;margin:0;padding:8px;">📍<br>DESTINAȚIA</p>
+      </div>
+      <div style="padding:14px 20px;background:#fff5f5;">
+        <p style="font-size:13px;font-weight:600;color:#8b1a1a;margin:0 0 4px;">Destinații premium</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Zakynthos, Creta, Corfu, Santorini, Mykonos</p>
+      </div>
+    </div>
+
+    <!-- RÂND POZIȚIE HOTEL -->
+    <div style="display:grid;grid-template-columns:1fr 80px 1fr;border-top:1px solid var(--border);">
+      <div style="padding:14px 20px;background:#f0faf0;">
+        <p style="font-size:13px;font-weight:600;color:#2a6b2a;margin:0 0 4px;">Hotel mai retras</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">La câteva sute de metri de plajă = preț mai bun</p>
+      </div>
+      <div style="background:#f8f9fc;display:flex;align-items:center;justify-content:center;
+                   border-left:1px solid var(--border);border-right:1px solid var(--border);">
+        <p style="font-size:10px;font-weight:700;color:#1a6fbf;text-align:center;
+                   text-transform:uppercase;letter-spacing:0.5px;margin:0;padding:8px;">🏨<br>POZIȚIA</p>
+      </div>
+      <div style="padding:14px 20px;background:#fff5f5;">
+        <p style="font-size:13px;font-weight:600;color:#8b1a1a;margin:0 0 4px;">Hotel pe plajă</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Vedere la mare și acces direct = tarif mai mare</p>
+      </div>
+    </div>
+
+    <!-- RÂND MASĂ -->
+    <div style="display:grid;grid-template-columns:1fr 80px 1fr;border-top:1px solid var(--border);">
+      <div style="padding:14px 20px;background:#f0faf0;">
+        <p style="font-size:13px;font-weight:600;color:#2a6b2a;margin:0 0 4px;">Fără masă / Mic dejun</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Flexibilitate și costuri mai reduse</p>
+      </div>
+      <div style="background:#f8f9fc;display:flex;align-items:center;justify-content:center;
+                   border-left:1px solid var(--border);border-right:1px solid var(--border);">
+        <p style="font-size:10px;font-weight:700;color:#1a6fbf;text-align:center;
+                   text-transform:uppercase;letter-spacing:0.5px;margin:0;padding:8px;">🍽️<br>MASA</p>
+      </div>
+      <div style="padding:14px 20px;background:#fff5f5;">
+        <p style="font-size:13px;font-weight:600;color:#8b1a1a;margin:0 0 4px;">Demipensiune / All Inclusive</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Confort și servicii incluse = tarif mai mare</p>
+      </div>
+    </div>
+
+    <!-- RÂND CAMERĂ -->
+    <div style="display:grid;grid-template-columns:1fr 80px 1fr;border-top:1px solid var(--border);">
+      <div style="padding:14px 20px;background:#f0faf0;border-radius:0 0 0 12px;">
+        <p style="font-size:13px;font-weight:600;color:#2a6b2a;margin:0 0 4px;">Cameră standard</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Fără vedere la mare, fără facilități extra</p>
+      </div>
+      <div style="background:#f8f9fc;display:flex;align-items:center;justify-content:center;
+                   border-left:1px solid var(--border);border-right:1px solid var(--border);">
+        <p style="font-size:10px;font-weight:700;color:#1a6fbf;text-align:center;
+                   text-transform:uppercase;letter-spacing:0.5px;margin:0;padding:8px;">🛏️<br>CAMERA</p>
+      </div>
+      <div style="padding:14px 20px;background:#fff5f5;border-radius:0 0 12px 0;">
+        <p style="font-size:13px;font-weight:600;color:#8b1a1a;margin:0 0 4px;">Cameră superioară / vedere la mare</p>
+        <p style="font-size:12px;color:#4a5568;margin:0;line-height:1.5;">Mai mult spațiu, vedere, confort = preț mai mare</p>
+      </div>
+    </div>
+
+  </div><!-- /tabel comparativ -->
+
+  <!-- SFATUL CONSULTANTULUI -->
+  <div style="background:#fff8e6;border-left:5px solid #c89b3c;border-radius:0 12px 12px 0;
+               padding:20px 24px;margin-bottom:20px;">
+    <p style="font-family:'Playfair Display',serif;color:#8a5f00;font-size:16px;
+               font-weight:700;margin:0 0 10px;">
+      💡 Întrebarea mea când aud „Vreau Grecia cât mai ieftin"
+    </p>
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:14px;
+               line-height:1.75;margin:0;">
+      <strong>„La ce nu vrei să renunți în vacanța ta?"</strong><br><br>
+      Pentru că uneori merită să economisim la cameră pentru a avea un hotel
+      mai aproape de plajă. Alteori merită să schimbăm perioada și să păstrăm
+      hotelul pe care ni-l dorim. Nu caut cel mai ieftin. Caut varianta care
+      să merite banii pentru ceea ce este important pentru tine. 😊
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Nu există „cât costă Grecia?".<br>
+      Există: <strong>ce fel de vacanță îți dorești?</strong><br><br>
+      Spune-mi bugetul și ce este important pentru tine.<br>
+      Eu caut varianta care să merite banii. ❤️
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 11 — 4 INSULE, 4 STILURI DE VACANȚĂ
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 11</p>
+  <h2 class="section-title">4 insule. 4 stiluri de vacanță. Tu pe care o alegi?</h2>
+  <p class="section-intro">
+    Grecia are atât de multe locuri superbe încât uneori partea cea mai grea nu este
+    să găsești o vacanță... ci să alegi insula potrivită pentru tine! 😍
+    Iată o comparație directă între 4 insule cu personalități complet diferite.
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/grecia-4-insule.jpeg"
+       alt="4 insule, 4 stiluri de vacanță — Thassos, Lefkada, Zakynthos, Corfu"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- GRID 4 INSULE -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px;">
+
+    <!-- THASSOS -->
+    <div style="background:#edf7f0;border-radius:12px;padding:18px 16px;
+                border-top:5px solid #2a9d60;">
+      <p style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;
+                 color:#1a5c38;margin:0 0 6px;">💚 THASSOS</p>
+      <p style="font-size:11px;font-weight:700;color:#2a9d60;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 12px;">Comodă și accesibilă</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🚗</span> Perfectă pentru mers cu mașina
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">👨‍👩‍👧‍👦</span> Foarte potrivită pentru familii
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🏖️</span> Multe plaje frumoase
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">💶</span> Variante pentru bugete diferite
+        </li>
+      </ul>
+    </div>
+
+    <!-- LEFKADA -->
+    <div style="background:#e6f4ff;border-radius:12px;padding:18px 16px;
+                border-top:5px solid #1a6fbf;">
+      <p style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;
+                 color:#0d4080;margin:0 0 6px;">💙 LEFKADA</p>
+      <p style="font-size:11px;font-weight:700;color:#1a6fbf;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 12px;">Pentru plaje WOW</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🌊</span> Apă incredibil de turcoaz
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">📸</span> Peisaje spectaculoase
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🚗</span> Mașina este foarte utilă pentru explorare
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">❤️</span> Excelentă pentru cupluri și iubitorii de plaje
+        </li>
+      </ul>
+    </div>
+
+    <!-- ZAKYNTHOS -->
+    <div style="background:#fff8e6;border-radius:12px;padding:18px 16px;
+                border-top:5px solid #c89b3c;">
+      <p style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;
+                 color:#8a5f00;margin:0 0 6px;">🐢 ZAKYNTHOS</p>
+      <p style="font-size:11px;font-weight:700;color:#c89b3c;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 12px;">Vacanță completă</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">✈️</span> Foarte potrivită pentru charter cu avionul
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🚤</span> Plaje superbe + excursii cu barca
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🐢</span> Celebrele țestoase Caretta-Caretta
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🍹</span> Zone liniștite, dar și stațiuni animate
+        </li>
+      </ul>
+    </div>
+
+    <!-- CORFU -->
+    <div style="background:#f3e8ff;border-radius:12px;padding:18px 16px;
+                border-top:5px solid #7c3aed;">
+      <p style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;
+                 color:#5b21b6;margin:0 0 6px;">🌿 CORFU</p>
+      <p style="font-size:11px;font-weight:700;color:#7c3aed;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 12px;">Verde, elegantă și romantică</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🏛️</span> Oraș superb de explorat
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🌊</span> Golfuri și plaje foarte diferite
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">❤️</span> Potrivită pentru cupluri, dar și familii
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;
+                    display:flex;gap:6px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🚗</span> Merită explorată, nu doar stat la hotel
+        </li>
+      </ul>
+    </div>
+
+  </div><!-- /grid 4 insule -->
+
+  <!-- VERSUS BANNER -->
+  <div style="background:var(--navy);border-radius:12px;padding:16px 20px;
+               display:flex;align-items:center;justify-content:center;
+               gap:12px;flex-wrap:wrap;margin-bottom:20px;text-align:center;">
+    <span style="font-family:'Playfair Display',serif;color:#2a9d60;font-size:15px;font-weight:700;">THASSOS</span>
+    <span style="color:#c89b3c;font-size:12px;font-weight:700;">VS</span>
+    <span style="font-family:'Playfair Display',serif;color:#1a6fbf;font-size:15px;font-weight:700;">LEFKADA</span>
+    <span style="color:#c89b3c;font-size:12px;font-weight:700;">VS</span>
+    <span style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:15px;font-weight:700;">ZAKYNTHOS</span>
+    <span style="color:#c89b3c;font-size:12px;font-weight:700;">VS</span>
+    <span style="font-family:'Playfair Display',serif;color:#a78bfa;font-size:15px;font-weight:700;">CORFU</span>
+    <p style="font-family:Georgia,serif;color:rgba(255,255,255,0.7);font-size:13px;
+               font-style:italic;margin:0;width:100%;">
+      Spune-mi ce îți dorești de la vacanță și te ajut să alegi insula potrivită! ❤️
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Nu există o insulă „cea mai bună".<br>
+      Există <strong>insula care se potrivește vacanței pe care ți-o imaginezi tu.</strong>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 12 — HOTEL PE PLAJĂ NU ÎNSEAMNĂ CE CREZI
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 12</p>
+  <h2 class="section-title">„Hotel pe plajă" nu înseamnă întotdeauna ce crezi!</h2>
+  <p class="section-intro">
+    Când vezi în descriere „hotel pe plajă", tentația este să-ți imaginezi că ieși din
+    cameră și în câțiva pași ești cu picioarele în nisip. În realitate, sunt câteva
+    detalii pe care merită să le verificăm înainte de rezervare. 😲
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/grecia-hotel-pe-plaja.jpeg"
+       alt="Hotel pe plajă nu înseamnă întotdeauna ce crezi — 5 detalii de verificat"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- 5 TIPURI ÎN RÂND -->
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:28px;">
+
+    <!-- 1. BEACHFRONT -->
+    <div style="background:#e6f4ff;border-radius:12px;padding:16px 14px;
+                border-top:4px solid #1a6fbf;text-align:center;">
+      <div style="width:28px;height:28px;border-radius:50%;background:#1a6fbf;
+                   color:#fff;font-size:13px;font-weight:700;display:flex;
+                   align-items:center;justify-content:center;margin:0 auto 10px;">1</div>
+      <p style="font-size:12px;font-weight:700;color:#0d4080;margin:0 0 8px;
+                 line-height:1.3;">BEACHFRONT / PE PLAJĂ</p>
+      <p style="font-size:11px;color:#4a5568;line-height:1.55;margin:0;">
+        Hotelul este chiar lângă plajă, dar asta nu înseamnă automat că are plajă proprie.
+      </p>
+    </div>
+
+    <!-- 2. 100-300M -->
+    <div style="background:#edf7f0;border-radius:12px;padding:16px 14px;
+                border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:28px;height:28px;border-radius:50%;background:#2a9d60;
+                   color:#fff;font-size:13px;font-weight:700;display:flex;
+                   align-items:center;justify-content:center;margin:0 auto 10px;">2</div>
+      <p style="font-size:12px;font-weight:700;color:#1a5c38;margin:0 0 8px;
+                 line-height:1.3;">LA 100–300 M DE PLAJĂ</p>
+      <p style="font-size:11px;color:#4a5568;line-height:1.55;margin:0;">
+        Poate fi foarte aproape, dar trebuie verificat traseul real: stradă, pantă, scări etc.
+      </p>
+    </div>
+
+    <!-- 3. ACCES DIRECT -->
+    <div style="background:#fff8e6;border-radius:12px;padding:16px 14px;
+                border-top:4px solid #c89b3c;text-align:center;">
+      <div style="width:28px;height:28px;border-radius:50%;background:#c89b3c;
+                   color:#fff;font-size:13px;font-weight:700;display:flex;
+                   align-items:center;justify-content:center;margin:0 auto 10px;">3</div>
+      <p style="font-size:12px;font-weight:700;color:#8a5f00;margin:0 0 8px;
+                 line-height:1.3;">ACCES DIRECT LA PLAJĂ</p>
+      <p style="font-size:11px;color:#4a5568;line-height:1.55;margin:0;">
+        Poți ajunge din proprietatea hotelului la plajă fără un drum public important de parcurs.
+      </p>
+    </div>
+
+    <!-- 4. PLAJĂ PRIVATĂ -->
+    <div style="background:#f3e8ff;border-radius:12px;padding:16px 14px;
+                border-top:4px solid #7c3aed;text-align:center;">
+      <div style="width:28px;height:28px;border-radius:50%;background:#7c3aed;
+                   color:#fff;font-size:13px;font-weight:700;display:flex;
+                   align-items:center;justify-content:center;margin:0 auto 10px;">4</div>
+      <p style="font-size:12px;font-weight:700;color:#5b21b6;margin:0 0 8px;
+                 line-height:1.3;">PLAJĂ PRIVATĂ</p>
+      <p style="font-size:11px;color:#4a5568;line-height:1.55;margin:0;">
+        Hotelul are o zonă dedicată oaspeților, însă verifică dacă șezlongurile și umbrelele sunt gratuite sau contra cost.
+      </p>
+    </div>
+
+    <!-- 5. CEL MAI IMPORTANT -->
+    <div style="background:#fce7f3;border-radius:12px;padding:16px 14px;
+                border-top:4px solid #be185d;text-align:center;">
+      <div style="width:28px;height:28px;border-radius:50%;background:#be185d;
+                   color:#fff;font-size:13px;font-weight:700;display:flex;
+                   align-items:center;justify-content:center;margin:0 auto 10px;">5</div>
+      <p style="font-size:12px;font-weight:700;color:#881337;margin:0 0 8px;
+                 line-height:1.3;">TIPUL PLAJEI ⚠️</p>
+      <p style="font-size:11px;color:#4a5568;line-height:1.55;margin:0;">
+        „Pe plajă" nu înseamnă neapărat „plajă cu nisip" și intrare lină! Poate fi cu pietricele, stânci sau intrare mai abruptă.
+      </p>
+    </div>
+
+  </div><!-- /5 tipuri -->
+
+  <!-- CE VERIFIC EU -->
+  <div style="background:#0d2240;border-radius:12px;padding:20px 24px;margin-bottom:20px;">
+    <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:15px;
+               font-weight:700;margin:0 0 14px;text-align:center;">
+      Ce verific eu pentru tine înainte să recomand un hotel:
+    </p>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;text-align:center;">
+      <div>
+        <p style="font-size:18px;margin:0 0 4px;">📍</p>
+        <p style="font-size:11px;color:#a8c8e8;margin:0;line-height:1.4;">Poziția exactă față de plajă</p>
+      </div>
+      <div>
+        <p style="font-size:18px;margin:0 0 4px;">🚶</p>
+        <p style="font-size:11px;color:#a8c8e8;margin:0;line-height:1.4;">Traseul real până la plajă</p>
+      </div>
+      <div>
+        <p style="font-size:18px;margin:0 0 4px;">🌊</p>
+        <p style="font-size:11px;color:#a8c8e8;margin:0;line-height:1.4;">Tipul plajei și intrarea în mare</p>
+      </div>
+      <div>
+        <p style="font-size:18px;margin:0 0 4px;">⛱️</p>
+        <p style="font-size:11px;color:#a8c8e8;margin:0;line-height:1.4;">Plajă privată și costurile aferente</p>
+      </div>
+      <div>
+        <p style="font-size:18px;margin:0 0 4px;">💬</p>
+        <p style="font-size:11px;color:#a8c8e8;margin:0;line-height:1.4;">Recenzii reale de la turiști</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      O fotografie frumoasă atrage privirea.<br>
+      <strong>Detaliile fac diferența dintre o ofertă frumoasă și o vacanță potrivită pentru tine.</strong><br><br>
+      Eu verific pentru tine, ca tu să ai vacanța potrivită. ❤️
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 13 — CRETA: CHANIA SAU HERAKLION?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 13</p>
+  <h2 class="section-title">Creta: Chania sau Heraklion?</h2>
+  <p class="section-intro">
+    Aceeași insulă, dar două stiluri de vacanță complet diferite! 😍
+    Nu alege doar după preț — alege zona potrivită stilului tău de vacanță.
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/creta-chania-heraklion.jpeg"
+       alt="Creta: Chania sau Heraklion — ce alegere ți se potrivește?"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- COMPARATIV 2 COLOANE -->
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- CHANIA -->
+    <div style="background:#e6f4ff;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d4080;margin:0 0 16px;text-align:center;">💙 CHANIA</p>
+      <p style="font-size:11px;font-weight:700;color:#1a6fbf;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Plaje & Explorare
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🏖️</span>
+          Plaje spectaculoase — Balos, Elafonissi, Falassarna
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">📸</span>
+          Atmosferă romantică și oraș venețian superb
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🚗</span>
+          Ideală dacă vrei să explorezi insula cu mașina
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#1a6fbf;">❤️</span>
+          Foarte frumoasă pentru cupluri
+        </li>
+      </ul>
+      <div style="background:#0d2240;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#7ab3e0;margin:0;">
+          👉 Plaje & explorare → CHANIA
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:#0d2240;display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- HERAKLION -->
+    <div style="background:#fff5e6;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#8a5f00;margin:0 0 16px;text-align:center;">🧡 HERAKLION</p>
+      <p style="font-size:11px;font-weight:700;color:#c89b3c;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Resort & Relaxare
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🏨</span>
+          Mai multe resorturi și opțiuni All Inclusive
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">👨‍👩‍👧‍👦</span>
+          Excelent pentru familii cu copii
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🏛️</span>
+          Knossos și multe obiective de vizitat
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#c89b3c;">✈️</span>
+          Foarte bun pentru o vacanță charter comodă
+        </li>
+      </ul>
+      <div style="background:#8a5f00;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#fef3c7;margin:0;">
+          👉 Resort & relaxare → HERAKLION
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <!-- SFATUL CONSULTANTULUI -->
+  <div style="background:#fff8e6;border-left:5px solid #c89b3c;border-radius:0 12px 12px 0;
+               padding:18px 22px;margin-bottom:20px;">
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:14px;
+               line-height:1.75;margin:0;">
+      💡 <strong>Sfatul meu:</strong> Nu aleg niciodată o vacanță în Creta doar după preț.
+      Zona potrivită poate face diferența dintre „a fost frumos" și „vreau să mă întorc!" ❤️
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Tu ce ai alege:<br>
+      <strong>CHANIA 💙 pentru plaje și explorare</strong><br>
+      sau<br>
+      <strong>HERAKLION 🧡 pentru resort și relaxare?</strong>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 14 — CORFU SAU ZAKYNTHOS?
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 14</p>
+  <h2 class="section-title">Corfu sau Zakynthos?</h2>
+  <p class="section-intro">
+    Două insule grecești superbe, dar cu personalități total diferite! 😍
+    Două stiluri de vacanță — tu pe care o alegi?
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/corfu-vs-zakynthos.jpeg"
+       alt="Corfu sau Zakynthos — două insule, două stiluri de vacanță"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- CORFU -->
+    <div style="background:#edf7f0;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#1a5c38;margin:0 0 16px;text-align:center;">🌿 CORFU</p>
+      <p style="font-size:11px;font-weight:700;color:#2a9d60;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Natură, eleganță & explorare
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🌿</span> Insulă foarte verde
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🏖️</span> Plaje și golfuri superbe
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🏛️</span> Oraș vechi superb pentru plimbări
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">👨‍👩‍👧‍👦</span> Potrivită și pentru familii
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#2a9d60;">🚗</span> Merită explorată cu mașina
+        </li>
+      </ul>
+      <div style="background:#1a5c38;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#a8e6c8;margin:0;">
+          👉 Natură, eleganță & explorare → CORFU
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:#0d2240;display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- ZAKYNTHOS -->
+    <div style="background:#e6f4ff;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d4080;margin:0 0 16px;text-align:center;">🐢 ZAKYNTHOS</p>
+      <p style="font-size:11px;font-weight:700;color:#1a6fbf;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Mare, excursii & peisaje WOW
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🌊</span> Apă incredibil de albastră
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🐢</span> Celebrele țestoase Caretta-Caretta
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🚤</span> Excursii cu barca și peșteri marine
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">📸</span> Peisaje spectaculoase — Plaja Navagio
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#1a6fbf;">🍹</span> Zone liniștite, dar și viață de noapte
+        </li>
+      </ul>
+      <div style="background:#0d2240;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#7ab3e0;margin:0;">
+          👉 Mare, excursii & peisaje WOW → ZAKYNTHOS
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div class="concluzie-box">
+    <p>
+      Nu există alegere greșită.<br>
+      Există doar <strong>insula care ți se potrivește mai bine.</strong><br><br>
+      Tu în ce tabără ești: CORFU 🌿 sau ZAKYNTHOS 🐢?
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 15 — RHODOS SAU KOS?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 15</p>
+  <h2 class="section-title">Rhodos sau Kos?</h2>
+  <p class="section-intro">
+    Două insule superbe din Grecia, dar potrivite pentru două stiluri diferite de vacanță! 😍
+    Rhodos dacă vrei să descoperi — Kos dacă vrei să încetinești. ❤️
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/rhodos-vs-kos.jpeg"
+       alt="Rhodos sau Kos — două insule, două stiluri de vacanță"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- RHODOS -->
+    <div style="background:#fff8e6;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#8a5f00;margin:0 0 16px;text-align:center;">🏰 RHODOS</p>
+      <p style="font-size:11px;font-weight:700;color:#c89b3c;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Istorie, explorare & mai multă acțiune
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🏰</span> Mult mai multe obiective de vizitat
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🏛️</span> Oraș medieval superb — Lindos
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🌊</span> Plaje frumoase și stațiuni animate
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🚗</span> Excelentă pentru explorat cu mașina
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">👨‍👩‍👧‍👦</span> Foarte bună pentru familii
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#c89b3c;">🌙</span> Viață de seară, restaurante și promenadă
+        </li>
+      </ul>
+      <div style="background:#8a5f00;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#fef3c7;margin:0;">
+          👉 Istorie, explorare & acțiune → RHODOS
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:#0d2240;display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- KOS -->
+    <div style="background:#e6f9f7;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d5c52;margin:0 0 16px;text-align:center;">🚲 KOS</p>
+      <p style="font-size:11px;font-weight:700;color:#0891b2;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Relaxare, plaje & ritm liniștit
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🏝️</span> Insulă mai mică și relaxată
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🏖️</span> Plaje lungi și frumoase
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🌿</span> Atmosferă liniștită
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">👨‍👩‍👧‍👦</span> Foarte potrivită pentru familii cu copii
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🚲</span> Celebră pentru biciclete și plimbări
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#0891b2;">😌</span> Ideală dacă vrei o vacanță fără prea multă alergătură
+        </li>
+      </ul>
+      <div style="background:#0d5c52;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#a7f3d0;margin:0;">
+          👉 Relaxare, plaje & ritm liniștit → KOS
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div class="concluzie-box">
+    <p>
+      <strong>Rhodos dacă vrei să descoperi.</strong><br>
+      <strong>Kos dacă vrei să încetinești.</strong><br><br>
+      Nu există alegere greșită — există insula potrivită pentru stilul tău de vacanță. ❤️
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 16 — HALKIDIKI SAU THASSOS?
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 16</p>
+  <h2 class="section-title">Halkidiki sau Thassos?</h2>
+  <p class="section-intro">
+    Două destinații foarte iubite de români, ambele accesibile cu mașina,
+    dar cu experiențe destul de diferite. 😍
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/halkidiki-vs-thassos.jpeg"
+       alt="Halkidiki sau Thassos — două destinații, două stiluri de vacanță"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- HALKIDIKI -->
+    <div style="background:#e6f4ff;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d4080;margin:0 0 16px;text-align:center;">💙 HALKIDIKI</p>
+      <p style="font-size:11px;font-weight:700;color:#1a6fbf;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Resort, confort & varietate
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🏖️</span> Plaje superbe și apă turcoaz
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🏨</span> Mai multe resorturi și hoteluri cu servicii bune
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">👨‍👩‍👧‍👦</span> Excelentă pentru familii cu copii
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🚗</span> Accesibilă cu mașina din România — fără ferry ✅
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🗺️</span> Multe stațiuni și zone diferite din care poți alege
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#1a6fbf;">🍹</span> Bună dacă vrei relaxare și puțină animație
+        </li>
+      </ul>
+      <div style="background:#0d2240;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#7ab3e0;margin:0;">
+          👉 Resort, confort & varietate → HALKIDIKI
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:#0d2240;display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- THASSOS -->
+    <div style="background:#edf7f0;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#1a5c38;margin:0 0 16px;text-align:center;">💚 THASSOS</p>
+      <p style="font-size:11px;font-weight:700;color:#2a9d60;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Natură, explorare & Grecia autentică
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🌿</span> Insulă verde cu muntele lângă mare
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🌊</span> Golfuri și plaje foarte frumoase
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🚗</span> Perfectă pentru explorat cu mașina pe insulă
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">⛴️</span> Necesită traversare cu ferryboat-ul (din Keramoti, 30 min)
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🍽️</span> Multe cazări mici, taverne și atmosferă grecească
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#2a9d60;">❤️</span> Potrivită dacă vrei o vacanță mai autentică și liniștită
+        </li>
+      </ul>
+      <div style="background:#1a5c38;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#a8e6c8;margin:0;">
+          👉 Natură, explorare & Grecia autentică → THASSOS
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div style="background:#fff8e6;border-left:5px solid #c89b3c;border-radius:0 12px 12px 0;
+               padding:16px 20px;margin-bottom:20px;">
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:14px;
+               line-height:1.75;margin:0;">
+      💡 <strong>De reținut:</strong> Ambele sunt accesibile cu mașina din România.
+      Thassos necesită în plus traversarea cu ferryboat-ul din Keramoti (~30 minute) —
+      dar acel drum cu feribotul face parte din experiența insulei. 😊
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Destinația potrivită depinde de cum vrei să arate vacanța ta,<br>
+      nu doar de preț.<br><br>
+      <strong>Tu ce alegi: HALKIDIKI 💙 sau THASSOS 💚?</strong>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 17 — LEFKADA SAU KEFALONIA?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 17</p>
+  <h2 class="section-title">Lefkada sau Kefalonia? Două bijuterii ale Mării Ionice!</h2>
+  <p class="section-intro">
+    Dacă iubești Grecia pentru apa aceea incredibil de turcoaz și peisajele care par
+    desprinse dintr-o carte poștală, alegerea asta va fi grea. 😍
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/lefkada-vs-kefalonia.jpeg"
+       alt="Lefkada sau Kefalonia — două bijuterii ale Mării Ionice"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- LEFKADA -->
+    <div style="background:#e6f4ff;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d4080;margin:0 0 16px;text-align:center;">💙 LEFKADA</p>
+      <p style="font-size:11px;font-weight:700;color:#1a6fbf;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Acces ușor, plaje WOW & aventură
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🚗</span> Poți ajunge cu mașina fără ferryboat ✅
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🏖️</span> Plaje spectaculoase cu apă turcoaz
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">📸</span> Porto Katsiki & Egremni — peisaje WOW
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">⛵</span> Perfectă pentru excursii cu barca
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🍹</span> Stațiuni animate, dar și zone liniștite
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#1a6fbf;">❤️</span> Potrivită dacă vrei să combini plaja cu explorarea
+        </li>
+      </ul>
+      <div style="background:#0d2240;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#7ab3e0;margin:0;">
+          👉 Acces ușor, plaje WOW & aventură → LEFKADA
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:#0d2240;display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- KEFALONIA -->
+    <div style="background:#edf7f0;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#1a5c38;margin:0 0 16px;text-align:center;">💚 KEFALONIA</p>
+      <p style="font-size:11px;font-weight:700;color:#2a9d60;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Natură, autenticitate & liniște
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🌴</span> Insulă mai mare și mai sălbatică
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🏖️</span> Myrtos — una dintre plajele emblematice ale Greciei
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🐢</span> Poți întâlni țestoase Caretta-Caretta în zona Argostoli
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🚗</span> Superbă de explorat cu mașina
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🏘️</span> Sate și porturi foarte pitorești
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#2a9d60;">🌿</span> Mai potrivită dacă vrei liniște, natură și un ritm lent
+        </li>
+      </ul>
+      <div style="background:#1a5c38;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#a8e6c8;margin:0;">
+          👉 Natură, autenticitate & liniște → KEFALONIA
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div class="concluzie-box">
+    <p>
+      Două bijuterii ale Mării Ionice.<br>
+      <strong>Alegerea e chiar grea! 😅</strong><br><br>
+      Tu ce ai alege: <strong>LEFKADA 💙</strong> sau <strong>KEFALONIA 💚</strong>?
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 18 — PARALIA KATERINI SAU OLYMPIC BEACH?
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 18</p>
+  <h2 class="section-title">Paralia Katerini sau Olympic Beach?</h2>
+  <p class="section-intro">
+    Riviera Olimpului — una dintre cele mai accesibile și iubite destinații de vacanță
+    cu mașina din Grecia pentru românii. Același litoral, dar două atmosfere complet diferite! 😍
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/paralia-vs-olympic-beach.jpeg"
+       alt="Paralia Katerini sau Olympic Beach — Riviera Olimpului"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- PARALIA KATERINI -->
+    <div style="background:#fff8e6;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:18px;font-weight:900;
+                 color:#8a5f00;margin:0 0 16px;text-align:center;">🌙 PARALIA KATERINI</p>
+      <p style="font-size:11px;font-weight:700;color:#c89b3c;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Animație, plimbări & totul aproape
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🎉</span> Multă animație seara
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🍹</span> Terase, restaurante și magazine
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🛍️</span> Bună pentru plimbări și cumpărături
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🏖️</span> Plajă lungă și accesibilă
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🗺️</span> Potrivită dacă vrei să ai totul aproape
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🇷🇴</span> Foarte populară printre turiștii români
+        </li>
+      </ul>
+      <div style="background:#8a5f00;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#fef3c7;margin:0;">
+          👉 Animație, plimbări & totul aproape → PARALIA
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:#0d2240;display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- OLYMPIC BEACH -->
+    <div style="background:#e6f9f7;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:18px;font-weight:900;
+                 color:#0d5c52;margin:0 0 16px;text-align:center;">🏖️ OLYMPIC BEACH</p>
+      <p style="font-size:11px;font-weight:700;color:#0891b2;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Liniște, familie & relaxare
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">😌</span> Mai liniștită și relaxată
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">👨‍👩‍👧‍👦</span> Foarte potrivită pentru familii cu copii
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🏖️</span> Plajă lată și mult spațiu
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🍽️</span> Taverne și atmosferă grecească autentică
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🚗</span> Poți ajunge ușor în Paralia Katerini
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#0891b2;">❤️</span> Bună dacă vrei mare fără aglomerația din centru
+        </li>
+      </ul>
+      <div style="background:#0d5c52;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#a7f3d0;margin:0;">
+          👉 Liniște, familie & relaxare → OLYMPIC BEACH
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div style="background:#fff8e6;border-left:5px solid #c89b3c;border-radius:0 12px 12px 0;
+               padding:16px 20px;margin-bottom:20px;">
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:14px;
+               line-height:1.75;margin:0;">
+      🚗 <strong>Avantajul Rivierei Olimpului:</strong> Ambele stațiuni sunt
+      accesibile cu mașina din România — una dintre cele mai aproape destinații
+      de mare din Grecia (~540 km din București). Bonus: poți combina plaja
+      cu excursii la Muntele Olimp sau Meteora.
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Aceeași Rivieră. Două atmosfere diferite.<br><br>
+      <strong>Tu unde te-ai caza: PARALIA 🌙 sau OLYMPIC BEACH 🏖️?</strong>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 19 — SKIATHOS SAU SKOPELOS?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 19</p>
+  <h2 class="section-title">Skiathos sau Skopelos? Două insule de poveste!</h2>
+  <p class="section-intro">
+    Două insule superbe din Sporade. Două atmosfere complet diferite. Tu pe care o alegi? 😍
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/skiathos-vs-skopelos.jpeg"
+       alt="Skiathos sau Skopelos — două insule de poveste"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- SKIATHOS -->
+    <div style="background:#e6f4ff;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d4080;margin:0 0 16px;text-align:center;">✈️ SKIATHOS</p>
+      <p style="font-size:11px;font-weight:700;color:#1a6fbf;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Plaje, acces ușor & atmosferă animată
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">✈️</span> Are aeroport — acces mult mai simplu
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🏖️</span> Peste 60 de plaje și golfuri superbe
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🌿</span> Multă vegetație și apă turcoaz
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🍹</span> Skiathos Town este animat seara
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">👨‍👩‍👧‍👦</span> Potrivită pentru familii, dar și pentru cupluri
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#1a6fbf;">⛵</span> Excursii cu barca spre plaje spectaculoase
+        </li>
+      </ul>
+      <div style="background:#0d2240;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#7ab3e0;margin:0;">
+          👉 Plaje, acces ușor & atmosferă animată → SKIATHOS
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:#0d2240;display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- SKOPELOS -->
+    <div style="background:#edf7f0;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#1a5c38;margin:0 0 16px;text-align:center;">🎬 SKOPELOS</p>
+      <p style="font-size:11px;font-weight:700;color:#2a9d60;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Mamma Mia, natură & romantism
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🎬</span> Insula celebră datorită filmului Mamma Mia!
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">⛪</span> Agios Ioannis — celebra bisericuță de pe stâncă
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🌿</span> Mai liniștită și mai autentică
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🏖️</span> Plaje superbe înconjurate de pini și natură
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">⛴️</span> Se ajunge cu ferryboat-ul
+        </li>
+        <li style="font-size:13px;color:#2d3748;padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#2a9d60;">❤️</span> Perfectă pentru romantism, natură și explorare
+        </li>
+      </ul>
+      <div style="background:#1a5c38;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#a8e6c8;margin:0;">
+          👉 Mamma Mia, natură & romantism → SKOPELOS
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div style="background:#fff8e6;border-left:5px solid #c89b3c;border-radius:0 12px 12px 0;
+               padding:16px 20px;margin-bottom:20px;">
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:14px;
+               line-height:1.75;margin:0;">
+      💡 <strong>Și dacă nu te poți hotărî?</strong> Poți vizita ambele insule în
+      aceeași vacanță! 😍⛴️ Skopelos este accesibil cu ferryboat-ul din Skiathos —
+      o combinație superbă pentru cei cu mai mult timp.
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Două insule de poveste.<br><br>
+      <strong>Tu pe care ai alege-o: SKIATHOS ✈️ sau SKOPELOS 🎬?</strong>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 20 — ÎNCHEIERE: CARE GRECIE ȚI SE POTRIVEȘTE?
+══════════════════════════════ -->
+<div class="section" style="background:var(--navy);">
+<div class="container">
+
+  <p class="section-label" style="color:#7ab3e0;">Secțiunea finală</p>
+  <h2 class="section-title" style="color:#ffffff;">Nu știi ce zonă din Grecia să alegi?</h2>
+  <p class="section-intro" style="color:#a8c8e8;">
+    Fiecare colț al Greciei are farmecul lui. Spune-mi cum îți imaginezi vacanța
+    și îți spun eu unde să mergi! ❤️
+  </p>
+
+  <img src="https://gherasimmarius.com/grecia/grecia-ce-zona-alegi.jpeg"
+       alt="Nu știi ce zonă din Grecia să alegi — ghid complet Destine Holidays"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- GRID 6 PROFILE -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px;">
+
+    <!-- Plaje spectaculoase -->
+    <div style="background:rgba(26,111,191,0.15);border-radius:12px;padding:18px;
+                border:1.5px solid #1a6fbf;">
+      <p style="font-size:13px;font-weight:700;color:#7ab3e0;margin:0 0 10px;">
+        🏖️ Vrei plaje spectaculoase?
+      </p>
+      <p style="font-size:13px;color:#ffffff;margin:0;line-height:1.6;">
+        📍 Lefkada<br>📍 Zakynthos<br>📍 Kefalonia
+      </p>
+    </div>
+
+    <!-- Copii -->
+    <div style="background:rgba(42,157,96,0.15);border-radius:12px;padding:18px;
+                border:1.5px solid #2a9d60;">
+      <p style="font-size:13px;font-weight:700;color:#a8e6c8;margin:0 0 10px;">
+        👨‍👩‍👧‍👦 Mergi cu copiii?
+      </p>
+      <p style="font-size:13px;color:#ffffff;margin:0;line-height:1.6;">
+        📍 Halkidiki<br>📍 Creta — Heraklion<br>📍 Kos
+      </p>
+    </div>
+
+    <!-- Mașina -->
+    <div style="background:rgba(200,155,60,0.15);border-radius:12px;padding:18px;
+                border:1.5px solid #c89b3c;">
+      <p style="font-size:13px;font-weight:700;color:#fde68a;margin:0 0 10px;">
+        🚗 Vrei Grecia cu mașina?
+      </p>
+      <p style="font-size:13px;color:#ffffff;margin:0;line-height:1.6;">
+        📍 Halkidiki<br>📍 Thassos<br>📍 Lefkada<br>📍 Riviera Olimpului
+      </p>
+    </div>
+
+    <!-- Romantism -->
+    <div style="background:rgba(190,24,93,0.15);border-radius:12px;padding:18px;
+                border:1.5px solid #be185d;">
+      <p style="font-size:13px;font-weight:700;color:#fbcfe8;margin:0 0 10px;">
+        💑 Vrei romantism și peisaje?
+      </p>
+      <p style="font-size:13px;color:#ffffff;margin:0;line-height:1.6;">
+        📍 Santorini<br>📍 Skopelos<br>📍 Chania
+      </p>
+    </div>
+
+    <!-- Plajă + vizitat -->
+    <div style="background:rgba(8,145,178,0.15);border-radius:12px;padding:18px;
+                border:1.5px solid #0891b2;">
+      <p style="font-size:13px;font-weight:700;color:#a5f3fc;margin:0 0 10px;">
+        🏛️ Vrei plajă + multe de vizitat?
+      </p>
+      <p style="font-size:13px;color:#ffffff;margin:0;line-height:1.6;">
+        📍 Rhodos<br>📍 Creta<br>📍 Corfu
+      </p>
+    </div>
+
+    <!-- Liniște autentică -->
+    <div style="background:rgba(124,58,237,0.15);border-radius:12px;padding:18px;
+                border:1.5px solid #7c3aed;">
+      <p style="font-size:13px;font-weight:700;color:#ddd6fe;margin:0 0 10px;">
+        🌿 Vrei liniște și Grecia autentică?
+      </p>
+      <p style="font-size:13px;color:#ffffff;margin:0;line-height:1.6;">
+        📍 Thassos<br>📍 Kefalonia<br>📍 Skopelos
+      </p>
+    </div>
+
+  </div><!-- /grid 6 profile -->
+
+  <!-- MESAJ DE ÎNCHEIERE -->
+  <div style="text-align:center;padding:32px 24px;border-top:1px solid rgba(255,255,255,0.1);">
+    <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:22px;
+               font-weight:700;margin:0 0 12px;line-height:1.3;">
+      Încheiem Ghidul pentru Vacanța Grecească!
+    </p>
+    <p style="font-family:Arial,sans-serif;color:#a8c8e8;font-size:15px;
+               line-height:1.8;margin:0 0 16px;max-width:560px;margin-left:auto;margin-right:auto;">
+      Grecia are câte ceva pentru fiecare. ❤️ Și tocmai de aceea, nu există
+      „cea mai bună destinație din Grecia" — există destinația potrivită
+      pentru vacanța pe care ți-o dorești.
+    </p>
+    <p style="font-family:'Playfair Display',serif;color:#7ab3e0;font-size:16px;
+               font-style:italic;margin:0 0 24px;">
+      Dar vacanțele în Grecia… abia încep! 😍✈️
+    </p>
+    <a href="https://gherasimmarius.com/solicita-oferta.html"
+       style="display:inline-block;background:#c89b3c;color:#0d2240;
+              font-family:Arial,sans-serif;font-size:16px;font-weight:700;
+              text-decoration:none;padding:16px 36px;border-radius:12px;
+              letter-spacing:0.3px;">
+      Găsește vacanța perfectă în Grecia →
+    </a>
+    <p style="font-family:Arial,sans-serif;color:#5a7a9a;font-size:12px;margin:14px 0 0;">
+      Consultanță gratuită · Răspuns în aceeași zi lucrătoare
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     CTA FINAL
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;padding-bottom:52px;">
+<div class="container">
+
+  <div class="cta-section">
+    <h3 class="cta-title">Vrei o recomandare personalizată?</h3>
+    <p class="cta-text">
+      Spune-mi cu cine călătorești și ce îți dorești de la vacanță, iar eu îți recomand
+      destinația și hotelul potrivit — gratuit, fără obligații.
+    </p>
+
+    <div class="cta-form">
+      <span class="cta-item">👨‍👩‍👧‍👦 Câți adulți și câți copii?</span>
+      <span class="cta-item">📅 În ce perioadă?</span>
+      <span class="cta-item">✈️ Avion sau 🚗 mașină?</span>
+      <span class="cta-item">💶 Ce buget aveți?</span>
+    </div>
+
+    <a href="https://gherasimmarius.com/solicita-oferta.html" class="btn-main">
+      Solicită ofertă personalizată Grecia →
+    </a>
+
+    <p class="cta-disclaimer">
+      Consultanță gratuită · Răspuns în aceeași zi lucrătoare · Fără spam
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer class="site-footer">
+  <img class="footer-logo"
+       src="https://storage.mlcdn.com/account_image/1999265/Dj71QqCQohnQFPKcr6c5MC8x8dNfYg7G1vncv4Wz.png"
+       alt="Destine Holidays">
+  <p class="footer-text">
+    <strong style="color:#7ab3e0;">🌴 DESTINE HOLIDAYS · Vacanțe Topic</strong><br>
+    📞 0759 012 119 &nbsp;|&nbsp;
+    <a href="mailto:office@gherasimmarius.com">office@gherasimmarius.com</a><br>
+    <a href="https://www.facebook.com/profile.php?id=61585331109994">📘 Vacanțe Topic pe Facebook</a>
+    &nbsp;|&nbsp;
+    <a href="https://gherasimmarius.com">gherasimmarius.com</a><br><br>
+    <span style="font-size:11px;">© 2026 Destine Holidays · Vacanțe care devin amintiri</span>
+  </p>
+</footer>
+
+</body>
+</html>
