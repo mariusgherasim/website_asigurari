@@ -1,0 +1,3090 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghid Turistic Croația — Destine Holidays</title>
+<meta name="description" content="Ghid complet Croația: cele mai bune zone, stațiuni, insule, plaje, gastronomie și sfaturi practice pentru vacanța ta pe Adriatică.">
+<link rel="canonical" href="https://gherasimmarius.com/croatia/ghid-turistic-croatia.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Ghid Turistic Croația — Destine Holidays">
+<meta property="og:description" content="Croația nu este Turcia. Vindem DESTINAȚIA: marea, orașele, insulele, gastronomia, excursiile și libertatea de a explora.">
+<meta property="og:image" content="https://gherasimmarius.com/croatia/croatia-bun-venit.jpeg">
+<meta property="og:url" content="https://gherasimmarius.com/croatia/ghid-turistic-croatia.html">
+<meta property="og:locale" content="ro_RO">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #0d2240;
+  --blue: #1a6fbf;
+  --blue-light: #e6f4ff;
+  --gold: #c89b3c;
+  --gold-light: #fff8e6;
+  --teal: #0891b2;
+  --teal-light: #e0f4f9;
+  --text: #2d3748;
+  --text-muted: #6b7280;
+  --border: #e2e8f0;
+  --bg: #f0f5fb;
+  --white: #ffffff;
+  --radius: 14px;
+  /* Culori Croația */
+  --croatia-red: #CC0000;
+  --croatia-blue: #003DA5;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ══════════════════════════════
+   HERO
+══════════════════════════════ */
+.hero {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+.hero-img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+  opacity: 0.55;
+}
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 20px;
+}
+.hero-logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 16px;
+}
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  color: #7ab3e0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(28px, 5vw, 46px);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+.hero h1 span { color: #7ab3e0; }
+.hero-sub {
+  font-size: 15px;
+  color: rgba(255,255,255,.80);
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+/* ══════════════════════════════
+   CONTAINER + SECTIONS
+══════════════════════════════ */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section {
+  padding: 52px 0 40px;
+}
+.section + .section {
+  border-top: 1px solid var(--border);
+}
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(22px, 3.5vw, 30px);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+.section-intro {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 680px;
+  margin-bottom: 28px;
+}
+
+/* ══════════════════════════════
+   BENEFITS GRID
+══════════════════════════════ */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.benefit-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 18px 14px;
+  border: 1.5px solid var(--border);
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.benefit-card:hover {
+  box-shadow: 0 6px 20px rgba(13,34,64,.08);
+}
+.benefit-icon { font-size: 28px; margin-bottom: 8px; }
+.benefit-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.benefit-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ══════════════════════════════
+   AVERTISMENT CHEIE
+══════════════════════════════ */
+.key-message {
+  background: var(--navy);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  margin: 8px 0 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.key-message-icon {
+  font-size: 36px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.key-message-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.key-message p {
+  font-size: 14px;
+  color: rgba(255,255,255,.8);
+  line-height: 1.7;
+  margin: 0;
+}
+.key-message strong { color: var(--gold); }
+
+/* ══════════════════════════════
+   TAGLINE SECTION
+══════════════════════════════ */
+.tagline-section {
+  background: linear-gradient(135deg, var(--croatia-red) 0%, var(--croatia-blue) 100%);
+  padding: 36px 24px;
+  text-align: center;
+}
+.tagline-section p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 3.5vw, 28px);
+  color: rgba(255,255,255,.75);
+  font-style: italic;
+  margin: 0 0 8px;
+}
+.tagline-section strong {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 4vw, 34px);
+  color: var(--white);
+  font-style: normal;
+  display: block;
+  letter-spacing: 1px;
+}
+
+/* ══════════════════════════════
+   CONCLUZIE BOX
+══════════════════════════════ */
+.concluzie-box {
+  background: var(--navy);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  text-align: center;
+  margin-top: 20px;
+}
+.concluzie-box p {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  color: var(--white);
+  line-height: 1.6;
+  margin: 0;
+}
+.concluzie-box strong { color: var(--gold); }
+
+/* ══════════════════════════════
+   CTA FINAL
+══════════════════════════════ */
+.cta-section {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+  border: 1.5px solid var(--border);
+}
+.cta-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+.cta-text {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.cta-item {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+}
+.btn-main {
+  display: inline-block;
+  background: var(--blue);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px 36px;
+  border-radius: 10px;
+  letter-spacing: 0.3px;
+  transition: background 0.2s;
+}
+.btn-main:hover { background: #155da0; }
+
+/* ══════════════════════════════
+   FOOTER
+══════════════════════════════ */
+.site-footer {
+  background: var(--navy);
+  padding: 28px 20px;
+  text-align: center;
+}
+.footer-logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 10px;
+  display: block;
+  opacity: 0.9;
+}
+.footer-text {
+  font-size: 12px;
+  color: #5a7a9a;
+  line-height: 1.7;
+}
+.footer-text a { color: #7ab3e0; text-decoration: none; }
+
+/* ══════════════════════════════
+   RESPONSIVE
+══════════════════════════════ */
+@media (max-width: 680px) {
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .key-message { flex-direction: column; gap: 12px; padding: 20px; }
+}
+@media (max-width: 480px) {
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .section { padding: 36px 0 28px; }
+  .cta-section { padding: 24px 20px; }
+  .concluzie-box { padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<div class="hero">
+  <img class="hero-img"
+       src="https://gherasimmarius.com/croatia/croatia-bun-venit.jpeg"
+       alt="Ghid Turistic Croația — Destine Holidays">
+  <div class="hero-content">
+    <img class="hero-logo"
+         src="https://storage.mlcdn.com/account_image/1999265/Dj71QqCQohnQFPKcr6c5MC8x8dNfYg7G1vncv4Wz.png"
+         alt="Destine Holidays">
+    <p class="hero-eyebrow">Vacanțe Topic · Ghid destinație</p>
+    <h1>Ghid Turistic<br><span>Croația</span></h1>
+    <p class="hero-sub">
+      Marea Adriatică · Insule · Orașe medievale · Gastronomie · Road trip
+    </p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 0 — BUN VENIT ÎN CROAȚIA
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Introducere</p>
+  <h2 class="section-title">Bun venit în Săptămâna Croației!</h2>
+  <p class="section-intro">
+    Săptămâna aceasta descoperim împreună una dintre cele mai frumoase destinații
+    ale Adriaticii. De ce merită Croația să fie pe lista ta de vacanțe?
+  </p>
+
+  <!-- BENEFITS GRID -->
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="benefit-icon">🌊</div>
+      <div class="benefit-title">Apă incredibilă</div>
+      <div class="benefit-desc">Limpede și cristalină, cu nuanțe spectaculoase de albastru</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🏖️</div>
+      <div class="benefit-title">Plaje și golfuri</div>
+      <div class="benefit-desc">Superbe, variate — de la pietriș fin la plaje ascunse</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🏰</div>
+      <div class="benefit-title">Orașe cu istorie</div>
+      <div class="benefit-desc">Dubrovnik, Split, Zadar, Trogir — bijuterii medievale</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🏝️</div>
+      <div class="benefit-title">Peste 1.000 insule</div>
+      <div class="benefit-desc">Hvar, Brač, Korčula, Vis — fiecare cu personalitatea ei</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🚗</div>
+      <div class="benefit-title">Perfect road trip</div>
+      <div class="benefit-desc">Libertatea de a explora mai multe zone în aceeași vacanță</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🌿</div>
+      <div class="benefit-title">Natură spectaculoasă</div>
+      <div class="benefit-desc">Plitvice, Krka și peisaje de poveste în toată țara</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">🍽️</div>
+      <div class="benefit-title">Gastronomie</div>
+      <div class="benefit-desc">Pește, fructe de mare, preparate mediteraneene autentice</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+      <div class="benefit-title">Pentru toți</div>
+      <div class="benefit-desc">Cupluri, familii, grupuri de prieteni, turiști activi</div>
+    </div>
+  </div>
+
+  <!-- MESAJUL CHEIE -->
+  <div class="key-message">
+    <div class="key-message-icon">❗</div>
+    <div>
+      <p class="key-message-title">Important: Croația nu se vinde ca Turcia!</p>
+      <p>
+        Nu mergem acolo în primul rând pentru resorturi gigantice și Ultra All Inclusive.
+        Alegem Croația pentru <strong>mare, atmosferă, orașe, insule, gastronomie, excursii</strong>
+        și libertatea de a descoperi câte ceva în fiecare zi. ❤️
+      </p>
+    </div>
+  </div>
+
+  <p class="section-intro" style="margin-bottom:8px;">
+    În paginile acestui ghid vei afla ce zone alegem, unde mergem cu copiii,
+    ce stațiuni ni se potrivesc, cum ajungem și ce trebuie să știm înainte să rezervăm.
+  </p>
+
+</div>
+</div>
+
+<!-- TAGLINE -->
+<div class="tagline-section">
+  <p>Nu vindem doar un hotel.</p>
+  <strong>Vindem CROAȚIA!</strong>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 1 — ISTRIA SAU DALMAȚIA?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 1</p>
+  <h2 class="section-title">Istria sau Dalmația? Două fețe ale Croației, două vacanțe diferite!</h2>
+  <p class="section-intro">
+    Dacă spui „vreau Croația", primul pas este să descoperim ce fel de Croație ți se potrivește.
+    Două zone cu personalități complet diferite — tu pe care o alegi? ❤️
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-istria-dalmatia.jpeg"
+       alt="Istria sau Dalmația — două fețe ale Croației"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- ISTRIA -->
+    <div style="background:#edf7f0;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#1a5c38;margin:0 0 16px;text-align:center;">💚 ISTRIA</p>
+      <p style="font-size:11px;font-weight:700;color:#2a9d60;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Verde, autentică, cu influențe italiene
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🏛️</span> Orașe superbe: Rovinj, Poreč, Pula
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🍷</span> Gastronomie excelentă: trufe, vinuri, fructe de mare
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🏖️</span> Plaje frumoase, multe Blue Flag
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🏨</span> Hoteluri și resorturi bine organizate
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">👨‍👩‍👧‍👦</span> Perfectă pentru familii și relaxare
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#2a9d60;">🚗</span> Excelentă pentru plimbări și explorare cu mașina
+        </li>
+      </ul>
+      <div style="background:#1a5c38;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#a8e6c8;margin:0;">
+          👉 Gastronomie, orașe cochete & explorare → ISTRIA
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:var(--navy);display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:var(--gold);font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- DALMAȚIA -->
+    <div style="background:#e6f4ff;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d4080;margin:0 0 16px;text-align:center;">💙 DALMAȚIA</p>
+      <p style="font-size:11px;font-weight:700;color:#1a6fbf;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Insule, mare și peisaje spectaculoase
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🏰</span> Orașe iconice: Dubrovnik, Split, Zadar, Makarska
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🏝️</span> Peste 1.000 de insule și insulițe
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🌊</span> Apă incredibil de limpede, nuanțe turcoaz
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">⛰️</span> Combinația perfectă: munte + mare
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">⛵</span> Excursii pe insule și croaziere
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#1a6fbf;">❤️</span> Ideală pentru cupluri, familii și turiști activi
+        </li>
+      </ul>
+      <div style="background:#0d2240;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#7ab3e0;margin:0;">
+          👉 Insule, mare & peisaje WOW → DALMAȚIA
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div class="concluzie-box">
+    <p>
+      Nu există alegere greșită. 😍<br>
+      Există doar <strong>vacanța care ți se potrivește mai bine.</strong><br><br>
+      Tu ce Croație ai alege: <strong>ISTRIA 💚</strong> sau <strong>DALMAȚIA 💙</strong>?
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 2 — SPLIT SAU DUBROVNIK?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 2</p>
+  <h2 class="section-title">Split sau Dubrovnik? Două orașe emblematice ale Dalmatiei!</h2>
+  <p class="section-intro">
+    Două orașe emblematice, două moduri diferite de a descoperi Croația. 😍
+    Dacă ai 3 zile la dispoziție — unde le-ai petrece?
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-split-dubrovnik.jpeg"
+       alt="Split sau Dubrovnik — două orașe emblematice ale Croației"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- SPLIT -->
+    <div style="background:#e6f4ff;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d4080;margin:0 0 16px;text-align:center;">💙 SPLIT</p>
+      <p style="font-size:11px;font-weight:700;color:#1a6fbf;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Insule, excursii & atmosferă
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🏛️</span> Centrul istoric și celebrul Palat al lui Dioclețian
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🌴</span> Promenada Riva — terase, restaurante și atmosferă vibrantă
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🏖️</span> Poți combina ușor orașul cu plaja
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">⛵</span> Punct de plecare spre insule: Brač, Hvar, Šolta
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🚗</span> Bază excelentă pentru explorarea întregii Dalmații
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#1a6fbf;">🍹</span> Animat, cu multe opțiuni de excursii și viață activă
+        </li>
+      </ul>
+      <div style="background:#0d2240;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#7ab3e0;margin:0;">
+          👉 Insule, excursii & atmosferă → SPLIT
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:var(--navy);display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:var(--gold);font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- DUBROVNIK -->
+    <div style="background:#fff0f0;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#8b0000;margin:0 0 16px;text-align:center;">❤️ DUBROVNIK</p>
+      <p style="font-size:11px;font-weight:700;color:#cc0000;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Istorie, romantism & peisaje WOW
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(204,0,0,0.12);">
+          <span style="flex-shrink:0;color:#cc0000;">🏰</span> Oraș medieval fortificat inclus în Patrimoniul UNESCO
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(204,0,0,0.12);">
+          <span style="flex-shrink:0;color:#cc0000;">🌊</span> Priveliști spectaculoase asupra Adriaticii
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(204,0,0,0.12);">
+          <span style="flex-shrink:0;color:#cc0000;">🚠</span> Panorame superbe de pe Muntele Srđ
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(204,0,0,0.12);">
+          <span style="flex-shrink:0;color:#cc0000;">🎬</span> Cunoscut datorită filmărilor pentru Game of Thrones
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(204,0,0,0.12);">
+          <span style="flex-shrink:0;color:#cc0000;">❤️</span> Foarte potrivit pentru city-break și vacanțe romantice
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#cc0000;">📸</span> Fiecare colț este o fotografie de poveste
+        </li>
+      </ul>
+      <div style="background:#8b0000;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#fecaca;margin:0;">
+          👉 Istorie, romantism & peisaje WOW → DUBROVNIK
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div class="concluzie-box">
+    <p>
+      Două orașe emblematice ale Dalmatiei.<br>
+      <strong>Dacă ai 3 zile — tu unde le-ai petrece?</strong><br><br>
+      <strong>SPLIT 💙</strong> pentru insule, excursii și atmosferă vibrantă<br>
+      sau<br>
+      <strong>DUBROVNIK ❤️</strong> pentru istorie, romantism și peisaje WOW?
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 3 — MAKARSKA SAU BRELA?
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 3</p>
+  <h2 class="section-title">Makarska sau Brela? Riviera Makarska — două atmosfere diferite!</h2>
+  <p class="section-intro">
+    La doar câțiva kilometri distanță, pe spectaculoasa Rivieră Makarska, dar cu
+    două stiluri complet diferite de vacanță. Tu ce alegi? 😍
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-makarska-brela.jpeg"
+       alt="Makarska sau Brela — Riviera Makarska"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- MAKARSKA -->
+    <div style="background:#fff8e6;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#8a5f00;margin:0 0 16px;text-align:center;">🍹 MAKARSKA</p>
+      <p style="font-size:11px;font-weight:700;color:#c89b3c;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Promenadă, animație & excursii
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">👥</span> Promenadă animată, terase, restaurante și baruri
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🌙</span> Mai multă viață seara
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">🏖️</span> Plaje frumoase, dar mai animate în sezon
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(200,155,60,0.2);">
+          <span style="flex-shrink:0;color:#c89b3c;">⛵</span> Punct bun pentru excursii și plimbări cu barca
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#c89b3c;">⛰️</span> Combinație superbă Marea Adriatică + Muntele Biokovo
+        </li>
+      </ul>
+      <div style="background:#8a5f00;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#fef3c7;margin:0;">
+          👉 Promenadă, animație & excursii → MAKARSKA
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:var(--navy);display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:var(--gold);font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- BRELA -->
+    <div style="background:#e6f9f7;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d5c52;margin:0 0 16px;text-align:center;">🌲 BRELA</p>
+      <p style="font-size:11px;font-weight:700;color:#0891b2;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Plaje, liniște & relaxare
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🌊</span> Plaje spectaculoase și apă foarte limpede
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🌲</span> Pini care ajung aproape de mare — peisaj unic
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">😌</span> Mai liniștită și mai relaxată decât Makarska
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">👨‍👩‍👧‍👦</span> Foarte potrivită pentru familii și cupluri
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#0891b2;">📸</span> Celebrul Punta Rata și stânca Brela — emblematice
+        </li>
+      </ul>
+      <div style="background:#0d5c52;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#a7f3d0;margin:0;">
+          👉 Plaje, liniște & relaxare → BRELA
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div style="background:#fff8e6;border-left:5px solid var(--gold);border-radius:0 12px 12px 0;
+               padding:16px 20px;margin-bottom:20px;">
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:14px;line-height:1.75;margin:0;">
+      💡 <strong>Sfatul consultantului:</strong> Makarska și Brela sunt la câțiva kilometri distanță.
+      Dacă stai în Brela poți ajunge ușor în Makarska seara pentru atmosferă și restaurante —
+      și te întorci la liniștea din Brela noaptea. Cel mai bun din ambele lumi! 😊
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Aceeași Rivieră Makarska. Două atmosfere diferite.<br><br>
+      <strong>Tu unde ți-ai petrece vacanța:</strong><br>
+      <strong>MAKARSKA 🍹</strong> sau <strong>BRELA 🌲</strong>?
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 4 — CROAȚIA CU COPIII
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 4</p>
+  <h2 class="section-title">Croația cu copiii — unde mergem pentru o vacanță reușită?</h2>
+  <p class="section-intro">
+    Croația poate fi o alegere superbă pentru familii, dar zona potrivită contează enorm,
+    mai ales când călătorim cu cei mici. ❤️
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-cu-copii.jpeg"
+       alt="Croația cu copiii — cele mai bune destinații pentru familii"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- 4 DESTINAȚII GRID -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px;">
+
+    <!-- POREČ -->
+    <div style="background:#edf7f0;border-radius:12px;padding:18px 14px;border-top:5px solid #2a9d60;">
+      <p style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;
+                 color:#1a5c38;margin:0 0 6px;">🌿 POREČ</p>
+      <p style="font-size:10px;font-weight:700;color:#2a9d60;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 10px;">Istria</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;flex-shrink:0;">🏨</span> Multe hoteluri și resorturi pentru familii
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;flex-shrink:0;">🏖️</span> Plaje amenajate și multe activități
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;flex-shrink:0;">🚶</span> Promenade și zone perfecte pentru plimbări
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;flex-shrink:0;">⭐</span> Ideală pentru prima vacanță în Croația cu cei mici
+        </li>
+      </ul>
+    </div>
+
+    <!-- MEDULIN -->
+    <div style="background:#e6f4ff;border-radius:12px;padding:18px 14px;border-top:5px solid #1a6fbf;">
+      <p style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;
+                 color:#0d4080;margin:0 0 6px;">🏖️ MEDULIN</p>
+      <p style="font-size:10px;font-weight:700;color:#1a6fbf;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 10px;">Istria</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;flex-shrink:0;">🏅</span> Bijeca — una dintre puținele plaje cu nisip din Croația
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;flex-shrink:0;">👶</span> Potrivită pentru familiile cu copii mici
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;flex-shrink:0;">😌</span> Atmosferă relaxată de stațiune
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;flex-shrink:0;">🌅</span> Apusuri superbe în fiecare seară
+        </li>
+      </ul>
+    </div>
+
+    <!-- ZADAR -->
+    <div style="background:#f3e8ff;border-radius:12px;padding:18px 14px;border-top:5px solid #7c3aed;">
+      <p style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;
+                 color:#5b21b6;margin:0 0 6px;">🌅 ZADAR</p>
+      <p style="font-size:10px;font-weight:700;color:#7c3aed;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 10px;">& Împrejurimi</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#7c3aed;flex-shrink:0;">🚤</span> Multe posibilități de excursii
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#7c3aed;flex-shrink:0;">🌊</span> Apusuri impresionante și promenadă superbă
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#7c3aed;flex-shrink:0;">🎵</span> Orga Mării — experiență de neuitat pentru copii
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#7c3aed;flex-shrink:0;">🚗</span> Bun punct de plecare pentru explorarea Dalmatiei
+        </li>
+      </ul>
+    </div>
+
+    <!-- BRELA / BASKA VODA -->
+    <div style="background:#e6f9f7;border-radius:12px;padding:18px 14px;border-top:5px solid #0891b2;">
+      <p style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;
+                 color:#0d5c52;margin:0 0 6px;">🌲 BRELA</p>
+      <p style="font-size:10px;font-weight:700;color:#0891b2;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 10px;">/ Baška Voda</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#0891b2;flex-shrink:0;">🌊</span> Apă foarte limpede și curată
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#0891b2;flex-shrink:0;">🏖️</span> Plaje frumoase cu pietriș
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#0891b2;flex-shrink:0;">🌲</span> Umbră naturală oferită de pini
+        </li>
+        <li style="font-size:12px;color:#2d3748;padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#0891b2;flex-shrink:0;">👨‍👩‍👧‍👦</span> Excelentă pentru familiile care pun marea pe primul loc
+        </li>
+      </ul>
+    </div>
+
+  </div><!-- /4 destinații -->
+
+  <!-- ATENȚIE PLAJE -->
+  <div style="background:#fff8e6;border-radius:12px;padding:20px 24px;
+               margin-bottom:20px;display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;">
+    <div style="font-size:32px;flex-shrink:0;">⚠️</div>
+    <div>
+      <p style="font-family:'Playfair Display',serif;font-weight:700;color:#8a5f00;
+                 font-size:15px;margin:0 0 6px;">Atenție la plaje!</p>
+      <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:13px;
+                 line-height:1.7;margin:0;">
+        În Croația nu trebuie să ne așteptăm peste tot la plaje cu nisip.
+        Multe sunt cu <strong>pietriș, stâncă sau platforme</strong> —
+        <strong>papucii de apă</strong> merită puși primii în bagaj! 😄👟
+      </p>
+    </div>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Spune-mi vârsta copiilor și ce vă doriți de la vacanță,<br>
+      iar eu vă ajut să găsiți zona și cazarea potrivite familiei voastre. 🇭🇷❤️
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 5 — CROAȚIA CU MAȘINA
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 5</p>
+  <h2 class="section-title">Croația cu mașina — drumul poate face parte din vacanță!</h2>
+  <p class="section-intro">
+    Croația este genul de destinație în care mașina îți oferă un avantaj uriaș: libertatea de a explora. 😍
+    Poți descoperi mai multe stațiuni, poți opri în locurile care îți plac și chiar combina
+    2–3 zone într-o singură vacanță.
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-cu-masina.jpeg"
+       alt="Croația cu mașina — road trip pe Adriatică"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- DESTINAȚII + DISTANȚE -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px;">
+
+    <!-- UNDE MERGEM -->
+    <div style="background:var(--white);border-radius:12px;padding:20px 22px;
+                border:1.5px solid var(--border);">
+      <p style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;
+                 color:var(--navy);margin:0 0 14px;">📍 Unde mergem?</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:13px;color:var(--text);padding:7px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid var(--border);">
+          <span style="flex-shrink:0;">💚</span>
+          <div><strong>Istria</strong> — Rovinj, Poreč, Pula — explorare, atmosferă și familii</div>
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:7px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid var(--border);">
+          <span style="flex-shrink:0;">🌅</span>
+          <div><strong>Zadar</strong> — bază excelentă pentru excursii</div>
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:7px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid var(--border);">
+          <span style="flex-shrink:0;">⛵</span>
+          <div><strong>Split & împrejurimi</strong> — oraș, plajă și acces spre insule</div>
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:7px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid var(--border);">
+          <span style="flex-shrink:0;">🌊</span>
+          <div><strong>Riviera Makarska</strong> — Brela, Baška Voda, Makarska — mare + munte + peisaje WOW</div>
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:7px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;">🏰</span>
+          <div><strong>Dubrovnik</strong> — mai departe, dar spectaculos dacă vrei explorare + plajă</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- DISTANȚE + INFO DRUM -->
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <!-- Distanțe -->
+      <div style="background:var(--navy);border-radius:12px;padding:18px 20px;flex:1;">
+        <p style="font-family:'Playfair Display',serif;font-size:14px;font-weight:700;
+                   color:var(--gold);margin:0 0 12px;">📏 Distanțe orientative din Nădlac</p>
+        <table style="width:100%;border-collapse:collapse;">
+          <tr>
+            <td style="font-size:12px;color:rgba(255,255,255,.8);padding:4px 0;">Nădlac → Rijeka</td>
+            <td style="font-size:12px;color:var(--gold);font-weight:700;text-align:right;padding:4px 0;">~620 km</td>
+          </tr>
+          <tr>
+            <td style="font-size:12px;color:rgba(255,255,255,.8);padding:4px 0;border-top:1px solid rgba(255,255,255,.08);">Nădlac → Zadar</td>
+            <td style="font-size:12px;color:var(--gold);font-weight:700;text-align:right;padding:4px 0;border-top:1px solid rgba(255,255,255,.08);">~720 km</td>
+          </tr>
+          <tr>
+            <td style="font-size:12px;color:rgba(255,255,255,.8);padding:4px 0;border-top:1px solid rgba(255,255,255,.08);">Nădlac → Split</td>
+            <td style="font-size:12px;color:var(--gold);font-weight:700;text-align:right;padding:4px 0;border-top:1px solid rgba(255,255,255,.08);">~950 km</td>
+          </tr>
+          <tr>
+            <td style="font-size:12px;color:rgba(255,255,255,.8);padding:4px 0;border-top:1px solid rgba(255,255,255,.08);">Nădlac → Dubrovnik</td>
+            <td style="font-size:12px;color:var(--gold);font-weight:700;text-align:right;padding:4px 0;border-top:1px solid rgba(255,255,255,.08);">~1.250 km</td>
+          </tr>
+        </table>
+      </div>
+      <!-- Euro + taxe -->
+      <div style="background:#fff8e6;border-radius:12px;padding:14px 16px;
+                   border-left:4px solid var(--gold);">
+        <p style="font-size:12px;color:#5a4000;line-height:1.65;margin:0;">
+          💶 <strong>Croația folosește EURO.</strong><br>
+          🛣️ <strong>Autostrăzile au taxe de drum</strong> în funcție de traseu
+          (nu există vignetă generală pentru autoturisme).<br>
+          🅿️ <strong>Verifică parcarea</strong> — în stațiunile de coastă poate fi limitată sau cu cost.
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /grid -->
+
+  <!-- SFATURI PRACTICE -->
+  <div style="background:var(--white);border-radius:12px;padding:20px 22px;
+               border:1.5px solid var(--border);margin-bottom:20px;">
+    <p style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;
+               color:var(--navy);margin:0 0 12px;">✅ Sfaturi practice pentru drum</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div style="font-size:12px;color:var(--text);padding:6px 0;display:flex;gap:7px;align-items:flex-start;">
+        <span style="color:#2a9d60;flex-shrink:0;font-weight:700;">✔</span>
+        Ia pauze la 2–3 ore de condus
+      </div>
+      <div style="font-size:12px;color:var(--text);padding:6px 0;display:flex;gap:7px;align-items:flex-start;">
+        <span style="color:#2a9d60;flex-shrink:0;font-weight:700;">✔</span>
+        Verifică RO-vinieta și asigurarea auto (Carte Verde)
+      </div>
+      <div style="font-size:12px;color:var(--text);padding:6px 0;display:flex;gap:7px;align-items:flex-start;">
+        <span style="color:#2a9d60;flex-shrink:0;font-weight:700;">✔</span>
+        La orele de vârf traficul poate fi aglomerat la intrarea în stațiuni
+      </div>
+      <div style="font-size:12px;color:var(--text);padding:6px 0;display:flex;gap:7px;align-items:flex-start;">
+        <span style="color:#2a9d60;flex-shrink:0;font-weight:700;">✔</span>
+        Alimentează înainte de a intra în Croația (în special vineri-weekend)
+      </div>
+      <div style="font-size:12px;color:var(--text);padding:6px 0;display:flex;gap:7px;align-items:flex-start;">
+        <span style="color:#2a9d60;flex-shrink:0;font-weight:700;">✔</span>
+        Ia cash — unele parcări și magazine mici nu acceptă card
+      </div>
+      <div style="font-size:12px;color:var(--text);padding:6px 0;display:flex;gap:7px;align-items:flex-start;">
+        <span style="color:#2a9d60;flex-shrink:0;font-weight:700;">✔</span>
+        Aplicații utile: Google Maps, Waze, HAC (info trafic Croația)
+      </div>
+    </div>
+  </div>
+
+  <div class="concluzie-box">
+    <p style="font-family:Georgia,serif;font-style:italic;color:var(--white);font-size:16px;margin:0 0 10px;">
+      România → Croația → Adriatica ❤️
+    </p>
+    <p style="font-size:14px;color:rgba(255,255,255,.75);margin:0;">
+      Bagajele în portbagaj. Playlist-ul pornit.<br>
+      <strong>Vacanța începe din momentul în care pleci!</strong> 🚗🎶🌊
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 6 — HOTEL ÎN CROAȚIA? NU ALEGE DUPĂ STELE!
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 6</p>
+  <h2 class="section-title">Hotel în Croația? Nu alege doar după stele!</h2>
+  <p class="section-intro">
+    Când alegem o vacanță în Croația, sunt câteva detalii care pot face diferența dintre
+    „a fost ok" și „a fost exact ce ne doream!" 😍
+    5 lucruri pe care le verificăm înainte de rezervare.
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-hotel.jpeg"
+       alt="Hotel în Croația — 5 lucruri de verificat înainte de rezervare"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- 5 CRITERII -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px;">
+
+    <!-- 1. STELE -->
+    <div style="background:#fff8e6;border-radius:12px;padding:18px 16px;border-top:5px solid var(--gold);">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--gold);
+                     color:var(--navy);font-size:13px;font-weight:700;display:flex;
+                     align-items:center;justify-content:center;flex-shrink:0;">1</div>
+        <p style="font-size:12px;font-weight:700;color:#8a5f00;margin:0;line-height:1.3;">
+          NU CUMPĂRA DOAR DUPĂ STELE
+        </p>
+      </div>
+      <p style="font-size:12px;color:var(--text);line-height:1.6;margin:0;">
+        Un hotel de 4★ din Croația nu este același lucru cu un resort de 4–5★ din Turcia.
+        Conceptul de vacanță este diferit.
+      </p>
+    </div>
+
+    <!-- 2. ALL INCLUSIVE -->
+    <div style="background:#e6f9f7;border-radius:12px;padding:18px 16px;border-top:5px solid #0891b2;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <div style="width:28px;height:28px;border-radius:50%;background:#0891b2;
+                     color:white;font-size:13px;font-weight:700;display:flex;
+                     align-items:center;justify-content:center;flex-shrink:0;">2</div>
+        <p style="font-size:12px;font-weight:700;color:#0d5c52;margin:0;line-height:1.3;">
+          ALL INCLUSIVE NU ESTE REGULA
+        </p>
+      </div>
+      <p style="font-size:12px;color:var(--text);line-height:1.6;margin:0;">
+        Multe hoteluri oferă mic dejun sau demipensiune — ideal dacă vrei să explorezi
+        și să descoperi bucătăria locală.
+      </p>
+    </div>
+
+    <!-- 3. APROAPE DE PLAJĂ -->
+    <div style="background:var(--blue-light);border-radius:12px;padding:18px 16px;border-top:5px solid var(--blue);">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--blue);
+                     color:white;font-size:13px;font-weight:700;display:flex;
+                     align-items:center;justify-content:center;flex-shrink:0;">3</div>
+        <p style="font-size:12px;font-weight:700;color:#0d4080;margin:0;line-height:1.3;">
+          „APROAPE DE PLAJĂ" — VERIFICAT
+        </p>
+      </div>
+      <p style="font-size:12px;color:var(--text);line-height:1.6;margin:0;">
+        Relieful Croației înseamnă scări și diferențe de nivel. Contează mai ales
+        pentru familii cu copii mici sau persoane cu mobilitate redusă.
+      </p>
+    </div>
+
+    <!-- 4. PLAJĂ PRIVATĂ -->
+    <div style="background:#fff0f0;border-radius:12px;padding:18px 16px;border-top:5px solid #cc0000;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <div style="width:28px;height:28px;border-radius:50%;background:#cc0000;
+                     color:white;font-size:13px;font-weight:700;display:flex;
+                     align-items:center;justify-content:center;flex-shrink:0;">4</div>
+        <p style="font-size:12px;font-weight:700;color:#8b0000;margin:0;line-height:1.3;">
+          PLAJĂ PRIVATĂ ≠ NISIP
+        </p>
+      </div>
+      <p style="font-size:12px;color:var(--text);line-height:1.6;margin:0;">
+        Plaja poate fi cu pietriș, stâncă sau platformă amenajată.
+        Verificăm întotdeauna tipul plajei și intrarea în apă.
+      </p>
+    </div>
+
+    <!-- 5. PARCAREA -->
+    <div style="background:#edf7f0;border-radius:12px;padding:18px 16px;border-top:5px solid #2a9d60;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <div style="width:28px;height:28px;border-radius:50%;background:#2a9d60;
+                     color:white;font-size:13px;font-weight:700;display:flex;
+                     align-items:center;justify-content:center;flex-shrink:0;">5</div>
+        <p style="font-size:12px;font-weight:700;color:#1a5c38;margin:0;line-height:1.3;">
+          PARCAREA! 🅿️
+        </p>
+      </div>
+      <p style="font-size:12px;color:var(--text);line-height:1.6;margin:0;">
+        Pentru cei care merg cu mașina — întrebăm din start: există parcare?
+        Este gratuită? Necesită rezervare?
+      </p>
+    </div>
+
+    <!-- COPII -->
+    <div style="background:#f3e8ff;border-radius:12px;padding:18px 16px;border-top:5px solid #7c3aed;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <div style="font-size:20px;">👨‍👩‍👧‍👦</div>
+        <p style="font-size:12px;font-weight:700;color:#5b21b6;margin:0;line-height:1.3;">
+          CU COPIII — VERIFICĂM CAMERA
+        </p>
+      </div>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:var(--text);padding:2px 0;display:flex;gap:6px;">
+          <span style="color:#7c3aed;">✔</span> Capacitate reală și paturi suplimentare
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:2px 0;display:flex;gap:6px;">
+          <span style="color:#7c3aed;">✔</span> Camere family disponibile
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:2px 0;display:flex;gap:6px;">
+          <span style="color:#7c3aed;">✔</span> Distanța până la plajă
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:2px 0;display:flex;gap:6px;">
+          <span style="color:#7c3aed;">✔</span> Facilități pentru copii
+        </li>
+      </ul>
+    </div>
+
+  </div><!-- /5 criterii -->
+
+  <div class="concluzie-box">
+    <p>
+      Un hotel bun <strong>nu este cel cu cele mai multe stele.</strong><br>
+      Este <strong>hotelul potrivit pentru clientul potrivit.</strong> ❤️
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 7 — HVAR SAU BRAČ?
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 7</p>
+  <h2 class="section-title">Hvar sau Brač? Două insule, două stiluri de vacanță!</h2>
+  <p class="section-intro">
+    Dacă visezi la o vacanță pe o insulă croată, alegerea depinde foarte mult de atmosfera
+    pe care o cauți. 😍 Ambele se ajung cu ferry-boat din Split.
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-hvar-brac.jpeg"
+       alt="Hvar sau Brač — două insule croate, două stiluri diferite"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- HVAR -->
+    <div style="background:#f3e8ff;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#5b21b6;margin:0 0 16px;text-align:center;">💜 HVAR</p>
+      <p style="font-size:11px;font-weight:700;color:#7c3aed;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Eleganță, atmosferă & romantism
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(124,58,237,0.15);">
+          <span style="flex-shrink:0;color:#7c3aed;">🍹</span> Hvar Town — terase, restaurante și viață de seară
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(124,58,237,0.15);">
+          <span style="flex-shrink:0;color:#7c3aed;">⛵</span> Excelentă pentru excursii cu barca și island hopping
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(124,58,237,0.15);">
+          <span style="flex-shrink:0;color:#7c3aed;">🌅</span> Apusuri romantice și peisaje de vis
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(124,58,237,0.15);">
+          <span style="flex-shrink:0;color:#7c3aed;">❤️</span> Ideală pentru cupluri și vacanțe romantice
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#7c3aed;">💎</span> Atmosferă sofisticată și, în general, mai exclusivistă
+        </li>
+      </ul>
+      <div style="background:#5b21b6;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#ddd6fe;margin:0;">
+          👉 Eleganță, atmosferă & romantism → HVAR
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:var(--navy);display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:var(--gold);font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- BRAČ -->
+    <div style="background:#e6f9f7;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d5c52;margin:0 0 16px;text-align:center;">💙 BRAČ</p>
+      <p style="font-size:11px;font-weight:700;color:#0891b2;text-transform:uppercase;
+                 letter-spacing:1px;text-align:center;margin:0 0 16px;">
+        Plajă, natură & relaxare
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🏅</span> Celebra Zlatni Rat — simbolul Croației
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🌊</span> Apă cristalină și multe golfuri ascunse
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">👨‍👩‍👧‍👦</span> Foarte potrivită pentru familii cu copii
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(8,145,178,0.15);">
+          <span style="flex-shrink:0;color:#0891b2;">🚲</span> Perfectă pentru explorare și vacanțe active
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#0891b2;">😌</span> Mai relaxată — ideală dacă vrei mare și liniște
+        </li>
+      </ul>
+      <div style="background:#0d5c52;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#a7f3d0;margin:0;">
+          👉 Plajă, natură & relaxare → BRAČ
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div style="background:#fff8e6;border-left:5px solid var(--gold);border-radius:0 12px 12px 0;
+               padding:16px 20px;margin-bottom:20px;">
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:14px;line-height:1.75;margin:0;">
+      💡 <strong>Sfatul consultantului:</strong> Alegerea mi s-ar părea grea —
+      <strong>Hvar pentru seri, Brač pentru zile!</strong> 😅 Ambele se ajung cu ferry-boat din Split,
+      deci poți combina o zi pe Brač cu o seară în Hvar Town fără probleme.
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Dacă ai avea o săptămână pe o singură insulă croată,<br>
+      tu pe care ai alege-o?<br><br>
+      <strong>HVAR 💜</strong> sau <strong>BRAČ 💙</strong>?
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 8 — PLITVICE SAU KRKA?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 8</p>
+  <h2 class="section-title">Plitvice sau Krka? Croația nu înseamnă doar Marea Adriatică!</h2>
+  <p class="section-intro">
+    Dacă ai ajuns în Croația, merită să lași măcar pentru o zi șezlongul și marea și să descoperi
+    și partea spectaculoasă de natură. 😍 Croația e una dintre acele destinații în care poți avea
+    mare, insule, orașe istorice și natură spectaculoasă în aceeași vacanță.
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-plitvice-krka.jpeg"
+       alt="Plitvice sau Krka — natura spectaculoasă a Croației"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <div style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+               border-radius:14px;overflow:hidden;border:1.5px solid var(--border);
+               margin-bottom:24px;">
+
+    <!-- PLITVICE -->
+    <div style="background:#edf7f0;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#1a5c38;margin:0 0 6px;text-align:center;">💚 PLITVICE</p>
+      <p style="font-family:Georgia,serif;font-size:12px;color:#2a9d60;
+                 font-style:italic;text-align:center;margin:0 0 16px;">
+        Lacurile Plitvice — spectacolul naturii
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">💦</span> Lacuri turcoaz legate prin cascade spectaculoase
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🌲</span> Peisaje spectaculoase, păduri și trasee amenajate
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">🥾</span> Necesită mai mult timp și mers pe jos
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">📸</span> Fiecare colț pare o carte poștală — loc perfect pentru fotografii
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(42,157,96,0.15);">
+          <span style="flex-shrink:0;color:#2a9d60;">❤️</span> Ideal pentru iubitorii de natură și drumeții
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#2a9d60;">⏰</span> Merită să-i dedici o zi întreagă
+        </li>
+      </ul>
+      <div style="background:#1a5c38;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#a8e6c8;margin:0;">
+          👉 Lacuri, trasee & natură WOW → PLITVICE
+        </p>
+      </div>
+    </div>
+
+    <!-- VS -->
+    <div style="background:var(--navy);display:flex;align-items:center;justify-content:center;">
+      <p style="font-family:'Playfair Display',serif;color:var(--gold);font-size:16px;
+                 font-weight:900;margin:0;writing-mode:vertical-rl;
+                 text-orientation:mixed;letter-spacing:3px;">VS</p>
+    </div>
+
+    <!-- KRKA -->
+    <div style="background:#e6f4ff;padding:24px 22px;">
+      <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;
+                 color:#0d4080;margin:0 0 6px;text-align:center;">💙 KRKA</p>
+      <p style="font-family:Georgia,serif;font-size:12px;color:#1a6fbf;
+                 font-style:italic;text-align:center;margin:0 0 16px;">
+        Parcul Național Krka — cascade & excursie ușor de combinat
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">💦</span> Cascade impresionante, inclusiv celebrul Skradinski Buk
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🚤</span> Excursii cu barca în parc
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">🌿</span> Natură superbă, mai ușor de integrat într-un sejur la mare
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;border-bottom:1px solid rgba(26,111,191,0.15);">
+          <span style="flex-shrink:0;color:#1a6fbf;">📍</span> Ideal dacă ești cazat în zona Šibenik, Zadar sau Split
+        </li>
+        <li style="font-size:13px;color:var(--text);padding:6px 0;line-height:1.55;
+                    display:flex;gap:8px;align-items:flex-start;">
+          <span style="flex-shrink:0;color:#1a6fbf;">👨‍👩‍👧‍👦</span> Variantă excelentă și pentru familii cu copii
+        </li>
+      </ul>
+      <div style="background:#0d2240;border-radius:10px;padding:12px;text-align:center;">
+        <p style="font-size:13px;font-weight:700;color:#7ab3e0;margin:0;">
+          👉 Cascade & excursie ușor de combinat → KRKA
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /comparativ -->
+
+  <div style="background:#fff8e6;border-left:5px solid var(--gold);border-radius:0 12px 12px 0;
+               padding:16px 20px;margin-bottom:20px;">
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:14px;line-height:1.75;margin:0;">
+      💡 <strong>Sfatul consultantului:</strong> Dacă ai timp pentru o singură excursie,
+      Krka e mai ușor de integrat într-o vacanță pe litoral.
+      Dacă vrei o experiență de neuitat în natură și poți dedica o zi întreagă,
+      <strong>Plitvice merită cu vârf și îndesat</strong>. Dacă ai timp — fă-le pe amândouă! ❤️
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Dacă ai putea alege o singură excursie în vacanța din Croația,<br>
+      ce ai alege?<br><br>
+      <strong>PLITVICE 💚</strong> sau <strong>KRKA 💙</strong>?
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 9 — CROAȚIA ÎN FARFURIE
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 9</p>
+  <h2 class="section-title">Croația în farfurie — o vacanță se descoperă și prin gust!</h2>
+  <p class="section-intro">
+    Croația nu înseamnă doar mare turcoaz, insule și orașe superbe. Înseamnă și mese lungi
+    pe malul Adriaticii, pește proaspăt, fructe de mare, vin local și preparate pe care
+    merită să le încerci măcar o dată. 😍
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-gastronomie.jpeg"
+       alt="Croația în farfurie — gastronomia mediteraneană croată"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- 7 PREPARATE GRID -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px;">
+
+    <div style="background:var(--white);border-radius:12px;padding:16px 14px;
+                border:1.5px solid var(--border);border-top:4px solid #cc0000;">
+      <div style="font-size:24px;margin-bottom:8px;">🐙</div>
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin:0 0 6px;">Peka</p>
+      <p style="font-size:12px;color:var(--text-muted);line-height:1.55;margin:0;">
+        Carne sau caracatiță cu legume și cartofi, gătite lent sub un capac metalic acoperit cu jar. Un adevărat festin!
+      </p>
+    </div>
+
+    <div style="background:var(--white);border-radius:12px;padding:16px 14px;
+                border:1.5px solid var(--border);border-top:4px solid #0891b2;">
+      <div style="font-size:24px;margin-bottom:8px;">🦐</div>
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin:0 0 6px;">Pește & fructe de mare</p>
+      <p style="font-size:12px;color:var(--text-muted);line-height:1.55;margin:0;">
+        Calamari, caracatiță, scoici, creveți și pește proaspăt — mai ales pe coasta Dalmatiei. Simplu și delicios!
+      </p>
+    </div>
+
+    <div style="background:var(--navy);border-radius:12px;padding:16px 14px;
+                border:1.5px solid var(--navy);border-top:4px solid #1a1a2e;">
+      <div style="font-size:24px;margin-bottom:8px;">🖤</div>
+      <p style="font-size:13px;font-weight:700;color:var(--gold);margin:0 0 6px;">Crni rižot</p>
+      <p style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.55;margin:0;">
+        Risotto negru cu sepie și cerneală de sepie. Arată neobișnuit, dar este unul dintre preparatele emblematice ale litoralului.
+      </p>
+    </div>
+
+    <div style="background:var(--white);border-radius:12px;padding:16px 14px;
+                border:1.5px solid var(--border);border-top:4px solid #7c3aed;">
+      <div style="font-size:24px;margin-bottom:8px;">🥩</div>
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin:0 0 6px;">Pašticada</p>
+      <p style="font-size:12px;color:var(--text-muted);line-height:1.55;margin:0;">
+        Carne de vită gătită lent într-un sos aromat, servită de obicei cu gnocchi. Un preparat tradițional dalmat.
+      </p>
+    </div>
+
+    <div style="background:var(--white);border-radius:12px;padding:16px 14px;
+                border:1.5px solid var(--border);border-top:4px solid #c89b3c;">
+      <div style="font-size:24px;margin-bottom:8px;">🧀</div>
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin:0 0 6px;">Paški sir</p>
+      <p style="font-size:12px;color:var(--text-muted);line-height:1.55;margin:0;">
+        Brânza de Pag — una dintre cele mai cunoscute brânzeturi croate, cu un gust unic datorită ierburilor aromatice și vântului insulei.
+      </p>
+    </div>
+
+    <div style="background:var(--white);border-radius:12px;padding:16px 14px;
+                border:1.5px solid var(--border);border-top:4px solid #cc0000;">
+      <div style="font-size:24px;margin-bottom:8px;">🍖</div>
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin:0 0 6px;">Pršut</p>
+      <p style="font-size:12px;color:var(--text-muted);line-height:1.55;margin:0;">
+        Varianta croată de prosciutto — excelentă alături de brânzeturi, măsline și un pahar de vin local. 🍷
+      </p>
+    </div>
+
+    <div style="background:var(--white);border-radius:12px;padding:16px 14px;
+                border:1.5px solid var(--border);border-top:4px solid #2a9d60;">
+      <div style="font-size:24px;margin-bottom:8px;">🍩</div>
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin:0 0 6px;">Fritule</p>
+      <p style="font-size:12px;color:var(--text-muted);line-height:1.55;margin:0;">
+        Mici gogoșele croate, pufoase și aromate. Desertul perfect pentru momentele dulci ale vacanței!
+      </p>
+    </div>
+
+    <!-- GUSTURI LOCALE -->
+    <div style="background:#edf7f0;border-radius:12px;padding:16px 14px;
+                border:1.5px solid rgba(42,157,96,.2);border-top:4px solid #2a9d60;">
+      <p style="font-size:12px;font-weight:700;color:#1a5c38;margin:0 0 10px;">
+        🫒 Gusturi locale pe care le vei iubi:
+      </p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:var(--text);padding:3px 0;display:flex;gap:6px;">
+          <span style="color:#2a9d60;">✔</span> Ulei de măsline de calitate
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:3px 0;display:flex;gap:6px;">
+          <span style="color:#2a9d60;">✔</span> Măsline și tapenade
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:3px 0;display:flex;gap:6px;">
+          <span style="color:#2a9d60;">✔</span> Ierburi aromatice și mirodenii locale
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:3px 0;display:flex;gap:6px;">
+          <span style="color:#2a9d60;">✔</span> Vinuri autohtone excelente
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:3px 0;display:flex;gap:6px;">
+          <span style="color:#2a9d60;">✔</span> Dulciuri tradiționale delicioase
+        </li>
+      </ul>
+    </div>
+
+  </div><!-- /grid preparate -->
+
+  <div class="concluzie-box">
+    <p style="font-family:Georgia,serif;font-style:italic;color:rgba(255,255,255,.85);font-size:15px;margin:0 0 10px;">
+      Savurează. Descoperă. Relaxează-te. Bucură-te de Croația! ❤️
+    </p>
+    <p style="font-size:14px;color:rgba(255,255,255,.7);margin:0;">
+      Cel mai frumos mod de a descoperi Croația: o tavernă locală,<br>
+      o masă cu vedere la mare și ceva ce n-ai mai mâncat niciodată. 🌅🍷<br><br>
+      <strong>Ai avea curaj să comanzi risotto negru? 😏🖤</strong>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 10 — CROAȚIA PENTRU ORICE BUGET
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 10</p>
+  <h2 class="section-title">Croația pentru orice buget? Da — dacă alegi zona și cazarea potrivite!</h2>
+  <p class="section-intro">
+    „Mi-ar plăcea Croația, dar am auzit că este scumpă…" Adevărul este că vacanța poate arăta
+    foarte diferit în funcție de zonă, perioadă și tipul de cazare ales. ❤️
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-bugete.jpeg"
+       alt="Croația pentru orice buget — Econom, Confort, Premium"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- 3 NIVELE BUGET -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px;">
+
+    <!-- ECONOM -->
+    <div style="background:#edf7f0;border-radius:12px;padding:20px 16px;border-top:5px solid #2a9d60;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+        <span style="font-size:22px;">🐷</span>
+        <div>
+          <p style="font-size:14px;font-weight:700;color:#1a5c38;margin:0;">ECONOM</p>
+          <p style="font-size:11px;color:#2a9d60;margin:0;">Vacanță accesibilă</p>
+        </div>
+      </div>
+      <p style="font-size:12px;font-weight:700;color:#1a5c38;margin:0 0 8px;">
+        📍 Crikvenica · Selce · Novi Vinodolski
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;">✔</span> Apartamente și pensiuni
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;">✔</span> Foarte potrivite pentru vacanțe cu mașina
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;">✔</span> Poți controla mai ușor bugetul alegând cazare fără servicii incluse
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;">✔</span> Variante bune pentru familii
+        </li>
+      </ul>
+      <div style="background:#1a5c38;border-radius:8px;padding:10px;text-align:center;">
+        <p style="font-size:12px;font-weight:700;color:#a8e6c8;margin:0;">💚 ECONOM</p>
+      </div>
+    </div>
+
+    <!-- CONFORT -->
+    <div style="background:#e6f4ff;border-radius:12px;padding:20px 16px;border-top:5px solid #1a6fbf;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+        <span style="font-size:22px;">💼</span>
+        <div>
+          <p style="font-size:14px;font-weight:700;color:#0d4080;margin:0;">CONFORT</p>
+          <p style="font-size:11px;color:#1a6fbf;margin:0;">Buget mediu · confort + experiențe</p>
+        </div>
+      </div>
+      <p style="font-size:12px;font-weight:700;color:#0d4080;margin:0 0 8px;">
+        📍 Poreč · Zadar & împrejurimi · Baška Voda · Makarska
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;">✔</span> Hoteluri de 3–4★ și apartamente
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;">✔</span> Plajă + promenadă + restaurante
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;">✔</span> Posibilități bune de excursii
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#1a6fbf;">✔</span> Potrivit pentru cei care vor să exploreze, nu doar să stea la hotel
+        </li>
+      </ul>
+      <div style="background:#0d2240;border-radius:8px;padding:10px;text-align:center;">
+        <p style="font-size:12px;font-weight:700;color:#7ab3e0;margin:0;">💙 CONFORT</p>
+      </div>
+    </div>
+
+    <!-- PREMIUM -->
+    <div style="background:#f3e8ff;border-radius:12px;padding:20px 16px;border-top:5px solid #7c3aed;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+        <span style="font-size:22px;">💎</span>
+        <div>
+          <p style="font-size:14px;font-weight:700;color:#5b21b6;margin:0;">PREMIUM</p>
+          <p style="font-size:11px;color:#7c3aed;margin:0;">Experiențe speciale</p>
+        </div>
+      </div>
+      <p style="font-size:12px;font-weight:700;color:#5b21b6;margin:0 0 8px;">
+        📍 Dubrovnik · Hvar · Rovinj
+      </p>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#7c3aed;">✔</span> Hoteluri și experiențe premium
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#7c3aed;">✔</span> Beach clubs, excursii private, yachting
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#7c3aed;">✔</span> Restaurante și experiențe gastronomice
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#7c3aed;">✔</span> Excelente pentru cupluri, aniversări și vacanțe speciale
+        </li>
+      </ul>
+      <div style="background:#5b21b6;border-radius:8px;padding:10px;text-align:center;">
+        <p style="font-size:12px;font-weight:700;color:#ddd6fe;margin:0;">💜 PREMIUM</p>
+      </div>
+    </div>
+
+  </div><!-- /3 nivele -->
+
+  <!-- AVERTISMENT -->
+  <div style="background:#fff8e6;border-radius:12px;padding:18px 22px;
+               margin-bottom:20px;display:flex;align-items:flex-start;gap:14px;">
+    <div style="font-size:28px;flex-shrink:0;">⚠️</div>
+    <div>
+      <p style="font-size:14px;font-weight:700;color:#8a5f00;margin:0 0 6px;">
+        Nu există „stațiune ieftină" garantată!
+      </p>
+      <p style="font-size:13px;color:#5a4000;line-height:1.7;margin:0;">
+        Prețul depinde enorm de perioadă, hotel, poziție, tipul camerei, masă și cât de devreme rezervi.
+        <strong>În august, diferențele pot fi uriașe!</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- ÎNTREBĂRILE CONSULTANTULUI -->
+  <div style="background:var(--navy);border-radius:12px;padding:20px 24px;margin-bottom:20px;">
+    <p style="font-family:'Playfair Display',serif;color:var(--gold);font-size:15px;
+               font-weight:700;margin:0 0 12px;">
+      Când îmi spui „Vreau Croația", eu te întreb:
+    </p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div style="font-size:13px;color:rgba(255,255,255,.85);display:flex;gap:8px;">
+        <span style="color:var(--gold);">💶</span> Care este bugetul?
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,.85);display:flex;gap:8px;">
+        <span style="color:var(--gold);">👨‍👩‍👧‍👦</span> Cu cine călătorești?
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,.85);display:flex;gap:8px;">
+        <span style="color:var(--gold);">📅</span> În ce perioadă?
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,.85);display:flex;gap:8px;">
+        <span style="color:var(--gold);">❤️</span> Cum îți imaginezi vacanța?
+      </div>
+    </div>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Nu-mi spune doar „Vreau Croația".<br>
+      Spune-mi <strong>bugetul</strong> și îți spun <strong>unde</strong> să mergi!<br><br>
+      Tu în ce categorie te-ai încadra:<br>
+      <strong>ECONOM 💚 · CONFORT 💙 · PREMIUM 💜</strong>?
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 11 — 12 EXPERIENȚE DE NERATAT
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 11</p>
+  <h2 class="section-title">12 experiențe de neratat în Croația — dincolo de plajă și relaxare!</h2>
+  <p class="section-intro">
+    Croația este una dintre acele destinații în care ar fi păcat să rămâi doar la hotel. ❤️
+    În aceeași vacanță poți avea mare, orașe medievale, insule, cascade, gastronomie și aventură.
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-experiente.jpeg"
+       alt="12 experiențe de neratat în Croația"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- 3 CATEGORII PRINCIPALE -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px;">
+
+    <!-- ORAȘE CU POVESTE -->
+    <div style="background:#edf7f0;border-radius:12px;padding:18px 16px;border-top:5px solid #2a9d60;">
+      <p style="font-size:12px;font-weight:700;color:#1a5c38;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 12px;">📸 1. Orașe cu poveste</p>
+      <p style="font-size:11px;color:#2a9d60;font-style:italic;margin:0 0 10px;">
+        Istorie, cultură și vibe mediteranean
+      </p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:6px;border-bottom:1px solid rgba(42,157,96,.12);">
+          <span style="color:#cc0000;font-weight:700;flex-shrink:0;">🏰</span>
+          <div><strong>Dubrovnik</strong> — Perla Adriaticii, centrul istoric impresionant</div>
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:6px;border-bottom:1px solid rgba(42,157,96,.12);">
+          <span style="color:#1a6fbf;font-weight:700;flex-shrink:0;">🏛️</span>
+          <div><strong>Split</strong> — Palatul lui Dioclețian și străduțe pline de viață</div>
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#c89b3c;font-weight:700;flex-shrink:0;">⚓</span>
+          <div><strong>Rovinj</strong> — Orășel romantic ca o carte poștală</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- INSULE DE VIS -->
+    <div style="background:#e6f4ff;border-radius:12px;padding:18px 16px;border-top:5px solid #1a6fbf;">
+      <p style="font-size:12px;font-weight:700;color:#0d4080;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 12px;">⛵ 2. Insule de vis</p>
+      <p style="font-size:11px;color:#1a6fbf;font-style:italic;margin:0 0 10px;">
+        Fiecare cu farmecul ei
+      </p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:6px;border-bottom:1px solid rgba(26,111,191,.12);">
+          <span style="color:#7c3aed;font-weight:700;flex-shrink:0;">💜</span>
+          <div><strong>Hvar</strong> — Glamour, lavandă și plaje superbe</div>
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:6px;border-bottom:1px solid rgba(26,111,191,.12);">
+          <span style="color:#0891b2;font-weight:700;flex-shrink:0;">🏖️</span>
+          <div><strong>Brač</strong> — Zlatni Rat, faimoasa limbă de nisip</div>
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#2a9d60;font-weight:700;flex-shrink:0;">🍷</span>
+          <div><strong>Korčula</strong> — Oraș medieval și vin excelent</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- NATURĂ SPECTACULOASĂ -->
+    <div style="background:#f3e8ff;border-radius:12px;padding:18px 16px;border-top:5px solid #7c3aed;">
+      <p style="font-size:12px;font-weight:700;color:#5b21b6;text-transform:uppercase;
+                 letter-spacing:1px;margin:0 0 12px;">⛰️ 3. Natură spectaculoasă</p>
+      <p style="font-size:11px;color:#7c3aed;font-style:italic;margin:0 0 10px;">
+        Peisaje care îți taie respirația
+      </p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:6px;border-bottom:1px solid rgba(124,58,237,.12);">
+          <span style="color:#2a9d60;font-weight:700;flex-shrink:0;">💦</span>
+          <div><strong>Lacurile Plitvice</strong> — Lacuri turcoaz și cascade spectaculoase</div>
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:6px;border-bottom:1px solid rgba(124,58,237,.12);">
+          <span style="color:#1a6fbf;font-weight:700;flex-shrink:0;">🌊</span>
+          <div><strong>Parcul Național Krka</strong> — Cascade impresionante și natură sălbatică</div>
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:6px;">
+          <span style="color:#cc0000;font-weight:700;flex-shrink:0;">🏔️</span>
+          <div><strong>Biokovo Sky Walk</strong> — Priveliști de neuitat de la înălțime 😅</div>
+        </li>
+      </ul>
+    </div>
+
+  </div><!-- /3 categorii -->
+
+  <!-- EXPERIENȚE PE CARE NU SĂ LE RATEZI -->
+  <div style="background:var(--navy);border-radius:12px;padding:20px 24px;margin-bottom:20px;">
+    <p style="font-family:'Playfair Display',serif;color:var(--gold);font-size:15px;
+               font-weight:700;margin:0 0 14px;">
+      ⭐ 4. Experiențe pe care nu să le ratezi!
+    </p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
+      <div style="font-size:12px;color:rgba(255,255,255,.85);display:flex;gap:7px;align-items:flex-start;">
+        <span style="flex-shrink:0;">🌅</span> Plimbare cu barca la apus
+      </div>
+      <div style="font-size:12px;color:rgba(255,255,255,.85);display:flex;gap:7px;align-items:flex-start;">
+        <span style="flex-shrink:0;">🍷</span> Degustare de vinuri și ulei de măsline
+      </div>
+      <div style="font-size:12px;color:rgba(255,255,255,.85);display:flex;gap:7px;align-items:flex-start;">
+        <span style="flex-shrink:0;">🐟</span> Gastronomie locală — pește și fructe de mare
+      </div>
+      <div style="font-size:12px;color:rgba(255,255,255,.85);display:flex;gap:7px;align-items:flex-start;">
+        <span style="flex-shrink:0;">🛶</span> Kayak, snorkeling sau drumeții
+      </div>
+      <div style="font-size:12px;color:rgba(255,255,255,.85);display:flex;gap:7px;align-items:flex-start;">
+        <span style="flex-shrink:0;">⛪</span> Vizite la mănăstiri și locuri încărcate de spiritualitate
+      </div>
+      <div style="font-size:12px;color:rgba(255,255,255,.85);display:flex;gap:7px;align-items:flex-start;">
+        <span style="flex-shrink:0;">🛍️</span> Shopping & suveniruri — produse locale
+      </div>
+    </div>
+  </div>
+
+  <div class="concluzie-box">
+    <p style="font-family:Georgia,serif;font-style:italic;color:rgba(255,255,255,.85);
+               font-size:15px;margin:0 0 10px;">
+      Croația nu este doar o destinație.<br>
+      <strong>Este o colecție de amintiri pentru o viață!</strong> 🇭🇷
+    </p>
+    <p style="font-size:14px;color:rgba(255,255,255,.7);margin:0;">
+      Care ar fi primul lucru pe care l-ai face<br>
+      dacă mâine ai ajunge în Croația? 😍
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 12 — 10 PLAJE DE VIS ÎN CROAȚIA
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 12</p>
+  <h2 class="section-title">10 plaje de vis în Croația — de la nisip fin la golfulețe secrete!</h2>
+  <p class="section-intro">
+    Croația are peste 1.000 de insule și 5.000 km de coastă. Frumusețea litoralului stă tocmai
+    în diversitate: golfuri ascunse, apă incredibil de limpede, plaje cu pietricele și câteva
+    surprize cu nisip. 💙
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-plaje.jpeg"
+       alt="10 plaje de vis în Croația"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- GRID 10 PLAJE -->
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:24px;">
+
+    <!-- 1 -->
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;
+                border:1.5px solid var(--border);border-top:4px solid #cc0000;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#cc0000;color:white;
+                   font-size:12px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 8px;">1</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 2px;">Bačvice</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 6px;">📍 Split</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.45;margin:0;">
+        Plajă cu nisip, rară în Croația. Perfectă pentru familii și distracție.
+      </p>
+    </div>
+
+    <!-- 2 -->
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;
+                border:1.5px solid var(--border);border-top:4px solid #1a6fbf;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#1a6fbf;color:white;
+                   font-size:12px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 8px;">2</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 2px;">Zlatni Rat</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 6px;">📍 Brač</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.45;margin:0;">
+        Cea mai faimoasă plajă din Croația — forma sa unică se modifică cu vântul.
+      </p>
+    </div>
+
+    <!-- 3 -->
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;
+                border:1.5px solid var(--border);border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#2a9d60;color:white;
+                   font-size:12px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 8px;">3</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 2px;">Punta Rata</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 6px;">📍 Brela</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.45;margin:0;">
+        Pietricele fine, apă cristalină, înconjurată de pini. Una din cele mai frumoase din Dalmația.
+      </p>
+    </div>
+
+    <!-- 4 -->
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;
+                border:1.5px solid var(--border);border-top:4px solid #c89b3c;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#c89b3c;color:white;
+                   font-size:12px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 8px;">4</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 2px;">Sahara Beach</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 6px;">📍 Rab</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.45;margin:0;">
+        Nisip fin, apă mică și caldă. Ideală pentru relaxare totală și familii cu copii mici.
+      </p>
+    </div>
+
+    <!-- 5 -->
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;
+                border:1.5px solid var(--border);border-top:4px solid #7c3aed;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#7c3aed;color:white;
+                   font-size:12px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 8px;">5</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 2px;">Stiniva</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 6px;">📍 Vis</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.45;margin:0;">
+        Golf sălbatic și spectaculos, accesibil pe jos sau cu barca. Loc perfect pentru fotografii.
+      </p>
+    </div>
+
+    <!-- 6 -->
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;
+                border:1.5px solid var(--border);border-top:4px solid #0891b2;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#0891b2;color:white;
+                   font-size:12px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 8px;">6</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 2px;">Dubovica</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 6px;">📍 Hvar</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.45;margin:0;">
+        Pietricele albe, apă turcoaz. Ușor accesibilă și foarte frumoasă.
+      </p>
+    </div>
+
+    <!-- 7 -->
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;
+                border:1.5px solid var(--border);border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#2a9d60;color:white;
+                   font-size:12px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 8px;">7</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 2px;">Saplunara</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 6px;">📍 Mljet</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.45;margin:0;">
+        Nisip fin, apă limpidă, lagună perfectă pentru copii. Relaxare în mijlocul naturii.
+      </p>
+    </div>
+
+    <!-- 8 -->
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;
+                border:1.5px solid var(--border);border-top:4px solid #7c3aed;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#7c3aed;color:white;
+                   font-size:12px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 8px;">8</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 2px;">Vela Pržina</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 6px;">📍 Lumbarda, Korčula</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.45;margin:0;">
+        Nisip și apă puțin adâncă, ideală pentru familii. Aproape de podgorii și taverne locale.
+      </p>
+    </div>
+
+    <!-- 9 -->
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;
+                border:1.5px solid var(--border);border-top:4px solid #cc0000;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#cc0000;color:white;
+                   font-size:12px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 8px;">9</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 2px;">Pasjača</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 6px;">📍 Konavle</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.45;margin:0;">
+        Spectaculoasă la poalele stâncilor. Acces pe scări — merită efortul! 💪
+      </p>
+    </div>
+
+    <!-- 10 -->
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;
+                border:1.5px solid var(--border);border-top:4px solid #c89b3c;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#c89b3c;color:white;
+                   font-size:12px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 8px;">10</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 2px;">Primošten</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 6px;">📍 Primošten</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.45;margin:0;">
+        Pietricele, ape curate și vedere spre unul dintre cele mai fotogenice orășele de pe coastă.
+      </p>
+    </div>
+
+  </div><!-- /10 plaje -->
+
+  <!-- TIPS -->
+  <div style="background:#fff8e6;border-radius:12px;padding:18px 22px;margin-bottom:20px;">
+    <p style="font-size:13px;font-weight:700;color:#8a5f00;margin:0 0 10px;">
+      💡 Tips pentru plajele din Croația:
+    </p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div style="font-size:12px;color:#5a4000;display:flex;gap:7px;">
+        <span style="flex-shrink:0;">👟</span> Papucii de apă sunt esențiali — majoritatea plajelor sunt cu pietricele
+      </div>
+      <div style="font-size:12px;color:#5a4000;display:flex;gap:7px;">
+        <span style="flex-shrink:0;">💧</span> Apa e cristalină și extrem de curată — ia hidratare și protecție solară
+      </div>
+      <div style="font-size:12px;color:#5a4000;display:flex;gap:7px;">
+        <span style="flex-shrink:0;">🅿️</span> Unele plaje au parcare limitată — ajungi devreme și eviți aglomerația
+      </div>
+      <div style="font-size:12px;color:#5a4000;display:flex;gap:7px;">
+        <span style="flex-shrink:0;">📷</span> Nu uita aparatul foto — vei vrea să surprinzi fiecare moment!
+      </div>
+    </div>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Uneori cea mai frumoasă plajă nu este cea mai celebră,<br>
+      ci <strong>golful mic pe care îl descoperi întâmplător în vacanță.</strong> ❤️<br><br>
+      Tu pe care dintre cele 10 ai pune șezlongul prima dată? 😍
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 13 — 15 ORAȘE CARE MERITĂ VĂZUTE
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 13</p>
+  <h2 class="section-title">15 orașe care merită văzute în Croația!</h2>
+  <p class="section-intro">
+    Croația este genul de țară în care merită să ieși la explorat — aproape fiecare oraș
+    are propria poveste, atmosferă și priveliște spre Adriatică. 😍
+    Istorie, cultură, peisaje și farmec adriatic.
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-orase.jpeg"
+       alt="15 orașe care merită văzute în Croația"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- GRID 15 ORAȘE — 5x3 -->
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:24px;">
+
+    <!-- 1 DUBROVNIK -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #cc0000;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#cc0000;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">1</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Dubrovnik</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Dalmația de Sud</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Perla Adriaticii, ziduri impresionante și atmosferă medievală unică.
+      </p>
+    </div>
+
+    <!-- 2 SPLIT -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #1a6fbf;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#1a6fbf;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">2</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Split</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Dalmația Centrală</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Palatul lui Dioclețian, străduțe pline de viață și energie vibrantă.
+      </p>
+    </div>
+
+    <!-- 3 ROVINJ -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #c89b3c;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#c89b3c;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">3</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Rovinj</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Istria</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Orășel romantic, colorat, ca desprins dintr-o poveste italiană.
+      </p>
+    </div>
+
+    <!-- 4 ZADAR -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #0891b2;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#0891b2;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">4</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Zadar</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Dalmația de Nord</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Orgă Mării, apusuri spectaculoase și centru istoric fermecător.
+      </p>
+    </div>
+
+    <!-- 5 ŠIBENIK -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #7c3aed;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#7c3aed;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">5</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Šibenik</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Dalmația Centrală</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Patrimoniu UNESCO și străduțe pietruite cu mult farmec.
+      </p>
+    </div>
+
+    <!-- 6 TROGIR -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #cc0000;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#cc0000;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">6</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Trogir</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Dalmația Centrală</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Orășel medieval perfect conservat, înscris în UNESCO.
+      </p>
+    </div>
+
+    <!-- 7 HVAR -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #7c3aed;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#7c3aed;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">7</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Hvar</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Insula Hvar</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Insula soarelui — plaje superbe și viață de noapte vibrantă.
+      </p>
+    </div>
+
+    <!-- 8 KORČULA -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#2a9d60;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">8</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Korčula</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Insula Korčula</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Ziduri, istorie și locul considerat casa lui Marco Polo.
+      </p>
+    </div>
+
+    <!-- 9 PULA -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #1a6fbf;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#1a6fbf;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">9</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Pula</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Istria</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Amfiteatrul roman impresionant și plaje minunate în apropiere.
+      </p>
+    </div>
+
+    <!-- 10 POREČ -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #c89b3c;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#c89b3c;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">10</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Poreč</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Istria</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Bazilica Eufrasiană (UNESCO) și un oraș plin de culoare.
+      </p>
+    </div>
+
+    <!-- 11 MOTOVUN -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#2a9d60;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">11</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Motovun</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Istria</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Orășel pe colină, înconjurat de vii și peisaje spectaculoase.
+      </p>
+    </div>
+
+    <!-- 12 OPATIJA -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #0891b2;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#0891b2;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">12</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Opatija</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Riviera Kvarner</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Eleganță imperială și promenadă lungă lângă mare.
+      </p>
+    </div>
+
+    <!-- 13 VRSAR -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #cc0000;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#cc0000;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">13</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Vrsar</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Istria</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Port pescăresc cu vedere superbă și atmosferă liniștită.
+      </p>
+    </div>
+
+    <!-- 14 MALI LOŠINJ -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#2a9d60;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">14</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Mali Lošinj</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Insula Lošinj</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Natură, aer curat și unul dintre cele mai frumoase porturi.
+      </p>
+    </div>
+
+    <!-- 15 SENJ -->
+    <div style="background:var(--white);border-radius:10px;padding:13px 11px;
+                border:1.5px solid var(--border);border-top:4px solid #1a6fbf;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#1a6fbf;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">15</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Senj</p>
+      <p style="font-size:10px;color:var(--text-muted);margin:0 0 5px;">Riviera Kvarner</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">
+        Istorie veche, fortăreața Nehaj și peisaje spectaculoase.
+      </p>
+    </div>
+
+  </div><!-- /15 orașe -->
+
+  <!-- PONT DE CALATORIE -->
+  <div style="background:#fff8e6;border-left:5px solid var(--gold);border-radius:0 12px 12px 0;
+               padding:16px 20px;margin-bottom:20px;">
+    <p style="font-family:Arial,sans-serif;color:#5a4000;font-size:14px;line-height:1.75;margin:0;">
+      💡 <strong>Pont de călătorie:</strong> Croația este ușor de explorat cu mașina, dar și
+      cu feribotul între insule. Nu încerca să vezi totul într-o singură vacanță — alege o regiune
+      și <strong>lasă loc pentru opririle neplanificate</strong>. Uneori tocmai acolo găsești
+      locurile care îți rămân cel mai mult în suflet. ❤️
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Croația are mult mai mult decât mare!<br>
+      <strong>Descoperă, trăiește, îndrăgostește-te!</strong> 🇭🇷<br><br>
+      Dintre cele 15 — ce oraș ai pune primul pe lista ta? 😍
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 14 — CÂND MERGEM ÎN CROAȚIA?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 14</p>
+  <h2 class="section-title">Când mergem în Croația?</h2>
+  <p class="section-intro">
+    Croația este superbă pe tot parcursul sezonului, dar fiecare perioadă vine cu avantajele ei.
+    Nu există doar UN sezon perfect — există perioada potrivită pentru vacanța <strong>TA</strong>! ❤️
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-cand-mergem.jpeg"
+       alt="Când mergem în Croația — Mai, Iulie, Septembrie"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- 3 PERIOADE -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px;">
+
+    <!-- MAI-IUNIE -->
+    <div style="background:#edf7f0;border-radius:12px;padding:20px 16px;border-top:5px solid #2a9d60;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+        <span style="font-size:22px;">🌸</span>
+        <div>
+          <p style="font-size:14px;font-weight:700;color:#1a5c38;margin:0;">MAI – IUNIE</p>
+          <p style="font-size:11px;color:#2a9d60;margin:0;font-weight:600;">Explorare & liniște</p>
+        </div>
+      </div>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(42,157,96,.12);">
+          <span style="color:#2a9d60;flex-shrink:0;">✔</span> Mai puțină aglomerație
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(42,157,96,.12);">
+          <span style="color:#2a9d60;flex-shrink:0;">✔</span> Excelent pentru road trip și explorare
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(42,157,96,.12);">
+          <span style="color:#2a9d60;flex-shrink:0;">✔</span> Perfect pentru Dubrovnik, Split, Rovinj, Plitvice
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(42,157,96,.12);">
+          <span style="color:#2a9d60;flex-shrink:0;">✔</span> Variante mai avantajoase față de vârf de sezon
+        </li>
+        <li style="font-size:12px;color:#8a5f00;padding:5px 0;line-height:1.5;display:flex;gap:7px;">
+          <span style="flex-shrink:0;">⚠️</span> Apa poate fi încă răcoroasă la începutul perioadei
+        </li>
+      </ul>
+      <div style="background:#1a5c38;border-radius:8px;padding:10px;text-align:center;">
+        <p style="font-size:12px;font-weight:700;color:#a8e6c8;margin:0;">
+          🌸 Ideal pentru explorare și liniște
+        </p>
+      </div>
+    </div>
+
+    <!-- IULIE-AUGUST -->
+    <div style="background:#fff8e6;border-radius:12px;padding:20px 16px;border-top:5px solid #c89b3c;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+        <span style="font-size:22px;">☀️</span>
+        <div>
+          <p style="font-size:14px;font-weight:700;color:#8a5f00;margin:0;">IULIE – AUGUST</p>
+          <p style="font-size:11px;color:#c89b3c;margin:0;font-weight:600;">Mare & atmosferă</p>
+        </div>
+      </div>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(200,155,60,.2);">
+          <span style="color:#c89b3c;flex-shrink:0;">✔</span> Perioada ideală pentru vacanța clasică de vară
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(200,155,60,.2);">
+          <span style="color:#c89b3c;flex-shrink:0;">✔</span> Mare caldă și mult soare
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(200,155,60,.2);">
+          <span style="color:#c89b3c;flex-shrink:0;">✔</span> Stațiunile sunt pline de viață
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(200,155,60,.2);">
+          <span style="color:#c89b3c;flex-shrink:0;">✔</span> Excursii, insule, plajă, atmosferă
+        </li>
+        <li style="font-size:12px;color:#8a5f00;padding:5px 0;line-height:1.5;display:flex;gap:7px;">
+          <span style="flex-shrink:0;">⚠️</span> Cea mai mare aglomerație și cele mai ridicate prețuri
+        </li>
+      </ul>
+      <div style="background:#8a5f00;border-radius:8px;padding:10px;text-align:center;">
+        <p style="font-size:12px;font-weight:700;color:#fef3c7;margin:0;">
+          ☀️ Ideal pentru vacanța clasică de vară
+        </p>
+      </div>
+    </div>
+
+    <!-- SEPTEMBRIE -->
+    <div style="background:#fff0f0;border-radius:12px;padding:20px 16px;border-top:5px solid #cc0000;
+                 position:relative;">
+      <div style="position:absolute;top:-10px;right:14px;background:#cc0000;color:white;
+                   font-size:10px;font-weight:700;padding:3px 10px;border-radius:10px;">
+        RECOMANDARE
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+        <span style="font-size:22px;">🍂</span>
+        <div>
+          <p style="font-size:14px;font-weight:700;color:#8b0000;margin:0;">SEPTEMBRIE</p>
+          <p style="font-size:11px;color:#cc0000;margin:0;font-weight:600;">Relaxare & raport bun calitate–preț</p>
+        </div>
+      </div>
+      <ul style="list-style:none;padding:0;margin:0 0 16px;">
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(204,0,0,.12);">
+          <span style="color:#cc0000;flex-shrink:0;">✔</span> Marea păstrează căldura acumulată peste vară
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(204,0,0,.12);">
+          <span style="color:#cc0000;flex-shrink:0;">✔</span> Vreme încă foarte bună — mai ales la începutul lunii
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(204,0,0,.12);">
+          <span style="color:#cc0000;flex-shrink:0;">✔</span> Mai puțină aglomerație
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;border-bottom:1px solid rgba(204,0,0,.12);">
+          <span style="color:#cc0000;flex-shrink:0;">✔</span> Oferte mai interesante după vârful sezonului
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;line-height:1.5;display:flex;gap:7px;">
+          <span style="color:#cc0000;flex-shrink:0;">✔</span> Excelent pentru cupluri și cei fără copii legați de vacanța școlară
+        </li>
+      </ul>
+      <div style="background:#8b0000;border-radius:8px;padding:10px;text-align:center;">
+        <p style="font-size:12px;font-weight:700;color:#fecaca;margin:0;">
+          🍂 Raport calitate–preț excelent
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /3 perioade -->
+
+  <div style="background:#fff8e6;border-left:5px solid var(--gold);border-radius:0 12px 12px 0;
+               padding:16px 20px;margin-bottom:20px;">
+    <p style="font-family:Georgia,serif;color:#8a5f00;font-size:14px;font-style:italic;
+               line-height:1.75;margin:0;">
+      „Eu? Pentru Croația aș fura câteva zile din <strong>SEPTEMBRIE</strong>. 😍🇭🇷"<br>
+      <span style="font-size:12px;color:#5a4000;">— Marius, Destine Holidays</span>
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Nu există o singură lună „perfectă" pentru Croația.<br>
+      Există <strong>perioada potrivită pentru vacanța pe care TU ți-o dorești.</strong><br><br>
+      Tu când ai pleca: <strong>Mai–Iunie 🌸 · Iulie–August ☀️ · Septembrie 🍂</strong>?
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 15 — CE ȘI UNDE MÂNCĂM ÎN CROAȚIA?
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 15</p>
+  <h2 class="section-title">Croația — ce și unde mâncăm? Gustă Croația autentică!</h2>
+  <p class="section-intro">
+    O vacanță adevărată se descoperă și cu... furculița! 😍 Gastronomia croată se schimbă de la
+    o regiune la alta: pe litoral predomină peștele și fructele de mare, iar în interior
+    găsim carne gătită lent și rețete tradiționale. ❤️
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-mancare.jpeg"
+       alt="Croația — ce și unde mâncăm, gastronomie autentică"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- 10 PREPARATE GRID -->
+  <p style="font-size:12px;font-weight:700;color:var(--navy);text-transform:uppercase;
+             letter-spacing:1.5px;margin:0 0 12px;">
+    🍴 10 preparate pe care trebuie să le încerci:
+  </p>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:24px;">
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;
+                border:1.5px solid var(--border);border-top:4px solid #cc0000;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#cc0000;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">1</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Ćevapi</p>
+      <p style="font-size:9px;color:#1a6fbf;margin:0 0 4px;font-weight:600;">Întreaga Croație</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Mici de carne condimentați cu lipie și ajvar</p>
+    </div>
+
+    <div style="background:var(--navy);border-radius:10px;padding:12px 10px;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.2);color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">2</div>
+      <p style="font-size:11px;font-weight:700;color:var(--gold);margin:0 0 2px;">Crni rižot</p>
+      <p style="font-size:9px;color:#7ab3e0;margin:0 0 4px;font-weight:600;">Istria, Kvarner</p>
+      <p style="font-size:10px;color:rgba(255,255,255,.8);line-height:1.4;margin:0;">Risotto cu cerneală de sepie — negru, aromat, delicios!</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;
+                border:1.5px solid var(--border);border-top:4px solid #1a6fbf;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#1a6fbf;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">3</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Hobotnica ispod peke</p>
+      <p style="font-size:9px;color:#1a6fbf;margin:0 0 4px;font-weight:600;">Dalmația</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Caracatiță gătită lent sub clopot de fontă, foarte fragedă</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;
+                border:1.5px solid var(--border);border-top:4px solid #0891b2;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#0891b2;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">4</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Riblji tanjur</p>
+      <p style="font-size:9px;color:#0891b2;margin:0 0 4px;font-weight:600;">Litoral</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Platou cu pește și fructe de mare proaspete, la grătar</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;
+                border:1.5px solid var(--border);border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#2a9d60;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">5</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Fuži s tartufima</p>
+      <p style="font-size:9px;color:#2a9d60;margin:0 0 4px;font-weight:600;">Istria</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Paste tradiționale cu trufe — un preparat de neratat!</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;
+                border:1.5px solid var(--border);border-top:4px solid #7c3aed;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#7c3aed;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">6</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Pašticada</p>
+      <p style="font-size:9px;color:#7c3aed;margin:0 0 4px;font-weight:600;">Dalmația</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Vită marinată în vin și prune, gătită lent cu gnocchi</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;
+                border:1.5px solid var(--border);border-top:4px solid #c89b3c;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#c89b3c;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">7</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Pršut i sir</p>
+      <p style="font-size:9px;color:#c89b3c;margin:0 0 4px;font-weight:600;">Dalmația</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Șuncă de prosciutto și brânzeturi locale — simplu și savuros</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;
+                border:1.5px solid var(--border);border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#2a9d60;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">8</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Fritule</p>
+      <p style="font-size:9px;color:#2a9d60;margin:0 0 4px;font-weight:600;">Întreaga Croație</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Gogoși pufoase cu stafide și coajă de lămâie — desert iubit de toți</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;
+                border:1.5px solid var(--border);border-top:4px solid #0891b2;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#0891b2;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">9</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Lignje na žaru</p>
+      <p style="font-size:9px;color:#0891b2;margin:0 0 4px;font-weight:600;">Litoral</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Calamari la grătar, simpli, cu ulei de măsline și lămâie</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;
+                border:1.5px solid var(--border);border-top:4px solid #cc0000;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#cc0000;color:white;
+                   font-size:11px;font-weight:700;display:flex;align-items:center;
+                   justify-content:center;margin:0 auto 6px;">10</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 2px;">Janjetina ispod peke</p>
+      <p style="font-size:9px;color:#cc0000;margin:0 0 4px;font-weight:600;">Dalmația, Lika</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Miel gătit lent sub clopot de fontă, fraged și aromat</p>
+    </div>
+
+  </div><!-- /10 preparate -->
+
+  <!-- UNDE + BONUS -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px;">
+
+    <!-- UNDE MÂNCĂM -->
+    <div style="background:var(--white);border-radius:12px;padding:18px 16px;border:1.5px solid var(--border);">
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin:0 0 12px;">🍽️ Unde să mănânci?</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:8px;border-bottom:1px solid var(--border);">
+          <span style="flex-shrink:0;">🏠</span> <div><strong>Konoba</strong> — taverne tradiționale cu mâncare autentică și gust ca acasă</div>
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:8px;border-bottom:1px solid var(--border);">
+          <span style="flex-shrink:0;">⚓</span> <div><strong>Restaurant pe malul mării</strong> — pește și fructe de mare proaspete, cu vedere superbă</div>
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:8px;border-bottom:1px solid var(--border);">
+          <span style="flex-shrink:0;">🌿</span> <div><strong>Agroturism</strong> — experiență locală completă, cu produse din gospodărie</div>
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:8px;">
+          <span style="flex-shrink:0;">🛒</span> <div><strong>Piețe locale</strong> — locul perfect pentru a gusta și cumpăra produse locale</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- BONUS -->
+    <div style="background:#edf7f0;border-radius:12px;padding:18px 16px;border:1.5px solid rgba(42,157,96,.2);">
+      <p style="font-size:13px;font-weight:700;color:#1a5c38;margin:0 0 12px;">🍷 Bonus — nu uita să încerci!</p>
+      <ul style="list-style:none;padding:0;margin:0 0 12px;">
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#2a9d60;">🍷</span> Vinuri croate — Malvazija, Plavac Mali, Pošip
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#2a9d60;">🫒</span> Ulei de măsline de calitate excelentă
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#2a9d60;">🫙</span> Ajvar & măsline — gustări simple și delicioase
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#2a9d60;">🍮</span> Rožata & kremšnita — deserturile care îți vor rămâne în suflet
+        </li>
+      </ul>
+      <p style="font-size:11px;color:#1a5c38;font-style:italic;margin:0;">
+        🎒 <strong>Souvenir gustos:</strong> ulei de măsline, lavandă, miere, lichioruri, brânzeturi și vinuri locale
+      </p>
+    </div>
+
+  </div>
+
+  <div style="background:#fff8e6;border-left:5px solid var(--gold);border-radius:0 12px 12px 0;
+               padding:16px 20px;margin-bottom:20px;">
+    <p style="font-family:Georgia,serif;color:#8a5f00;font-size:14px;font-style:italic;
+               line-height:1.75;margin:0;">
+      Croații mănâncă încet, savurează și se bucură de moment.<br>
+      <strong>Fă și tu la fel! Bună dispoziție și poftă bună!</strong> ❤️
+    </p>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Mâncarea bună aduce oamenii împreună.<br>
+      <strong>Bucură-te de gustul autentic al Croației!</strong> 🇭🇷🍽️<br><br>
+      Ce ai comanda prima dată:<br>
+      <strong>Risotto negru 🖤 · Caracatiță 🐙 · Fuži cu trufe 🍝</strong>?
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 16 — CE SĂ VEDEM ÎN CROAȚIA?
+══════════════════════════════ -->
+<div class="section">
+<div class="container">
+
+  <p class="section-label">Secțiunea 16</p>
+  <h2 class="section-title">Croația — ce să vedem? 15 locuri pe care merită să le pui pe listă!</h2>
+  <p class="section-intro">
+    Dacă mergi în Croația doar pentru mare, s-ar putea să ratezi jumătate din farmecul ei. 😍
+    Este una dintre acele destinații în care merită să închiriezi o mașină, să iei feribotul
+    sau pur și simplu să pleci la explorat.
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-ce-sa-vedem.jpeg"
+       alt="Croația — ce să vedem, 15 locuri de vizitat"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- GRID 15 LOCURI 5x3 -->
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:24px;">
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #cc0000;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#cc0000;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">1</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Dubrovnik</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Perla Adriaticii, ziduri impresionante și atmosferă medievală unică.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #1a6fbf;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#1a6fbf;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">2</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Split</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Palatul lui Dioclețian și o promenadă plină de viață, zi și noapte.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #c89b3c;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#c89b3c;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">3</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Rovinj</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Romantic, colorat, cu aer italian — unul dintre cele mai fotogenice orașe.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #0891b2;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#0891b2;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">4</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Zadar</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Apusuri spectaculoase, celebra Orgă a Mării și Salutul Soarelui.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #7c3aed;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#7c3aed;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">5</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Šibenik</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Istorie, fortificații și o catedrală inclusă în Patrimoniul UNESCO.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #cc0000;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#cc0000;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">6</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Trogir</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Un orășel medieval superb, micuț, dar perfect pentru o plimbare.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #7c3aed;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#7c3aed;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">7</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Hvar</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Eleganță, lavandă, plajă și viață de noapte — combinația perfectă.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#2a9d60;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">8</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Korčula</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Ziduri, străduțe înguste și farmec autentic dalmat — insula lui Marco Polo.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #1a6fbf;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#1a6fbf;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">9</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Pula</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Celebrul amfiteatru roman și o istorie fascinantă la fiecare pas.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #c89b3c;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#c89b3c;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">10</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Poreč</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Istorie, plaje frumoase și o bazilică cu mozaicuri impresionante.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#2a9d60;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">11</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Motovun</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Orășel cocoțat pe dealurile Istriei, înconjurat de natură și podgorii.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #0891b2;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#0891b2;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">12</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Opatija</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Elegantă și diferită — faimoasă stațiune cu aer austro-ungar.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #cc0000;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#cc0000;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">13</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Vrsar</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Mic port pescăresc cu străduțe pitorești și priveliști superbe spre mare.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #2a9d60;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#2a9d60;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">14</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Mali Lošinj</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Natură, mare cristalină și aer curat — perfect pentru relaxare.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:12px 10px;border:1.5px solid var(--border);border-top:4px solid #1a6fbf;text-align:center;">
+      <div style="width:22px;height:22px;border-radius:50%;background:#1a6fbf;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;">15</div>
+      <p style="font-size:11px;font-weight:700;color:var(--navy);margin:0 0 4px;">Senj</p>
+      <p style="font-size:10px;color:var(--text);line-height:1.4;margin:0;">Istorie, fortăreață și peisaje sălbatice la poalele munților lângă Adriatică.</p>
+    </div>
+
+  </div><!-- /15 locuri -->
+
+  <!-- DE NERATAT + TIPS -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px;">
+
+    <div style="background:#fff0f0;border-radius:12px;padding:18px 16px;border:1.5px solid rgba(204,0,0,.15);">
+      <p style="font-size:13px;font-weight:700;color:#8b0000;margin:0 0 12px;">❗ De neratat!</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:7px;border-bottom:1px solid rgba(204,0,0,.1);">
+          <span style="color:#cc0000;">✔</span> Parcul Național Plitvice — lacuri și cascade spectaculoase
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:7px;border-bottom:1px solid rgba(204,0,0,.1);">
+          <span style="color:#cc0000;">✔</span> Insula Vis și Peștera Albastră — experiență de neuitat
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:7px;border-bottom:1px solid rgba(204,0,0,.1);">
+          <span style="color:#cc0000;">✔</span> Drumul panoramic de-a lungul coastei
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:7px;">
+          <span style="color:#cc0000;">✔</span> Apus în Dubrovnik — magie pură! 🌅
+        </li>
+      </ul>
+    </div>
+
+    <div style="background:#edf7f0;border-radius:12px;padding:18px 16px;border:1.5px solid rgba(42,157,96,.2);">
+      <p style="font-size:13px;font-weight:700;color:#1a5c38;margin:0 0 12px;">💡 Extra tips</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:7px;border-bottom:1px solid rgba(42,157,96,.12);">
+          <span style="color:#2a9d60;">🚗</span> Închiriază o mașină și explorează în ritmul tău
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:7px;border-bottom:1px solid rgba(42,157,96,.12);">
+          <span style="color:#2a9d60;">🌊</span> Nu te limita la plajă — Croația are mult mai mult de oferit!
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:7px;border-bottom:1px solid rgba(42,157,96,.12);">
+          <span style="color:#2a9d60;">🍽️</span> Gustă din bucătăria locală cu aparatul foto încărcat
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:5px 0;display:flex;gap:7px;">
+          <span style="color:#2a9d60;">🌿</span> Respectă natura și bucură-te responsabil de vacanță!
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Croația are de toate:<br>
+      <strong>istorie, natură, mare, experiențe și amintiri pentru o viață!</strong> 🇭🇷<br><br>
+      Dacă mâine ai ajunge în Croația — care ar fi PRIMUL loc pe care ai vrea să-l vezi? 😍
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     SECȚIUNEA 17 — TOP 10 INSULE DIN CROAȚIA
+══════════════════════════════ -->
+<div class="section" style="background:#f8fafc;">
+<div class="container">
+
+  <p class="section-label">Secțiunea 17</p>
+  <h2 class="section-title">Top 10 insule din Croația pe care trebuie să le descoperi!</h2>
+  <p class="section-intro">
+    Croația are peste 1.000 de insule, iar fiecare oferă un alt stil de vacanță. Unele sunt animate
+    și elegante, altele sălbatice și liniștite, iar altele perfecte pentru familii. 😍
+    O insulă pentru fiecare stare de spirit.
+  </p>
+
+  <img src="https://gherasimmarius.com/croatia/croatia-insule.jpeg"
+       alt="Top 10 insule din Croația"
+       style="width:100%;border-radius:14px;margin-bottom:32px;display:block;"
+       onerror="this.style.display='none'">
+
+  <!-- GRID 10 INSULE 5x2 -->
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:24px;">
+
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;border:1.5px solid var(--border);border-top:5px solid #7c3aed;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#7c3aed;color:white;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;">1</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 6px;">☀️ HVAR</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.5;margin:0;">Cea mai însorită insulă. Plaje superbe, oraș elegant și viață de noapte animată.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;border:1.5px solid var(--border);border-top:5px solid #1a6fbf;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#1a6fbf;color:white;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;">2</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 6px;">🏖️ BRAČ</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.5;margin:0;">Celebra Zlatni Rat, sporturi nautice, sate pitorești și peisaje autentice.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;border:1.5px solid var(--border);border-top:5px solid #2a9d60;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#2a9d60;color:white;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;">3</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 6px;">🏰 KORČULA</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.5;margin:0;">Considerată locul de naștere al lui Marco Polo. Vinuri, gastronomie și oraș medieval.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;border:1.5px solid var(--border);border-top:5px solid #0891b2;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#0891b2;color:white;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;">4</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 6px;">💎 VIS</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.5;margin:0;">Una dintre cele mai sălbatice și autentice insule. Pește proaspăt și golfuri ascunse.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;border:1.5px solid var(--border);border-top:5px solid #2a9d60;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#2a9d60;color:white;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;">5</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 6px;">🌿 MLJET</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.5;margin:0;">Parc Național și natură nealterată. Lacuri sărate unice în Europa. Ideală pentru ciclism.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;border:1.5px solid var(--border);border-top:5px solid #1a6fbf;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#1a6fbf;color:white;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;">6</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 6px;">💙 ŠOLTA</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.5;margin:0;">Aproape de Split, perfectă pentru o escapadă rapidă. Plaje liniștite și atmosferă autentică.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;border:1.5px solid var(--border);border-top:5px solid #cc0000;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#cc0000;color:white;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;">7</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 6px;">🌳 LOKRUM</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.5;margin:0;">La câteva minute cu barca din Dubrovnik. Grădini botanice, păuni liberi și golfuri superbe.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;border:1.5px solid var(--border);border-top:5px solid #7c3aed;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#7c3aed;color:white;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;">8</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 6px;">⛰️ CRES</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.5;margin:0;">Natură sălbatică, sate tradiționale și oameni primitori. Ideală pentru drumeții și explorare.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;border:1.5px solid var(--border);border-top:5px solid #c89b3c;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#c89b3c;color:white;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;">9</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 6px;">🧀 PAG</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.5;margin:0;">Peisaj aparte, aproape lunar. Celebra brânză de Pag, plaje frumoase și apă cristalină.</p>
+    </div>
+
+    <div style="background:var(--white);border-radius:10px;padding:14px 12px;border:1.5px solid var(--border);border-top:5px solid #0891b2;text-align:center;">
+      <div style="width:24px;height:24px;border-radius:50%;background:#0891b2;color:white;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;">10</div>
+      <p style="font-size:12px;font-weight:700;color:var(--navy);margin:0 0 6px;">👨‍👩‍👧‍👦 RAB</p>
+      <p style="font-size:11px;color:var(--text);line-height:1.5;margin:0;">Oraș vechi cu 4 turnuri emblematice. Plaje pentru familii, sporturi nautice, atmosferă relaxată.</p>
+    </div>
+
+  </div><!-- /10 insule -->
+
+  <!-- SFATURI + EXTRA -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px;">
+    <div style="background:var(--white);border-radius:12px;padding:18px 16px;border:1.5px solid var(--border);">
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin:0 0 10px;">⛴️ Sfaturi utile</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#1a6fbf;">✔</span> Verifică orarul ferry-urilor în funcție de sezon
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#1a6fbf;">✔</span> Rezervă cazarea din timp, mai ales în iulie–august
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#1a6fbf;">✔</span> Închiriază o mașină sau scuter pentru libertate totală
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#1a6fbf;">✔</span> Nu uita de cremă cu protecție, apă și încălțăminte comodă
+        </li>
+      </ul>
+    </div>
+    <div style="background:#edf7f0;border-radius:12px;padding:18px 16px;border:1.5px solid rgba(42,157,96,.2);">
+      <p style="font-size:13px;font-weight:700;color:#1a5c38;margin:0 0 10px;">⭐ Extra idei</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#2a9d60;">✔</span> Excursii de o zi între insule — island hopping
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#2a9d60;">✔</span> Snorkeling, scufundări, caiac
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#2a9d60;">✔</span> Gustă specialitățile locale și vinurile croate
+        </li>
+        <li style="font-size:12px;color:var(--text);padding:4px 0;display:flex;gap:7px;">
+          <span style="color:#2a9d60;">✔</span> Bucură-te de fiecare apus — Croația te va cuceri!
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="concluzie-box">
+    <p>
+      Hvar pentru atmosferă · Brač pentru plaje · Vis pentru liniște · Mljet pentru natură<br><br>
+      <strong>O insulă pentru fiecare stare de spirit.</strong><br>
+      Care îți va fi preferata? 🇭🇷🏝️
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     CTA FINAL
+══════════════════════════════ -->
+<div class="section" style="background:linear-gradient(135deg,#0d2240 0%,#003DA5 100%);padding-bottom:56px;">
+<div class="container">
+
+  <div style="text-align:center;padding:48px 24px 0;">
+    <p style="font-family:'Playfair Display',serif;color:#c89b3c;font-size:13px;
+               font-weight:700;letter-spacing:2px;text-transform:uppercase;margin:0 0 12px;">
+      Vacanțe Topic · Destine Holidays
+    </p>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,36px);
+                font-weight:700;color:#ffffff;margin:0 0 16px;line-height:1.2;">
+      Ești gata să descoperi Croația?
+    </h2>
+    <p style="font-family:Arial,sans-serif;color:rgba(255,255,255,.75);font-size:15px;
+               line-height:1.8;margin:0 0 32px;max-width:520px;margin-left:auto;margin-right:auto;">
+      Nu vindem doar un hotel. Vindem CROAȚIA. ❤️<br>
+      Spune-mi cu cine călătorești, perioada și bugetul,
+      iar eu îți găsesc zona și cazarea perfecte.
+    </p>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:28px;">
+      <span style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+                    color:rgba(255,255,255,.85);font-size:13px;padding:7px 16px;border-radius:20px;">
+        👨‍👩‍👧‍👦 Cu cine călătorești?
+      </span>
+      <span style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+                    color:rgba(255,255,255,.85);font-size:13px;padding:7px 16px;border-radius:20px;">
+        📅 În ce perioadă?
+      </span>
+      <span style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+                    color:rgba(255,255,255,.85);font-size:13px;padding:7px 16px;border-radius:20px;">
+        💶 Ce buget aveți?
+      </span>
+      <span style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+                    color:rgba(255,255,255,.85);font-size:13px;padding:7px 16px;border-radius:20px;">
+        🏖️ Ce vă doriți?
+      </span>
+    </div>
+
+    <a href="https://gherasimmarius.com/solicita-oferta.html"
+       style="display:inline-block;background:#c89b3c;color:#0d2240;
+              font-family:Arial,sans-serif;font-size:17px;font-weight:700;
+              text-decoration:none;padding:18px 48px;border-radius:12px;
+              letter-spacing:0.3px;box-shadow:0 6px 24px rgba(200,155,60,.35);">
+      Solicită ofertă personalizată Croația →
+    </a>
+
+    <p style="font-family:Arial,sans-serif;color:rgba(255,255,255,.4);font-size:12px;
+               margin:16px 0 0;">
+      Consultanță gratuită · Răspuns în aceeași zi lucrătoare
+    </p>
+  </div>
+
+</div>
+</div>
+<div class="section" style="background:#f8fafc;padding-bottom:52px;">
+<div class="container">
+
+  <div class="cta-section">
+    <h3 class="cta-title">Vrei o recomandare personalizată pentru Croația?</h3>
+    <p class="cta-text">
+      Spune-mi cu cine călătorești și ce îți dorești de la vacanță, iar eu îți recomand
+      zona și hotelul potrivit — gratuit, fără obligații.
+    </p>
+    <div class="cta-items">
+      <span class="cta-item">👨‍👩‍👧‍👦 Câți adulți și câți copii?</span>
+      <span class="cta-item">📅 În ce perioadă?</span>
+      <span class="cta-item">🚗 Cu mașina sau ✈️ avionul?</span>
+      <span class="cta-item">💶 Ce buget aveți?</span>
+      <span class="cta-item">🏖️ Ce vă doriți de la vacanță?</span>
+    </div>
+    <a href="https://gherasimmarius.com/solicita-oferta.html" class="btn-main">
+      Solicită ofertă personalizată Croația →
+    </a>
+    <p style="font-family:Arial,sans-serif;color:#9aabbc;font-size:12px;margin:12px 0 0;">
+      Consultanță gratuită · Răspuns în aceeași zi lucrătoare
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer class="site-footer">
+  <img class="footer-logo"
+       src="https://storage.mlcdn.com/account_image/1999265/Dj71QqCQohnQFPKcr6c5MC8x8dNfYg7G1vncv4Wz.png"
+       alt="Destine Holidays">
+  <p class="footer-text">
+    <strong style="color:#7ab3e0;">Destine Holidays · Vacanțe Topic</strong><br>
+    📞 0759 012 119 &nbsp;|&nbsp;
+    <a href="mailto:office@gherasimmarius.com">office@gherasimmarius.com</a><br>
+    <a href="https://www.facebook.com/profile.php?id=61585331109994">Vacanțe Topic pe Facebook</a>
+    &nbsp;|&nbsp;
+    <a href="https://gherasimmarius.com">gherasimmarius.com</a><br><br>
+    <span style="font-size:11px;">© 2026 Destine Holidays · Vacanțe care devin amintiri</span>
+  </p>
+</footer>
+
+</body>
+</html>
