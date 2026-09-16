@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asigurare de Credit Comercial — Destine Broker</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --orange: #F47920;
+    --orange-dark: #D96510;
+    --orange-light: #FEF0E4;
+    --blue: #1A3A6B;
+    --blue-mid: #2A5298;
+    --blue-light: #EEF3FB;
+    --white: #FFFFFF;
+    --grey-bg: #F5F7FA;
+    --grey-border: #E2E8F0;
+    --text-dark: #1A1A2E;
+    --text-mid: #4A5568;
+    --text-light: #718096;
+    --danger: #C0392B;
+    --success: #27AE60;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background: var(--white);
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--blue);
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    box-shadow: 0 2px 12px rgba(26,58,107,0.18);
+  }
+
+  .nav-logo {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: -0.3px;
+  }
+
+  .nav-logo span { color: var(--orange); }
+
+  .nav-cta {
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 9px 22px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .nav-cta:hover { background: var(--orange-dark); }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--blue);
+    padding: 80px 5% 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    min-height: 520px;
+  }
+
+  .hero-left {}
+
+  .hero-eyebrow {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 24px;
+    max-width: 560px;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--orange);
+  }
+
+  .hero-sub {
+    color: rgba(255,255,255,0.75);
+    font-size: 1.05rem;
+    max-width: 480px;
+    margin-bottom: 36px;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .btn-primary {
+    background: var(--orange);
+    color: var(--white);
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover { background: var(--orange-dark); transform: translateY(-1px); }
+
+  .btn-ghost {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  .hero-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .hero-stat {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px;
+    padding: 24px 20px;
+  }
+
+  .hero-stat.accent {
+    background: var(--orange);
+    border-color: var(--orange);
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero-stat-num {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .hero-stat.accent .hero-stat-num { font-size: 2rem; }
+
+  .hero-stat-label {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.4;
+  }
+
+  .hero-stat.accent .hero-stat-label { color: rgba(255,255,255,0.85); font-size: 0.85rem; }
+
+  /* ── TRUST BAR ── */
+  .trust-bar {
+    background: var(--grey-bg);
+    padding: 28px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--grey-border);
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-mid);
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .trust-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--blue-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .trust-icon svg { width: 18px; height: 18px; stroke: var(--blue); fill: none; stroke-width: 2; }
+
+  /* ── SECTION BASE ── */
+  section { padding: 80px 5%; }
+
+  .section-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    color: var(--blue);
+    line-height: 1.25;
+    margin-bottom: 20px;
+    max-width: 640px;
+  }
+
+  .section-intro {
+    color: var(--text-mid);
+    font-size: 1rem;
+    max-width: 580px;
+    line-height: 1.75;
+    margin-bottom: 50px;
+  }
+
+  /* ── PROBLEMA ── */
+  .problema { background: var(--white); }
+
+  .problema-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 50px;
+  }
+
+  .problema-card {
+    border-left: 4px solid var(--orange);
+    padding: 28px 24px;
+    background: var(--grey-bg);
+    border-radius: 0 10px 10px 0;
+  }
+
+  .problema-card-num {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--blue);
+    line-height: 1;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .problema-card-text {
+    color: var(--text-mid);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .problema-card-text strong { color: var(--text-dark); }
+
+  .problema-alert {
+    margin-top: 36px;
+    background: var(--blue);
+    color: var(--white);
+    padding: 28px 32px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .alert-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .alert-text { font-size: 0.95rem; line-height: 1.65; color: rgba(255,255,255,0.9); }
+  .alert-text strong { color: var(--orange); }
+
+  /* ── CALCULATOR ── */
+  .calculator-section { background: var(--grey-bg); }
+
+  .calculator-section .section-title { max-width: 500px; }
+
+  .calculator-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(26,58,107,0.1);
+  }
+
+  .calc-left {
+    padding: 44px 40px;
+    border-right: 1px solid var(--grey-border);
+  }
+
+  .calc-right {
+    padding: 44px 40px;
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .calc-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .calc-input-group {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--grey-border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 28px;
+    transition: border-color 0.2s;
+  }
+
+  .calc-input-group:focus-within { border-color: var(--orange); }
+
+  .calc-input-group button {
+    background: var(--grey-bg);
+    border: none;
+    width: 44px;
+    height: 52px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--blue);
+    font-weight: 700;
+    transition: background 0.15s;
+    flex-shrink: 0;
+  }
+
+  .calc-input-group button:hover { background: var(--blue-light); }
+
+  .calc-input-group input[type="number"] {
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blue);
+    width: 80px;
+    padding: 0 8px;
+    height: 52px;
+    -moz-appearance: textfield;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .calc-input-group input[type="number"]::-webkit-outer-spin-button,
+  .calc-input-group input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+  .calc-suffix {
+    background: var(--grey-bg);
+    color: var(--text-mid);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0 14px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid var(--grey-border);
+    flex-shrink: 0;
+  }
+
+  .calc-facturi-group {
+    position: relative;
+    margin-bottom: 36px;
+  }
+
+  .calc-facturi-input {
+    width: 100%;
+    border: 2px solid var(--grey-border);
+    border-radius: 8px;
+    padding: 14px 60px 14px 18px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--blue);
+    font-weight: 600;
+    outline: none;
+    transition: border-color 0.2s;
+    -moz-appearance: textfield;
+  }
+
+  .calc-facturi-input::-webkit-outer-spin-button,
+  .calc-facturi-input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+  .calc-facturi-input:focus { border-color: var(--orange); }
+
+  .calc-currency {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    font-size: 0.85rem;
+    font-weight: 600;
+    pointer-events: none;
+  }
+
+  .calc-result-label {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.65);
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .calc-result-num {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: var(--orange);
+    line-height: 1;
+    margin-bottom: 6px;
+    display: block;
+    word-break: break-all;
+  }
+
+  .calc-result-currency {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.7);
+    margin-left: 4px;
+  }
+
+  .calc-result-explain {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .calc-result-explain strong { color: rgba(255,255,255,0.9); }
+
+  /* ── BENEFICII ── */
+  .beneficii { background: var(--white); }
+
+  .beneficii-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .beneficiu-card {
+    display: flex;
+    gap: 20px;
+    padding: 32px 28px;
+    border: 1px solid var(--grey-border);
+    border-radius: 12px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .beneficiu-card:hover {
+    border-color: var(--orange);
+    box-shadow: 0 4px 20px rgba(244,121,32,0.1);
+  }
+
+  .beneficiu-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--orange-light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .beneficiu-icon svg { width: 24px; height: 24px; stroke: var(--orange); fill: none; stroke-width: 1.8; }
+
+  .beneficiu-content h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .beneficiu-content p {
+    font-size: 0.875rem;
+    color: var(--text-mid);
+    line-height: 1.65;
+  }
+
+  /* ── CUM FUNCȚIONEAZĂ ── */
+  .cum-functioneaza { background: var(--grey-bg); }
+
+  .pasi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .pas {
+    padding: 32px 28px;
+    position: relative;
+    text-align: left;
+  }
+
+  .pas:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 1px;
+    height: 60%;
+    background: var(--grey-border);
+  }
+
+  .pas-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--grey-border);
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .pas h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 10px;
+  }
+
+  .pas p {
+    font-size: 0.875rem;
+    color: var(--text-mid);
+    line-height: 1.65;
+  }
+
+  .pas-badge {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  /* ── PENTRU CINE ── */
+  .pentru-cine { background: var(--blue); padding: 80px 5%; }
+
+  .pentru-cine .section-title { color: var(--white); }
+  .pentru-cine .section-label { color: var(--orange); }
+  .pentru-cine .section-intro { color: rgba(255,255,255,0.7); }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .profile-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px;
+    padding: 28px 24px;
+    transition: background 0.2s;
+  }
+
+  .profile-card:hover { background: rgba(255,255,255,0.12); }
+
+  .profile-icon {
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .profile-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .profile-desc {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.65;
+  }
+
+  /* ── FORMULAR ── */
+  .formular-section {
+    background: var(--white);
+    padding: 80px 5%;
+  }
+
+  .formular-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .formular-left h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: var(--blue);
+    margin-bottom: 18px;
+    line-height: 1.3;
+  }
+
+  .formular-left p {
+    color: var(--text-mid);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+
+  .formular-promise {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .promise-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.875rem;
+    color: var(--text-mid);
+    line-height: 1.5;
+  }
+
+  .promise-check {
+    width: 20px;
+    height: 20px;
+    background: var(--success);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .promise-check svg { width: 10px; height: 10px; stroke: white; fill: none; stroke-width: 3; }
+
+  .formular-right {
+    background: var(--grey-bg);
+    border-radius: 16px;
+    padding: 40px 36px;
+    border: 1px solid var(--grey-border);
+  }
+
+  .formular-right h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 28px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+  }
+
+  .form-group label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-mid);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px 14px;
+    border: 1.5px solid var(--grey-border);
+    border-radius: 7px;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background: var(--white);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus { border-color: var(--orange); }
+
+  .form-group input::placeholder { color: var(--text-light); }
+
+  .form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .form-check input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: var(--orange);
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  .form-check label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    cursor: pointer;
+  }
+
+  .form-check label a { color: var(--orange); }
+
+  .form-submit {
+    width: 100%;
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .form-submit:hover { background: var(--orange-dark); }
+
+  .form-note {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 12px;
+  }
+
+  /* ── SUCCES MESSAGE ── */
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .form-success .success-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--success);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+
+  .form-success .success-icon svg { width: 28px; height: 28px; stroke: white; fill: none; stroke-width: 2.5; }
+
+  .form-success h3 { color: var(--blue); font-size: 1.2rem; margin-bottom: 10px; }
+  .form-success p { color: var(--text-mid); font-size: 0.9rem; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--text-dark);
+    color: rgba(255,255,255,0.7);
+    padding: 50px 5%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+
+  .footer-brand span { color: var(--orange); }
+
+  .footer-desc {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.55);
+    max-width: 300px;
+  }
+
+  .footer-col h4 {
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+  }
+
+  .footer-contact-item a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+  }
+
+  .footer-contact-item a:hover { color: var(--orange); }
+
+  .footer-contact-icon {
+    width: 16px;
+    height: 16px;
+    stroke: var(--orange);
+    fill: none;
+    stroke-width: 2;
+    flex-shrink: 0;
+  }
+
+  .footer-bottom {
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 16px 5%;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; padding: 50px 5%; }
+    .hero-right { display: none; }
+    .problema-grid { grid-template-columns: 1fr; }
+    .beneficii-grid { grid-template-columns: 1fr; }
+    .pasi { grid-template-columns: 1fr; }
+    .pas:not(:last-child)::after { display: none; }
+    .profile-grid { grid-template-columns: 1fr; }
+    .formular-wrapper { grid-template-columns: 1fr; gap: 40px; }
+    .calculator-wrapper { grid-template-columns: 1fr; }
+    .calc-left { border-right: none; border-bottom: 1px solid var(--grey-border); padding: 32px 24px; }
+    .calc-right { padding: 32px 24px; }
+    footer { grid-template-columns: 1fr; gap: 30px; }
+    .form-row { grid-template-columns: 1fr; }
+    .trust-bar { gap: 20px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+
+  /* ── UTILITIES ── */
+  .text-center { text-align: center; }
+  .text-center .section-title { margin-left: auto; margin-right: auto; }
+  .text-center .section-intro { margin-left: auto; margin-right: auto; }
+  .max-w { max-width: 1200px; margin: 0 auto; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Destine <span>Broker</span></div>
+  <a class="nav-cta" href="#formular">Solicită ofertă gratuită</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <span class="hero-eyebrow">Asigurare de Credit Comercial</span>
+    <h1>Profitul pe hârtie nu plătește <em>salarii.</em></h1>
+    <p class="hero-sub">
+      Companiile din România așteaptă în medie 120 de zile să încaseze o factură. 
+      Dacă unul dintre clienți nu plătește, paguba nu se oprește la suma din factură — 
+      ci la tot ce trebuie vândut în plus ca să revii la zero.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#formular">Calculează expunerea ta</a>
+      <button class="btn-ghost" onclick="document.getElementById('calculator').scrollIntoView({behavior:'smooth'})">
+        Vezi calculatorul →
+      </button>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-stat">
+      <span class="hero-stat-num">120</span>
+      <span class="hero-stat-label">zile — durata medie de încasare a facturilor în România (Sierra Quadrant, 2026)</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">4 din 10</span>
+      <span class="hero-stat-label">facturi B2B sunt plătite cu întârziere față de termenul agreat</span>
+    </div>
+    <div class="hero-stat accent">
+      <div>
+        <span class="hero-stat-num">1.829</span>
+        <span class="hero-stat-label">firme intrate în insolvență doar în T1 2026 — cu 14% mai multe față de același trimestru al anului trecut (ONRC)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">
+    <div class="trust-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+    Parteneriat cu lideri globali în asigurări de credit comercial
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    </div>
+    Despăgubire în max. 30 de zile
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">
+      <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    </div>
+    Acoperire în 175+ țări
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+    </div>
+    Compensare până la 90% din pierdere
+  </div>
+</div>
+
+<!-- PROBLEMA -->
+<section class="problema">
+  <div class="max-w">
+    <div class="section-label">Contextul de piață</div>
+    <h2 class="section-title">De ce facturile neîncasate sunt o amenințare existențială pentru afacerea ta</h2>
+    <p class="section-intro">
+      Nu e vorba de ghinion sau de clienți rău-intenționați. E o problemă structurală care afectează 
+      în mod sistematic companiile B2B din România.
+    </p>
+    <div class="problema-grid">
+      <div class="problema-card">
+        <span class="problema-card-num">7 din 10</span>
+        <p class="problema-card-text">companii românești întârzie să-și plătească facturile, principalele motive fiind <strong>lipsa lichidității</strong> și neîncasarea propriilor creanțe.</p>
+      </div>
+      <div class="problema-card">
+        <span class="problema-card-num">+164%</span>
+        <p class="problema-card-text">creștere în rândul companiilor mari cu active de peste 1 milion de euro intrate în insolvență în T1 2026 față de T1 2025. <strong>Firmele solide nu sunt imune.</strong></p>
+      </div>
+      <div class="problema-card">
+        <span class="problema-card-num">3,5 mld.</span>
+        <p class="problema-card-text">RON valoarea instrumentelor de plată refuzate în 2025 — <strong>cel mai ridicat nivel din ultimii 7 ani.</strong> Disciplina de plată nu se îmbunătățește.</p>
+      </div>
+    </div>
+    <div class="problema-alert">
+      <div class="alert-icon">⚠️</div>
+      <div class="alert-text">
+        <strong>Calculul pe care puțini îl fac:</strong> Dacă pierzi 100.000 RON dintr-un client neplătitor, 
+        la o marjă de profit de 5%, compania ta trebuie să vândă <strong>2.000.000 RON suplimentar</strong> 
+        doar pentru a reveni la situația anterioară. Cu cât marja e mai mică, cu atât cifra e mai mare.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="calculator-section" id="calculator">
+  <div class="max-w">
+    <div class="section-label">Calculator de risc</div>
+    <h2 class="section-title">Cât te costă, de fapt, o pierdere?</h2>
+    <p class="section-intro">
+      Introdu marja ta de profit și valoarea facturilor restante. 
+      Calculatorul îți arată cifra de afaceri suplimentară necesară pentru a compensa pierderea.
+    </p>
+
+    <div class="calculator-wrapper">
+      <div class="calc-left">
+        <span class="calc-label">Rata marjei tale de profit</span>
+        <div class="calc-input-group">
+          <button id="decrease" onclick="changeMargin(-1)" aria-label="Scade marja">−</button>
+          <input type="number" id="margin" value="10" min="1" max="100" aria-label="Rata marjei">
+          <div class="calc-suffix">%</div>
+          <button id="increase" onclick="changeMargin(1)" aria-label="Crește marja">+</button>
+        </div>
+
+        <span class="calc-label">Total facturi restante / neîncasate</span>
+        <div class="calc-facturi-group">
+          <input type="number" id="invoices" class="calc-facturi-input" placeholder="Ex: 50.000" aria-label="Total facturi restante">
+          <span class="calc-currency">RON</span>
+        </div>
+
+        <div style="background: var(--blue-light); border-radius: 10px; padding: 18px 20px;">
+          <p style="font-size: 0.8rem; color: var(--blue); line-height: 1.6;">
+            <strong>Cum funcționează:</strong> Cifra de afaceri suplimentară = Pierdere ÷ Rata marjei. 
+            Cu o marjă de <span id="margin-display">10</span>% și o pierdere de 50.000 RON, 
+            trebuie să vinzi 500.000 RON în plus.
+          </p>
+        </div>
+      </div>
+
+      <div class="calc-right">
+        <span class="calc-result-label">Cifra de afaceri suplimentară necesară pentru a compensa pierderea</span>
+        <div>
+          <span class="calc-result-num" id="result">0</span>
+          <span class="calc-result-currency">RON</span>
+        </div>
+        <p class="calc-result-explain" id="result-explain">
+          Introdu datele în stânga pentru a vedea impactul real al unei facturi neîncasate.
+        </p>
+        <a href="#formular" class="btn-primary" style="margin-top: 28px; text-align: center; display: block;">
+          Vreau să fiu protejat →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICII -->
+<section class="beneficii">
+  <div class="max-w">
+    <div class="section-label">Ce primești</div>
+    <h2 class="section-title">Ce face, concret, asigurarea de credit comercial</h2>
+    <p class="section-intro">
+      Nu este o poliță pe care o semnezi și o uiți. Este un sistem activ de protecție 
+      care funcționează înainte, în timpul și după fiecare relație comercială.
+    </p>
+    <div class="beneficii-grid">
+
+      <div class="beneficiu-card">
+        <div class="beneficiu-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="beneficiu-content">
+          <h3>Verifici solvabilitatea clienților înainte să livrezi</h3>
+          <p>Accesezi date din 200 de milioane de companii din 175 de țări. Știi din timp dacă un client reprezintă un risc — înainte de prima factură, nu după.</p>
+        </div>
+      </div>
+
+      <div class="beneficiu-card">
+        <div class="beneficiu-icon">
+          <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div class="beneficiu-content">
+          <h3>Monitorizare în timp real a comportamentului de plată</h3>
+          <p>Sistemul monitorizează continuu partenerii tăi comerciali. Dacă apar semne de deteriorare financiară, ești notificat — nu descoperi problema din presă.</p>
+        </div>
+      </div>
+
+      <div class="beneficiu-card">
+        <div class="beneficiu-icon">
+          <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <div class="beneficiu-content">
+          <h3>Vinzi mai mult, fără să crești riscul</h3>
+          <p>Cu o limită de credit stabilită profesionist, poți oferi termene mai lungi și sume mai mari — un avantaj competitiv față de concurenții care lucrează din teamă.</p>
+        </div>
+      </div>
+
+      <div class="beneficiu-card">
+        <div class="beneficiu-icon">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="beneficiu-content">
+          <h3>Recuperezi până la 90% din valoarea creanței pierdute</h3>
+          <p>Dacă un client nu plătește, asigurătorul preia colectarea — amiabilă și juridică — fără costuri suplimentare. Și dacă colectarea eșuează, primești despăgubirea.</p>
+        </div>
+      </div>
+
+      <div class="beneficiu-card">
+        <div class="beneficiu-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="beneficiu-content">
+          <h3>Acces la finanțare bancară mai facilă</h3>
+          <p>Polița de asigurare poate fi cesionată băncii ca garanție, facilitând accesul la linii de credit și îmbunătățind profilul financiar al companiei tale.</p>
+        </div>
+      </div>
+
+      <div class="beneficiu-card">
+        <div class="beneficiu-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="beneficiu-content">
+          <h3>Relațiile cu clienții rămân intacte</h3>
+          <p>Colectarea este gestionată profesionist de echipe specializate. Nu tu ești cel care sună și presează — relația comercială poate continua după rezolvarea debitului.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CUM FUNCȚIONEAZĂ -->
+<section class="cum-functioneaza">
+  <div class="max-w">
+    <div class="section-label">Procesul</div>
+    <h2 class="section-title">Cum funcționează în practică</h2>
+    <div class="pasi">
+      <div class="pas">
+        <span class="pas-badge">Înainte</span>
+        <span class="pas-number">01</span>
+        <h3>Analiză și stabilire limite de credit</h3>
+        <p>Clienții tăi sunt analizați de specialiști. Se stabilesc limite de credit individuale bazate pe date financiare reale, nu pe impresii. Știi în avans cât poți livra în siguranță.</p>
+      </div>
+      <div class="pas">
+        <span class="pas-badge">În timp real</span>
+        <span class="pas-number">02</span>
+        <h3>Monitorizare continuă și alertare</h3>
+        <p>Pe toată durata relației comerciale, comportamentul de plată al clienților tăi este urmărit continuu. Orice semnal de risc generează o alertă — tu decizi cum acționezi.</p>
+      </div>
+      <div class="pas">
+        <span class="pas-badge">Dacă apare o problemă</span>
+        <span class="pas-number">03</span>
+        <h3>Colectare și despăgubire</h3>
+        <p>Notifici asigurătorul în 30 de zile de la scadență. Se demarează procedura de colectare. Dacă aceasta nu reușește integral, primești despăgubirea — în max. 30 de zile pentru insolvență.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PENTRU CINE -->
+<section class="pentru-cine">
+  <div class="max-w">
+    <div class="section-label">Cui se adresează</div>
+    <h2 class="section-title">Asigurarea de credit comercial este potrivită pentru tine dacă…</h2>
+    <p class="section-intro">
+      Orice companie care vinde cu plată la termen către alte companii este eligibilă — 
+      indiferent de sector sau dimensiune.
+    </p>
+    <div class="profile-grid">
+      <div class="profile-card">
+        <span class="profile-icon">🏗️</span>
+        <div class="profile-title">Operezi în construcții sau distribuție</div>
+        <p class="profile-desc">Sectoarele cu cel mai mare număr de insolvențe în 2025–2026. Marja ta e subțire. Un singur client poate face diferența dintre profit și pierdere.</p>
+      </div>
+      <div class="profile-card">
+        <span class="profile-icon">📦</span>
+        <div class="profile-title">Livrezi marfă sau servicii pe credit</div>
+        <p class="profile-desc">Dacă acorzi termene de 30, 60 sau 90 de zile, creanțele tale comerciale sunt probabil cel mai mare activ neprotejat din bilanț.</p>
+      </div>
+      <div class="profile-card">
+        <span class="profile-icon">🌍</span>
+        <div class="profile-title">Vinzi și în afara României</div>
+        <p class="profile-desc">Riscul de neplată extern este greu de evaluat singur. Asigurarea acoperă creanțe față de parteneri din 175+ țări, cu analiză locală.</p>
+      </div>
+      <div class="profile-card">
+        <span class="profile-icon">📈</span>
+        <div class="profile-title">Vrei să crești fără să riști</div>
+        <p class="profile-desc">Clienți noi înseamnă risc necunoscut. Cu o limită de credit aprobată profesionist, poți deschide relații noi fără să pui afacerea în pericol.</p>
+      </div>
+      <div class="profile-card">
+        <span class="profile-icon">🏦</span>
+        <div class="profile-title">Ai nevoie de finanțare bancară</div>
+        <p class="profile-desc">Polița de asigurare poate fi cesionată băncii, transformând creanțele asigurate în garanție și facilitând accesul la capital de lucru.</p>
+      </div>
+      <div class="profile-card">
+        <span class="profile-icon">⚡</span>
+        <div class="profile-title">Ai deja un incident de neplată</div>
+        <p class="profile-desc">Dacă ai pierdut bani dintr-un client neașteptat, știi deja că nicio relație comercială nu este garantată. Există o soluție structurală.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULAR -->
+<section class="formular-section" id="formular">
+  <div class="formular-wrapper">
+    <div class="formular-left">
+      <div class="section-label">Solicită ofertă</div>
+      <h2>Calculăm împreună expunerea ta reală — gratuit</h2>
+      <p>
+        Completează formularul și un consultant Destine Broker te va contacta în termen de 24 de ore 
+        cu o analiză personalizată a portofoliului tău de clienți și o estimare de primă de asigurare.
+      </p>
+      <div class="formular-promise">
+        <div class="promise-item">
+          <div class="promise-check">
+            <svg viewBox="0 0 12 9"><polyline points="1,4.5 4,7.5 11,1"/></svg>
+          </div>
+          Analiza inițială a 6 clienți cheie — gratuită și fără angajamente
+        </div>
+        <div class="promise-item">
+          <div class="promise-check">
+            <svg viewBox="0 0 12 9"><polyline points="1,4.5 4,7.5 11,1"/></svg>
+          </div>
+          Estimare de primă de asigurare în funcție de cifra ta de afaceri
+        </div>
+        <div class="promise-item">
+          <div class="promise-check">
+            <svg viewBox="0 0 12 9"><polyline points="1,4.5 4,7.5 11,1"/></svg>
+          </div>
+          Răspuns în maximum 24 de ore de la trimiterea formularului
+        </div>
+        <div class="promise-item">
+          <div class="promise-check">
+            <svg viewBox="0 0 12 9"><polyline points="1,4.5 4,7.5 11,1"/></svg>
+          </div>
+          Fără presiuni comerciale — consulți, decizi tu
+        </div>
+      </div>
+    </div>
+
+    <div class="formular-right" style="padding: 0; background: transparent; border: none; overflow: hidden;">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf8vzi4vGv0ydlUQ2Um_FsvVHeNO24Hx68EtdWbToNW2Jei2w/viewform?embedded=true"
+        width="100%"
+        height="950"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        style="border-radius: 16px; display: block;"
+        title="Formular solicitare asigurare credit comercial">
+        Se încarcă…
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-brand">Gherasim <span>Marius</span></div>
+    <p class="footer-desc">
+      Consultant în asigurări și servicii financiare, partener Destine Broker. 
+      Asigurarea de credit comercial — protejăm afacerile B2B din România.
+    </p>
+  </div>
+  <div class="footer-col">
+    <h4>Contact</h4>
+    <div class="footer-contact-item">
+      <svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.87a16 16 0 0 0 6.29 6.29l1.66-1.84a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <a href="tel:+400759012119">0759 012 119</a>
+    </div>
+    <div class="footer-contact-item">
+      <svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <a href="mailto:office@gherasimmarius.com">office@gherasimmarius.com</a>
+    </div>
+    <div class="footer-contact-item">
+      <svg class="footer-contact-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <a href="https://gherasimmarius.com" target="_blank">gherasimmarius.com</a>
+    </div>
+  </div>
+  <div class="footer-col">
+    <h4>Informații</h4>
+    <div class="footer-contact-item">
+      <svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      <a href="#">Politică confidențialitate</a>
+    </div>
+    <div class="footer-contact-item">
+      <svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Autorizat ASF
+    </div>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  © 2026 Gherasim Marius — consultant în asigurări și servicii financiare, partener Destine Broker. Toate drepturile rezervate. 
+  Sursele statistice: Sierra Quadrant (ian. 2026), ONRC (apr. 2026), Atradius CEE 2026.
+</div>
+
+<script>
+  // ── CALCULATOR ──
+  const marginInput = document.getElementById('margin');
+  const invoicesInput = document.getElementById('invoices');
+  const resultEl = document.getElementById('result');
+  const resultExplain = document.getElementById('result-explain');
+  const marginDisplay = document.getElementById('margin-display');
+
+  function formatNumber(n) {
+    if (n === 0) return '0';
+    if (n >= 1000000) return (n/1000000).toFixed(1).replace('.', ',') + ' mil.';
+    return n.toLocaleString('ro-RO');
+  }
+
+  function calculate() {
+    const margin = parseFloat(marginInput.value) || 0;
+    const invoices = parseFloat(invoicesInput.value) || 0;
+    marginDisplay.textContent = margin;
+
+    if (margin <= 0 || invoices <= 0) {
+      resultEl.textContent = '0';
+      resultExplain.textContent = 'Introdu datele în stânga pentru a vedea impactul real al unei facturi neîncasate.';
+      return;
+    }
+
+    const result = Math.round((invoices / margin) * 100);
+    resultEl.textContent = formatNumber(result);
+    resultExplain.innerHTML = `Pentru a compensa o pierdere de <strong>${formatNumber(invoices)} RON</strong>, compania ta trebuie să realizeze o cifră de afaceri suplimentară de <strong>${formatNumber(result)} RON</strong>, la o marjă de profit de <strong>${margin}%</strong>.`;
+  }
+
+  function changeMargin(delta) {
+    let current = parseFloat(marginInput.value) || 10;
+    current = Math.min(100, Math.max(1, current + delta));
+    marginInput.value = current;
+    calculate();
+  }
+
+  marginInput.addEventListener('input', calculate);
+  invoicesInput.addEventListener('input', calculate);
+
+  // ── FORM SUBMIT ──
+  function submitForm(e) {
+    e.preventDefault();
+    const form = e.target;
+    const prenume = document.getElementById('prenume').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const companie = document.getElementById('companie').value.trim();
+    const gdpr = document.getElementById('gdpr').checked;
+
+    if (!prenume || !email || !companie || !gdpr) {
+      alert('Te rugăm să completezi câmpurile obligatorii și să accepți termenii de prelucrare a datelor.');
+      return;
+    }
+
+    // Simulare trimitere
+    document.getElementById('form-content').style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  }
+</script>
+</body>
+</html>
