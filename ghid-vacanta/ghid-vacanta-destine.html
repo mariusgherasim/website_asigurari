@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghidul vacanței alese corect | Destine Holidays</title>
+<meta name="description" content="Cum alegi hotelul potrivit, când pleci în destinații exotice, de ce merită Albania, unde găsești biblioteci în română la mare și cum îți plătești vacanța în rate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0d2240;
+  --navy-2:#173a66;
+  --gold:#c89b3c;
+  --gold-soft:#f4e9d0;
+  --sand:#faf6ee;
+  --sea:#1f8a9e;
+  --red:#c8323c;
+  --green:#2f8a4f;
+  --ink:#1d2433;
+  --muted:#5b6476;
+  --line:#e6ddca;
+  --white:#ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--sand);line-height:1.65;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--navy-2)}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;color:var(--navy);line-height:1.2}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.narrow{max-width:760px}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 70%,var(--sea) 130%);color:#fff;padding:70px 0 60px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:2px solid rgba(200,155,60,.35)}
+.hero .brand{font-size:15px;letter-spacing:.06em;color:var(--gold);font-weight:600;margin-bottom:18px}
+.hero h1{color:#fff;font-size:clamp(34px,5.4vw,58px);max-width:820px}
+.hero .qs{margin-top:22px;font-size:clamp(18px,2.2vw,22px);color:#e6ecf5;max-width:720px}
+.hero .qs span{display:block}
+.hero .lead{margin-top:18px;color:#cfd8e6;max-width:680px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:38px;max-width:900px}
+.stat{border-left:3px solid var(--gold);padding:4px 0 4px 14px}
+.stat b{font-family:'Playfair Display',serif;font-size:34px;color:#fff;display:block;line-height:1.1}
+.stat small{color:#c9d3e3;font-size:14px}
+
+/* TOC */
+.toc{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.toc ul{list-style:none;display:flex;gap:6px;overflow-x:auto;padding:12px 0;scrollbar-width:thin}
+.toc a{display:block;white-space:nowrap;text-decoration:none;font-size:14px;font-weight:600;color:var(--navy);padding:7px 13px;border-radius:999px;background:var(--sand);border:1px solid var(--line)}
+.toc a:hover,.toc a:focus-visible{background:var(--gold-soft);outline:none;border-color:var(--gold)}
+
+/* SECTIONS */
+section.s{padding:64px 0;border-bottom:1px solid var(--line)}
+section.s:nth-of-type(even){background:#fff}
+.s-num{font-family:'Playfair Display',serif;color:var(--gold);font-size:18px;font-weight:700}
+.s h2{font-size:clamp(28px,3.6vw,40px);margin:6px 0 14px}
+.s .intro{font-size:19px;color:var(--muted);max-width:760px;margin-bottom:28px}
+.s h3{font-size:22px;margin:34px 0 14px}
+.s p{margin-bottom:14px;max-width:760px}
+
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
+.split img{border-radius:14px;box-shadow:0 14px 34px rgba(13,34,64,.18)}
+
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+
+.item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px}
+section.s:nth-of-type(even) .item{background:var(--sand)}
+.item h4{font-size:17px;color:var(--navy);margin-bottom:6px;font-family:'Inter',sans-serif;font-weight:700}
+.item p{font-size:15.5px;color:var(--muted);margin:0}
+.item .ico{font-size:26px;margin-bottom:8px;display:block}
+
+.place{border-top:4px solid var(--sea)}
+.place.u{border-top-color:var(--gold)}
+.tag{display:inline-block;font-size:12.5px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--gold-soft);color:#7a5a17;margin-top:8px}
+
+.quote{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(20px,2.6vw,26px);color:var(--navy);border-left:4px solid var(--gold);padding:6px 0 6px 20px;margin:28px 0;max-width:760px}
+
+.concluzie{background:var(--navy);color:#fff;border-radius:14px;padding:26px 28px;margin-top:30px;max-width:860px}
+.concluzie h4{font-family:'Playfair Display',serif;color:var(--gold);font-size:21px;margin-bottom:8px}
+.concluzie p{color:#e2e8f2;margin:0}
+
+.sfat{background:var(--gold-soft);border:1px solid #e5cf9a;border-radius:14px;padding:20px 24px;margin-top:24px;max-width:860px}
+.sfat strong{color:#6d4f12}
+
+.check{list-style:none}
+.check li{padding:8px 0 8px 34px;position:relative;border-bottom:1px dashed var(--line)}
+.check li::before{content:"✓";position:absolute;left:4px;top:7px;width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;font-size:13px;display:grid;place-items:center;font-weight:700}
+
+.vs{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:stretch;margin-top:10px;max-width:860px}
+.vs .side{border-radius:12px;padding:18px 20px}
+.vs .no{background:#fbeaea;border:1px solid #f0c4c4}
+.vs .yes{background:#e8f4ec;border:1px solid #bfdfca}
+.vs .mid{display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:800;color:var(--gold);font-size:22px}
+
+/* 3 words */
+.words{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px 0}
+.words div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:16px}
+.rules{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.rules span{background:#fbeaea;color:var(--red);font-weight:700;border-radius:999px;padding:6px 14px;font-size:14.5px}
+.rules span.ok{background:#e8f4ec;color:var(--green)}
+
+/* Month picker */
+.months{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px}
+.months button{font:600 14.5px 'Inter',sans-serif;border:1px solid var(--line);background:#fff;color:var(--navy);padding:8px 14px;border-radius:999px;cursor:pointer}
+.months button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.months button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.month-panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+section.s:nth-of-type(even) .month-panel{background:var(--sand)}
+.month-panel h4{font-family:'Playfair Display',serif;font-size:24px;color:var(--navy);margin-bottom:12px}
+.dest{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);flex-wrap:wrap}
+.dest:last-child{border-bottom:0}
+.dest b{color:var(--navy)}
+.dest small{color:var(--muted)}
+.dest.warn b{color:var(--red)}
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:18px}
+
+/* Sept */
+.sept{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.sept .item{border-top:5px solid var(--c)}
+.sept .item h4{color:var(--c)}
+.sept ul{list-style:none;margin-top:8px;font-size:14.5px;color:var(--muted)}
+.sept li{padding:3px 0}
+
+/* Hotels list */
+.hotels{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.hotels div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:11px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.hotels em{font-style:normal;color:var(--gold);font-weight:700;white-space:nowrap}
+.genres{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 20px}
+.genres span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:14.5px}
+
+/* TBI */
+.reasons{counter-reset:r;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.reason{counter-increment:r;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px 64px;position:relative}
+section.s:nth-of-type(even) .reason{background:var(--sand)}
+.reason::before{content:counter(r);position:absolute;left:16px;top:16px;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--gold);font:700 16px 'Playfair Display',serif;display:grid;place-items:center}
+.reason h4{font-size:17px;color:var(--navy);margin-bottom:4px}
+.reason p{font-size:15.5px;color:var(--muted);margin:0}
+.example{display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;max-width:720px;margin:24px 0 8px}
+.example .box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center}
+.example .box b{display:block;font-family:'Playfair Display',serif;font-size:32px;color:var(--navy)}
+.example .arrow{text-align:center;font-size:28px;color:var(--gold)}
+.legal{font-size:13.5px;color:var(--muted);max-width:760px;border-top:1px solid var(--line);padding-top:12px;margin-top:20px}
+
+/* AI vs UAI */
+.ai{display:grid;grid-template-columns:1fr 60px 1fr;align-items:stretch;max-width:980px}
+.ai .col{background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+section.s:nth-of-type(even) .ai .col{background:var(--sand)}
+.ai .col h3{margin:0;padding:16px 20px;color:#fff;font-size:22px}
+.ai .std h3{background:var(--navy)}
+.ai .ult h3{background:var(--red)}
+.ai .ult{border-color:#f0c4c4}
+.ai ul{list-style:none;padding:8px 20px 14px}
+.ai li{padding:11px 0;border-bottom:1px dashed var(--line)}
+.ai li:last-child{border-bottom:0}
+.ai li b{display:block;font-size:16px}
+.ai .std li b{color:var(--navy)}
+.ai .ult li b{color:var(--red)}
+.ai li span{font-size:15px;color:var(--muted)}
+.ai .mid{display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:800;color:var(--gold);font-size:24px}
+.atentie{display:flex;gap:16px;align-items:flex-start;background:#fdf1d6;border:2px solid #f0b429;border-radius:14px;padding:20px 24px;margin-top:26px;max-width:980px}
+.atentie .big{font-size:34px;line-height:1}
+.atentie h4{font-family:'Playfair Display',serif;color:var(--navy);font-size:21px;margin-bottom:4px}
+.atentie p{margin:0}
+@media (max-width:620px){.ai{grid-template-columns:1fr}.ai .mid{padding:8px 0}}
+
+/* COMPARAȚII MULTI-COLOANĂ */
+.cmp{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:14px}
+.cc{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+section.s:nth-of-type(even) .cc{background:var(--sand)}
+.cc-h{background:var(--c);color:#fff;padding:14px 16px}
+.cc-h h3{color:#fff;margin:0;font-size:22px}
+.cc-h span{font-size:14px;opacity:.92}
+.cc .row{padding:12px 16px;border-top:1px dashed var(--line)}
+.cc .row:first-of-type{border-top:0}
+.cc h5{font:700 13.5px 'Inter',sans-serif;color:var(--c);margin-bottom:4px;letter-spacing:.02em}
+.cc p,.cc li{font-size:15px;color:var(--ink)}
+.cc ul{list-style:none}
+.cc li{padding:2px 0 2px 16px;position:relative}
+.cc li::before{content:"•";position:absolute;left:3px;color:var(--c);font-weight:700}
+.pick{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:20px}
+.pick div{border-left:5px solid var(--c);background:#fff;border-radius:10px;padding:14px 16px}
+section.s:nth-of-type(even) .pick div{background:var(--sand)}
+.pick span{display:block;font-size:15px;color:var(--muted)}
+.pick b{display:block;margin-top:4px;color:var(--c);font-size:17px}
+.fig{margin-top:30px;max-width:620px}
+.fig img{border-radius:14px;box-shadow:0 14px 34px rgba(13,34,64,.18)}
+.fig figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+.ladder{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:6px 0 26px}
+.ladder a,.ladder span.st{display:inline-block;padding:7px 13px;border-radius:999px;font-weight:700;font-size:14.5px;color:#fff;background:var(--c);text-decoration:none}
+.ladder i{color:var(--gold);font-style:normal;font-weight:700}
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:22px}
+.tips div{background:var(--navy);color:#e2e8f2;border-radius:12px;padding:14px 16px;font-size:15px}
+.tips b{color:var(--gold);display:block;margin-bottom:2px}
+@media (max-width:900px){.cmp{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.cmp{grid-template-columns:1fr}}
+
+/* TOP 10 */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 18px}
+.filters button{font:600 14.5px 'Inter',sans-serif;border:1px solid var(--line);background:#fff;color:var(--navy);padding:8px 14px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.filters button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.top10{list-style:none;counter-reset:t;display:grid;gap:10px;max-width:980px}
+.top10 li{counter-increment:t;display:grid;grid-template-columns:56px 1fr 230px;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+section.s:nth-of-type(even) .top10 li{background:var(--sand)}
+.top10 li::before{content:counter(t);width:46px;height:46px;border-radius:12px;background:var(--navy);color:#fff;font:800 22px 'Playfair Display',serif;display:grid;place-items:center}
+.top10 li:nth-child(1)::before{background:var(--gold)}
+.top10 li:nth-child(2)::before{background:#8a97a8}
+.top10 li:nth-child(3)::before{background:#b07a3c}
+.top10 li[hidden]{display:none}
+.top10 h4{font-size:18px;color:var(--navy);font-family:'Inter',sans-serif;font-weight:700}
+.top10 .st{color:var(--gold);font-size:15px;margin-left:4px;white-space:nowrap}
+.top10 .meta{display:flex;flex-wrap:wrap;gap:6px;margin:5px 0}
+.chip{font-size:12.5px;font-weight:700;padding:3px 9px;border-radius:999px;background:#e9eef6;color:var(--navy)}
+.chip.uai{background:#fbe3e5;color:var(--red)}
+.chip.aic{background:#e3eefb;color:var(--navy-2)}
+.chip.adult{background:#fde8ef;color:#c2185b}
+.chip.book{background:var(--gold-soft);color:#7a5a17}
+.top10 p{font-size:15px;color:var(--muted);margin:0}
+.top10 .beach{font-size:14.5px;color:var(--ink);border-left:3px solid var(--sea);padding-left:12px}
+@media (max-width:760px){.top10 li{grid-template-columns:46px 1fr}.top10 .beach{grid-column:2}}
+
+/* CTA */
+.cta{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;padding:70px 0}
+.cta h2{color:#fff;font-size:clamp(28px,4vw,42px);max-width:760px}
+.cta p{color:#d6deeb;max-width:680px;margin-top:12px}
+.ask{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0}
+.ask div{border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:16px;text-align:center}
+.ask span{font-size:28px;display:block}
+.ask b{display:block;margin-top:6px;font-size:15px}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;text-decoration:none;padding:14px 26px;border-radius:999px;margin-top:6px}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btns .btn{margin-top:0}
+.btn-alt{background:var(--navy);color:#fff}
+.btn-alt:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.tagline{text-align:center;padding:36px 22px;font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:var(--navy)}
+footer{background:#081629;color:#9fb0c8;text-align:center;font-size:14px;padding:26px 20px}
+footer a{color:var(--gold)}
+
+@media (max-width:900px){
+  .split{grid-template-columns:1fr}
+  .grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}
+  .sept{grid-template-columns:repeat(2,1fr)}
+  .ask{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .grid-2,.grid-3,.grid-4,.reasons,.hotels,.sept{grid-template-columns:1fr}
+  .vs,.example{grid-template-columns:1fr}
+  .vs .mid,.example .arrow{padding:8px 0}
+  section.s{padding:48px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">Destine Holidays · Vacanțe Topic</div>
+    <h1>Ghidul vacanței alese corect</h1>
+    <p class="qs">
+      <span>Maldive în august? Zanzibar în aprilie? Thailanda în septembrie?</span>
+      <span>Hotelul de 5★ mai ieftin sau celălalt?</span>
+      <span>Albania sau încă o vară în aceeași stațiune?</span>
+    </p>
+    <p class="lead">Tot ce te ajută să alegi destinația, perioada și hotelul potrivit pentru tine, nu pentru altcineva. Scris de un consultant de turism care compară hoteluri în fiecare zi.</p>
+    <div class="stats">
+      <div class="stat"><b>8</b><small>criterii pentru alegerea hotelului</small></div>
+      <div class="stat"><b>12</b><small>luni de destinații exotice</small></div>
+      <div class="stat"><b>3</b><small>orașe și situri UNESCO în Albania</small></div>
+      <div class="stat"><b>500+</b><small>cărți în română la Nisipurile de Aur</small></div>
+      <div class="stat"><b>10</b><small>motive pentru vacanța în rate</small></div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Cuprins">
+  <div class="wrap">
+    <ul>
+      <li><a href="#cum-te-simti">Cum vrei să te simți</a></li>
+      <li><a href="#hoteluri-5-stele">Hoteluri de 5★</a></li>
+      <li><a href="#albania">Albania</a></li>
+      <li><a href="#septembrie">Vara în septembrie</a></li>
+      <li><a href="#exotic">Calendar exotic</a></li>
+      <li><a href="#grifid">Biblioteci GRIFID</a></li>
+      <li><a href="#rate">Vacanța în rate</a></li>
+      <li><a href="#all-inclusive">All vs Ultra All Inclusive</a></li>
+      <li><a href="#concepte-masa">BB, HB, FB</a></li>
+      <li><a href="#camere">Tipuri de cameră</a></li>
+      <li><a href="#tipuri-vacanta">Circuit, croazieră, charter</a></li>
+      <li><a href="#riviera-turca">Riviera Turcească</a></li>
+      <li><a href="#marea-rosie">Marea Roșie</a></li>
+      <li><a href="#insule-grecesti">Insule grecești</a></li>
+      <li><a href="#top10-nisipurile">Top 10 Nisipurile de Aur</a></li>
+      <li><a href="#top-sunny-beach">Top Sunny Beach</a></li>
+      <li><a href="#top5-albena">Top 5 Albena</a></li>
+      <li><a href="#top10-albania">Top 10 Albania</a></li>
+      <li><a href="#aquapark-egipt">Aquapark Egipt</a></li>
+      <li><a href="#calitate-pret-egipt">Egipt calitate/preț</a></li>
+      <li><a href="#prima-linie">Prima linie vs. plajă privată</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<!-- SECȚIUNEA 1 -->
+<section class="s" id="cum-te-simti">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 1</div>
+    <h2>Înainte de destinație: cum vrei să te simți?</h2>
+    <p class="intro">Dacă mâine dimineață cineva ți-ar spune: „Fă-ți bagajul. Pleci 7 zile în vacanță. Tu doar spune-mi cum vrei să arate.” Ce ai alege?</p>
+
+    <div class="words">
+      <div>🌊 Să te trezești și primul lucru pe care îl vezi să fie marea</div>
+      <div>🏝️ O plajă cu apă atât de limpede încât să nu-ți vină să mai pleci</div>
+      <div>☕ Cafeaua de dimineață pe balcon, fără alarmă și fără grabă</div>
+      <div>🍹 All Inclusive, iar singura decizie a zilei: plajă sau piscină?</div>
+      <div>🚗 Mașina închiriată și în fiecare zi altă plajă, alt sat, alt restaurant</div>
+      <div>🏛️ Străduțe vechi, locuri noi și 300 de poze seara</div>
+      <div>❤️ Sau nici nu contează unde, atâta timp cât lângă tine e omul potrivit</div>
+    </div>
+
+    <p>Aici începe, de fapt, alegerea unei vacanțe. Nu cu hotelul. Nu cu numărul de stele. Nu cu destinația. Ci cu întrebarea:</p>
+    <div class="quote">„Cum vreau să mă simt în vacanța asta?”</div>
+    <p>Două persoane pot merge în exact același loc, iar una să spună „a fost vacanța vieții mele”, cealaltă „nu m-aș mai întoarce”. Și ambele pot avea dreptate. Vacanța perfectă nu e neapărat cea pe care o vezi cel mai des pe Facebook. E cea care ți se potrivește ție.</p>
+
+    <div class="sfat">
+      <strong>Provocarea:</strong> descrie-ți vacanța perfectă în doar 3 cuvinte.
+      <div class="rules"><span>Fără țări</span><span>Fără hoteluri</span><span>Fără prețuri</span><span class="ok">Doar 3 cuvinte</span></div>
+      Trimite-mi-le și îți spun ce destinație cred că ți s-ar potrivi.
+    </div>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 2 -->
+<section class="s" id="hoteluri-5-stele">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 2</div>
+    <h2>Două hoteluri de 5★ pot oferi experiențe complet diferite</h2>
+    <p class="intro">„Am găsit un hotel de 5★ mai ieftin. De ce să-l aleg pe celălalt?” E una dintre cele mai bune întrebări pe care le poate pune un turist. Pentru că numărul de stele nu spune întreaga poveste.</p>
+
+    <div class="split">
+      <div>
+        <h3 style="margin-top:0">Cele 8 lucruri pe care le verific când compar două hoteluri</h3>
+        <div class="grid-2">
+          <div class="item"><span class="ico">🏖️</span><h4>Plaja</h4><p>Nisip sau pietriș? Intrare lină în apă? E potrivită pentru copii?</p></div>
+          <div class="item"><span class="ico">📍</span><h4>Poziționarea</h4><p>Cât e până la aeroport, centru sau obiectivele importante?</p></div>
+          <div class="item"><span class="ico">🍽️</span><h4>Conceptul de masă</h4><p>Un All Inclusive poate fi foarte diferit de la un hotel la altul.</p></div>
+          <div class="item"><span class="ico">🛏️</span><h4>Camera</h4><p>Suprafață, renovare, configurație și dacă găzduiește confortabil familia.</p></div>
+          <div class="item"><span class="ico">👧</span><h4>Facilitățile pentru copii</h4><p>Aquapark, mini-club, piscine, animație.</p></div>
+          <div class="item"><span class="ico">🍹</span><h4>Serviciile incluse</h4><p>Băuturi, restaurante à la carte, minibar, snack-uri.</p></div>
+          <div class="item"><span class="ico">💬</span><h4>Recenziile recente</h4><p>Ce spun turiștii despre curățenie, mâncare și servicii.</p></div>
+          <div class="item"><span class="ico">👨‍👩‍👧‍👦</span><h4>Cine merge în vacanță</h4><p>Cel mai important criteriu dintre toate.</p></div>
+        </div>
+      </div>
+      <img src="ghid-hoteluri-5-stele.jpeg" alt="Infografic: două hoteluri de 5 stele pot oferi experiențe complet diferite" loading="lazy">
+    </div>
+
+    <p style="margin-top:26px">Un hotel extraordinar pentru un cuplu poate să nu fie cea mai bună alegere pentru o familie cu doi copii. Iar hotelul perfect pentru o familie poate să nu fie ce își dorește un cuplu care caută liniște.</p>
+
+    <div class="vs">
+      <div class="side no"><strong>❌ Nu caut</strong><br>„Cel mai ieftin hotel de 5★”</div>
+      <div class="mid">VS</div>
+      <div class="side yes"><strong>✅ Caut</strong><br>Hotelul care se potrivește cel mai bine cu ce îți dorești tu de la vacanță</div>
+    </div>
+
+    <div class="concluzie">
+      <h4>Concluzia</h4>
+      <p>Uneori diferența dintre o vacanță „ok” și una despre care povestești ani întregi stă tocmai în aceste detalii. Vacanța potrivită nu e întotdeauna cea mai ieftină sau cea cu cele mai multe stele. E cea aleasă corect.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 3 -->
+<section class="s" id="albania">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 3 · Destinația zilei</div>
+    <h2>Albania 🇦🇱 — apă turcoaz, situri UNESCO și altceva decât clasicul</h2>
+    <p class="intro">Pentru cine caută mare spectaculoasă, peisaje frumoase, excursii și o atmosferă mediteraneană, dar vrea să încerce altceva decât destinațiile de fiecare vară.</p>
+
+    <h3>Unde mergem pentru plajă?</h3>
+    <div class="grid-3">
+      <div class="item place"><h4>💙 Ksamil</h4><p>Cea mai cunoscută imagine a litoralului albanez: apă turcoaz, golfuri și insulițe foarte aproape de coastă. Superb, dar foarte aglomerat în plin sezon.</p></div>
+      <div class="item place"><h4>🌊 Sarandë</h4><p>Una dintre principalele stațiuni din sud. Mare, restaurante, promenadă și excursii ușor de făcut în zonă.</p></div>
+      <div class="item place"><h4>🏝️ Himarë</h4><p>Plaje frumoase și o atmosferă mai relaxată. În împrejurimi: Gjipe, Livadhi și Jale.</p></div>
+      <div class="item place"><h4>💎 Dhërmi</h4><p>Apă superbă, peisaje spectaculoase și atmosferă mai animată. Bună pentru cupluri și tineri.</p></div>
+      <div class="item place"><h4>🌅 Vlorë</h4><p>Locul unde Adriatica întâlnește Marea Ionică. O bază bună pentru a combina litoralul cu explorarea coastei.</p></div>
+    </div>
+
+    <h3>Dar Albania nu înseamnă doar plajă</h3>
+    <div class="grid-3">
+      <div class="item place u"><h4>📍 Butrint</h4><p>Unul dintre cele mai importante situri arheologice ale țării. Se combină ușor cu o vacanță în zona Sarandë–Ksamil.</p><span class="tag">UNESCO</span></div>
+      <div class="item place u"><h4>🏰 Gjirokastër</h4><p>Oraș istoric cu arhitectură tradițională și o cetate impresionantă. Perfect dacă nu vrei 7 zile pe șezlong.</p><span class="tag">UNESCO</span></div>
+      <div class="item place u"><h4>🏘️ Berat</h4><p>„Orașul celor o mie de ferestre”, una dintre imaginile emblematice ale Albaniei.</p><span class="tag">UNESCO</span></div>
+      <div class="item place"><h4>💦 Blue Eye (Syri i Kaltër)</h4><p>Izvor natural renumit pentru culoarea intensă a apei. O excursie foarte frumoasă din sud.</p></div>
+      <div class="item place"><h4>⛰️ Alpii Albanezi</h4><p>Theth și Valbona, pentru iubitorii de natură și drumeții. Pot transforma vacanța într-un circuit.</p></div>
+    </div>
+
+    <h3>Ce mâncăm?</h3>
+    <p>O bucătărie cu influențe mediteraneene și balcanice: pește și fructe de mare pe coastă, carne, legume, brânzeturi și preparate tradiționale precum <strong>byrek</strong> (plăcintă cu foi) sau <strong>tavë kosi</strong> (miel la cuptor cu iaurt și ouă).</p>
+
+    <h3>Cui i se potrivește Albania?</h3>
+    <ul class="check" style="max-width:760px">
+      <li>Familiilor care vor mare și plajă, dacă zona și hotelul sunt alese atent</li>
+      <li>Cuplurilor care vor plaje, plimbări și restaurante</li>
+      <li>Turiștilor activi care închiriază mașină și vor să descopere mai multe locuri</li>
+      <li>Celor care s-au săturat de aceleași destinații în fiecare vară</li>
+      <li>Celor care vor să combine marea cu excursii și obiective turistice</li>
+    </ul>
+
+    <div class="sfat">
+      <strong>Ce e bine să știi înainte:</strong> Albania nu e „o Turcie mai ieftină”. Experiența e diferită. Standardul hotelier și serviciile variază mult de la o proprietate la alta, iar All Inclusive-ul nu e același cu cel din resorturile mari din Turcia. De aceea alegem hotelul după tine, nu după stele și preț. Și dacă vrei să vezi plajele și obiectivele, vorbim și despre transport, nu doar despre cazare.
+    </div>
+
+    <div class="concluzie">
+      <h4>Pe scurt</h4>
+      <p>Dacă îți dorești apă turcoaz, plaje spectaculoase și o vacanță în care într-o zi stai la mare, iar în următoarea descoperi un sit antic, un izvor spectaculos sau un oraș UNESCO, hai să ne uităm și la Albania.</p>
+    </div>
+    <p style="margin-top:18px">🏖️ Cauți hotel direct la mare? Vezi <a href="#top10-albania">top 10 hoteluri cu plajă privată în Albania</a>.</p>
+    <figure class="fig"><img src="ghid-descopera-albania.jpeg" alt="Infografic: descoperă Albania — plaje, obiective turistice, gastronomie și ce e bine de știut" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 4 -->
+<section class="s" id="septembrie">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 4</div>
+    <h2>Vara nu se termină în septembrie</h2>
+    <p class="intro">Vreme excelentă, prețuri mai bune decât în plin sezon și mai multă disponibilitate la hotelurile de top. Cinci destinații în care marea e încă vară.</p>
+
+    <div class="sept">
+      <div class="item" style="--c:#c8323c"><h4>🇹🇷 Turcia</h4><p>Hoteluri de top și plaje spectaculoase.</p><ul><li>✔ All Inclusive</li><li>✔ Resorturi cu aquapark</li><li>✔ Familii și cupluri</li></ul></div>
+      <div class="item" style="--c:#d9822b"><h4>🇨🇾 Cipru</h4><p>Apă cristalină și ospitalitate mediteraneană.</p><ul><li>✔ Zbor direct</li><li>✔ Hoteluri pe plajă</li><li>✔ Relaxare și distracție</li></ul></div>
+      <div class="item" style="--c:#1d5fb4"><h4>🇬🇷 Rodos</h4><p>Atmosferă grecească și apă turcoaz.</p><ul><li>✔ Zbor direct</li><li>✔ Hoteluri pentru toate bugetele</li><li>✔ Plaje premiate</li></ul></div>
+      <div class="item" style="--c:#2f8a4f"><h4>🇬🇷 Creta</h4><p>Insula zeilor, plaje exotice și peisaje uimitoare.</p><ul><li>✔ Zbor direct</li><li>✔ Hoteluri cu vedere la mare</li><li>✔ Cultură și gastronomie</li></ul></div>
+      <div class="item" style="--c:#6b3fa0"><h4>🇪🇬 Egipt</h4><p>Soare din plin și All Inclusive la prețuri bune.</p><ul><li>✔ All Inclusive</li><li>✔ Hoteluri cu recif</li><li>✔ Distracție pentru toată familia</li></ul></div>
+    </div>
+
+    <div class="split" style="margin-top:30px">
+      <div>
+        <p>Ai concediu în septembrie? Cu perechea, cu copiii sau cu prietenii, spune-mi bugetul și aeroportul de plecare, iar eu îți caut vacanța potrivită. Zboruri directe din București și din toate regiunile, consultanță personalizată și asistență pe toată durata vacanței.</p>
+        <div class="sfat"><strong>Sfatul consultantului:</strong> Egiptul rămâne cald și după septembrie, deci e o opțiune bună și pentru octombrie–noiembrie, când Grecia și Cipru se răcoresc.</div>
+      </div>
+      <img src="ghid-septembrie.jpeg" alt="Infografic: vara nu se termină în septembrie — Turcia, Cipru, Rodos, Creta, Egipt" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 5 -->
+<section class="s" id="exotic">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 5</div>
+    <h2>Când e cel mai bine să mergi în destinațiile exotice?</h2>
+    <p class="intro">Maldive în august? Zanzibar în aprilie? Thailanda în septembrie? O vacanță exotică nu înseamnă doar unde mergi, ci și când. Alege luna și vezi ce colț de paradis i se potrivește.</p>
+
+    <div class="months" role="group" aria-label="Alege luna">
+      <button type="button" data-m="0">Ianuarie</button>
+      <button type="button" data-m="1">Februarie</button>
+      <button type="button" data-m="2">Martie</button>
+      <button type="button" data-m="3">Aprilie</button>
+      <button type="button" data-m="4">Mai</button>
+      <button type="button" data-m="5">Iunie</button>
+      <button type="button" data-m="6">Iulie</button>
+      <button type="button" data-m="7">August</button>
+      <button type="button" data-m="8">Septembrie</button>
+      <button type="button" data-m="9">Octombrie</button>
+      <button type="button" data-m="10">Noiembrie</button>
+      <button type="button" data-m="11">Decembrie</button>
+    </div>
+    <div class="month-panel" id="monthPanel" aria-live="polite"></div>
+
+    <div class="legend">
+      <div class="item"><h4>🌊 Maldive</h4><p>Lagune incredibil de albastre</p></div>
+      <div class="item"><h4>🌴 Mauritius &amp; Seychelles</h4><p>Natură și plaje spectaculoase</p></div>
+      <div class="item"><h4>🐘 Thailanda &amp; Sri Lanka</h4><p>Exotism, cultură și aventură</p></div>
+      <div class="item"><h4>🦁 Zanzibar &amp; Kenya</h4><p>Plajă și safari în aceeași vacanță</p></div>
+      <div class="item"><h4>🥥 Bali</h4><p>Temple, junglă și plaje</p></div>
+      <div class="item"><h4>🌺 Caraibe &amp; Mexic</h4><p>Vacanța pe care o vezi în filme</p></div>
+      <div class="item"><h4>✨ Dubai &amp; Oman</h4><p>Soare și răsfăț când în Europa e frig</p></div>
+    </div>
+
+    <div class="sfat">
+      <strong>De reținut:</strong> sezonul ploios nu înseamnă ploaie continuă, ci averse scurte și puternice. În Caraibe, sezonul uraganelor e 1 iunie – 30 noiembrie.
+    </div>
+
+    <div class="split" style="margin-top:30px">
+      <div>
+        <p>💡 Salvează pagina. Îți va fi de folos când începi să te gândești la următoarea vacanță.</p>
+        <p>Nu știi ce destinație să alegi? Spune-mi în ce lună vrei să pleci, cu cine călătorești și ce buget ai, iar eu îți recomand variantele potrivite.</p>
+        <div class="quote">Hai să transformăm „mi-ar plăcea să ajung acolo într-o zi” în „când plecăm?”</div>
+      </div>
+      <img src="ghid-calendar-exotic.jpeg" alt="Calendarul destinațiilor exotice, lună cu lună" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 6 -->
+<section class="s" id="grifid">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 6 · Știai că?</div>
+    <h2>📚 La Nisipurile de Aur, vacanța are acum și o bibliotecă în română</h2>
+    <p class="intro">Plajă, relaxare, mâncare bună și o carte captivantă. IRI Travel a amenajat biblioteci în limba română în hotelurile GRIFID, ca oaspeții să citească ce le place chiar în timpul sejurului.</p>
+
+    <div class="split">
+      <div>
+        <h3 style="margin-top:0">Peste 500 de cărți, pentru toate gusturile</h3>
+        <div class="genres">
+          <span>❤️ Romane de dragoste</span><span>🔎 Mister și aventură</span><span>📚 Literatură clasică</span><span>🌱 Dezvoltare personală</span><span>👧 Cărți pentru copii</span><span>✨ Multe alte titluri</span>
+        </div>
+        <h3>Unde le găsești</h3>
+        <div class="hotels">
+          <div>GRIFID Noa <em>5★</em></div>
+          <div>GRIFID Vistamar <em>4★</em></div>
+          <div>GRIFID Metropol <em>4★ · 16+</em></div>
+          <div>GRIFID Arabella <em>4★</em></div>
+          <div>GRIFID Encanto Beach <em>4★</em></div>
+          <div>Sentido Marea <em>4★</em></div>
+          <div>GRIFID Bolero <em>4★</em></div>
+          <div>GRIFID Foresta <em>3★</em></div>
+        </div>
+      </div>
+      <img src="ghid-grifid-biblioteca.jpeg" alt="Bibliotecă cu peste 500 de cărți în limba română în hotelurile GRIFID" loading="lazy">
+    </div>
+
+    <div class="sfat">
+      <strong>Sfatul consultantului:</strong> GRIFID Metropol este hotel Adults Only (16+). Pentru familii cu copii mici, alegem din celelalte șapte. Un motiv în plus să-mi spui cine merge în vacanță.
+    </div>
+    <div class="concluzie">
+      <h4>Vacanță completă</h4>
+      <p>Mare, soare și lecturi de neuitat, la 8 hoteluri din Nisipurile de Aur. Bulgaria, la câteva ore de mers cu mașina din București.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 7 -->
+<section class="s" id="rate">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 7</div>
+    <h2>Vacanța în rate: pleci acum, plătești treptat</h2>
+    <p class="intro">Plata în rate prin TBI Bank nu e despre un credit, ci despre o soluție prin care îți permiți vacanța dorită fără să-ți dezechilibrezi bugetul lunar. Iată de ce o aleg tot mai mulți turiști.</p>
+
+    <div class="example" aria-label="Exemplu orientativ">
+      <div class="box"><small>Pachet de vacanță</small><b>8.000 lei</b><small>dintr-odată</small></div>
+      <div class="arrow">→</div>
+      <div class="box"><small>împărțit în 12 luni</small><b>≈ 670 lei</b><small>pe lună*</small></div>
+    </div>
+
+    <div class="reasons" style="margin-top:26px">
+      <div class="reason"><h4>Nu mai amâni vacanța</h4><p>„Mai strâng bani și merg anul viitor.” De ce să amâni amintirile cu familia, când poți pleca acum și plăti treptat?</p></div>
+      <div class="reason"><h4>O sumă lunară ușor de inclus în buget</h4><p>8.000 lei par mult dintr-odată. Aproximativ 670 lei pe lună se potrivesc mai ușor în bugetul familiei.</p></div>
+      <div class="reason"><h4>Îți blochezi prețul și locul</h4><p>Dacă aștepți, prețurile pot crește, locurile bune se ocupă și zborurile se scumpesc.</p></div>
+      <div class="reason"><h4>Îți păstrezi economiile</h4><p>Nu consumi toți banii puși deoparte. Rămâi cu o rezervă pentru situații neprevăzute.</p></div>
+      <div class="reason"><h4>Mai mult confort</h4><p>Poți alege un hotel mai bun, All Inclusive, o cameră superioară sau destinația pe care ți-o dorești cu adevărat.</p></div>
+      <div class="reason"><h4>Investești în experiențe</h4><p>Lucrurile cumpărate se uită repede. Amintirile din vacanță rămân ani întregi.</p></div>
+      <div class="reason"><h4>Fără presiunea economisirii</h4><p>Nu e ușor să pui bani deoparte disciplinat. Ratele îți dau un plan clar de plată.</p></div>
+      <div class="reason"><h4>Prinzi reducerile Early Booking</h4><p>Rezervi acum, păstrezi reducerea și întinzi plata pe mai multe luni.</p></div>
+      <div class="reason"><h4>Mai multe vacanțe, nu doar una</h4><p>Concediul de vară, city break-ul de toamnă și vacanța de iarnă, fără să scoți toți banii odată.</p></div>
+      <div class="reason"><h4>Proces simplu și rapid</h4><p>În câteva minute verificăm eligibilitatea, iar dacă finanțarea e aprobată, rezervăm vacanța imediat.</p></div>
+    </div>
+
+    <div class="concluzie">
+      <h4>Pe scurt</h4>
+      <p>O vacanță e o investiție în timpul petrecut cu familia și în starea ta de bine. Ratele fac doar ca ea să înceapă mai devreme.</p>
+    </div>
+
+    <p class="legal">* Exemplu strict orientativ, care împarte prețul pachetului la numărul de luni și nu include eventualele costuri ale finanțării. Rata lunară efectivă, dobânda, DAE și valoarea totală plătibilă depind de oferta TBI Bank în vigoare și de aprobarea finanțării, și îți sunt comunicate înainte de semnare. Finanțarea este oferită de TBI Bank, sub rezerva analizei de eligibilitate.</p>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 8 -->
+<section class="s" id="all-inclusive">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 8 · Știi ce plătești?</div>
+    <h2>🍹 All Inclusive vs. Ultra All Inclusive: care e diferența?</h2>
+    <p class="intro">„Dacă am All Inclusive, nu înseamnă că am totul inclus?” Nu neapărat. Și aici apare una dintre cele mai frecvente confuzii atunci când alegem o vacanță.</p>
+
+    <div class="ai">
+      <div class="col std">
+        <h3>🍽️ All Inclusive</h3>
+        <ul>
+          <li><b>Mese principale</b><span>Mic dejun, prânz și cină în restaurantul principal.</span></li>
+          <li><b>Gustări</b><span>În anumite intervale orare, în locațiile stabilite de hotel.</span></li>
+          <li><b>Băuturi răcoritoare</b><span>Apă, sucuri, ceai, cafea filtrată, la mese și la baruri, în program.</span></li>
+          <li><b>Băuturi alcoolice locale</b><span>Bere, vin, băuturi spirtoase locale, în programul stabilit.</span></li>
+          <li><b>Activități și facilități</b><span>Piscine, plajă, șezlonguri, animație și unele sporturi nemotorizate.</span></li>
+        </ul>
+      </div>
+      <div class="mid">VS</div>
+      <div class="col ult">
+        <h3>👑 Ultra All Inclusive</h3>
+        <ul>
+          <li><b>Program extins</b><span>Mâncare și băuturi de la micul dejun timpuriu până la gustările târzii.</span></li>
+          <li><b>Mai multe gustări</b><span>Snack-uri, înghețată, cafea, clătite pe parcursul zilei.</span></li>
+          <li><b>Băuturi de import și premium</b><span>De regulă, băuturi internaționale, cocktailuri, cafea la bar, fresh-uri.</span></li>
+          <li><b>Minibar inclus</b><span>Răcoritoare, bere, apă, realimentat zilnic.</span></li>
+          <li><b>Restaurante à la carte</b><span>Restaurante tematice, de obicei cu rezervare prealabilă.</span></li>
+          <li><b>Servicii suplimentare</b><span>Room service, spălătorie, prosoape de plajă în cameră, early check-in / late check-out, după disponibilitate.</span></li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:14px;font-size:14.5px;color:var(--muted)">Toate elementele din coloana Ultra depind de hotel: unele le includ pe toate, altele doar o parte.</p>
+
+    <div class="atentie" role="note">
+      <div class="big">⚠️</div>
+      <div>
+        <h4>Atenție: conceptul diferă de la hotel la hotel</h4>
+        <p>„Ultra All Inclusive” nu înseamnă automat că absolut totul e gratuit. Două hoteluri care folosesc exact aceeași denumire pot avea concepte foarte diferite. Citește descrierea conceptului de masă sau cere detalii înainte de rezervare.</p>
+      </div>
+    </div>
+
+    <div class="split" style="margin-top:30px">
+      <div>
+        <p>Când compar două oferte, verific ce include efectiv conceptul de masă al fiecărui hotel. Nu mă opresc la denumirea „All Inclusive” sau „Ultra All Inclusive”.</p>
+        <p>Uneori, un hotel foarte bun cu All Inclusive oferă o experiență mai bună decât un alt hotel care își numește conceptul Ultra All Inclusive.</p>
+        <div class="sfat"><strong>Sfatul consultantului:</strong> două oferte par asemănătoare și nu știi pe care s-o alegi? Trimite-mi hotelurile și te ajut să le compari, punct cu punct. Vezi și <a href="#hoteluri-5-stele">cele 8 criterii de comparare a hotelurilor</a>.</div>
+        <div class="concluzie">
+          <h4>Pe scurt</h4>
+          <p>Nu cumpăra doar denumirea. Compară ceea ce primești pentru banii tăi.</p>
+        </div>
+      </div>
+      <img src="ghid-all-inclusive-vs-ultra.jpeg" alt="Infografic: All Inclusive vs. Ultra All Inclusive — diferențe care contează" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 9 -->
+<section class="s" id="concepte-masa">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 9</div>
+    <h2>BB, HB, HB+, FB, FB+: ce înseamnă toate aceste prescurtări?</h2>
+    <p class="intro">Le vezi în fiecare ofertă, dar ce primești de fapt la masă? Și ce băuturi plătești separat? De la micul dejun simplu până la Ultra All Inclusive, iată scara conceptelor de masă.</p>
+    <div class="ladder">
+      <span class="st" style="--c:#2f8a4f">BB</span><i>›</i><span class="st" style="--c:#1d5fb4">HB</span><i>›</i><span class="st" style="--c:#d9822b">HB+</span><i>›</i><span class="st" style="--c:#6b3fa0">FB</span><i>›</i><span class="st" style="--c:#c8323c">FB+</span><i>›</i><a href="#all-inclusive" style="--c:var(--navy)">All Inclusive</a><i>›</i><a href="#all-inclusive" style="--c:var(--navy)">Ultra All Inclusive</a>
+    </div>
+    <div class="cmp" style="--n:5"><div class="cc" style="--c:#2f8a4f"><div class="cc-h"><h3>BB</h3><span>Bed &amp; Breakfast · mic dejun</span></div><div class="row"><h5>Include</h5><ul><li>Cazare + mic dejun tip bufet</li></ul></div><div class="row"><h5>Ideal pentru</h5><p>Cei care vor să descopere destinația și să ia masa în afara hotelului.</p></div></div><div class="cc" style="--c:#1d5fb4"><div class="cc-h"><h3>HB</h3><span>Half Board · demipensiune</span></div><div class="row"><h5>Include</h5><ul><li>Mic dejun tip bufet</li><li>O masă principală, de regulă cina (unele hoteluri oferă mic dejun + prânz)</li><li>Băuturile la mese nu sunt incluse, de regulă</li></ul></div><div class="row"><h5>Ideal pentru</h5><p>Cei care vor confort, dar și flexibilitatea de a lua prânzul sau cina în oraș.</p></div></div><div class="cc" style="--c:#d9822b"><div class="cc-h"><h3>HB+</h3><span>Half Board Plus · demipensiune plus</span></div><div class="row"><h5>Include</h5><ul><li>Mic dejun tip bufet</li><li>O masă principală, de regulă cina</li><li>Băuturi incluse la masa principală: apă, răcoritoare, vin, bere (conform conceptului hotelului)</li></ul></div><div class="row"><h5>Ideal pentru</h5><p>Cei care își doresc confort și băuturi incluse la cină.</p></div></div><div class="cc" style="--c:#6b3fa0"><div class="cc-h"><h3>FB</h3><span>Full Board · pensiune completă</span></div><div class="row"><h5>Include</h5><ul><li>Mic dejun tip bufet</li><li>Prânz tip bufet sau meniu fix</li><li>Cină tip bufet sau meniu fix</li><li>Băuturile la mese nu sunt incluse, de regulă</li></ul></div><div class="row"><h5>Ideal pentru</h5><p>Familii și călători care vor toate mesele incluse, fără băuturi.</p></div></div><div class="cc" style="--c:#c8323c"><div class="cc-h"><h3>FB+</h3><span>Full Board Plus · pensiune completă plus</span></div><div class="row"><h5>Include</h5><ul><li>Mic dejun, prânz și cină</li><li>Băuturi incluse la toate mesele: apă, răcoritoare, vin, bere (conform conceptului hotelului)</li></ul></div><div class="row"><h5>Ideal pentru</h5><p>Cei care vor toate mesele și băuturile incluse, pentru o vacanță fără griji.</p></div></div></div>
+    <div class="atentie" role="note"><div class="big">⚠️</div><div><h4>Important</h4><p>Ce include HB, HB+, FB și FB+ poate diferi de la un hotel la altul. Verifică întotdeauna conceptul de masă înainte de rezervare.</p></div></div>
+    <div class="sfat"><strong>Bine de știut:</strong> citește cu atenție descrierea conceptului de masă al hotelului, întreabă înainte de rezervare dacă ai nelămuriri și alege varianta care se potrivește stilului tău de călătorie. Dacă pleci cu copiii și vrei gustări între mese, merită comparat și <a href="#all-inclusive">All Inclusive</a>.</div>
+    <figure class="fig"><img src="ghid-concepte-masa.jpeg" alt="Infografic: BB, HB, HB+, FB, FB+ — ce înseamnă prescurtările conceptelor de masă" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 10 -->
+<section class="s" id="camere">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 10</div>
+    <h2>Tipuri de cameră: ce înseamnă și care ți se potrivește?</h2>
+    <p class="intro">Standard, Superior, Deluxe, Family sau Suită? Câți metri pătrați primești? Vezi marea sau parcarea? Fiecare hotel folosește denumiri ușor diferite, dar acestea sunt cele mai întâlnite tipuri de cameră.</p>
+    <div class="cmp" style="--n:5"><div class="cc" style="--c:#1d3f7a"><div class="cc-h"><h3>Standard</h3><span>Cameră standard</span></div><div class="row"><h5>Ce este</h5><p>Camera de bază a hotelului: suprafață mai mică, facilități esențiale.</p></div><div class="row"><h5>Capacitate</h5><p>2 adulți</p></div><div class="row"><h5>Suprafață</h5><p>de la 18–25 m²</p></div><div class="row"><h5>Vedere</h5><p>Curte interioară, stradă sau lateral</p></div></div><div class="cc" style="--c:#1f8a9e"><div class="cc-h"><h3>Superior</h3><span>Cameră superioară</span></div><div class="row"><h5>Ce este</h5><p>Mai spațioasă decât standard, cu un plus de confort și, adesea, o vedere mai bună.</p></div><div class="row"><h5>Capacitate</h5><p>2–3 persoane</p></div><div class="row"><h5>Suprafață</h5><p>de la 22–30 m²</p></div><div class="row"><h5>Vedere</h5><p>Piscină, grădină sau parțial spre mare</p></div></div><div class="cc" style="--c:#2f8a4f"><div class="cc-h"><h3>Deluxe</h3><span>Cameră deluxe</span></div><div class="row"><h5>Ce este</h5><p>Confort sporit, design modern, spațiu generos, dotări premium.</p></div><div class="row"><h5>Capacitate</h5><p>2–3 persoane</p></div><div class="row"><h5>Suprafață</h5><p>de la 28–35 m²</p></div><div class="row"><h5>Vedere</h5><p>De obicei, spre mare</p></div></div><div class="cc" style="--c:#6b3fa0"><div class="cc-h"><h3>Family Room</h3><span>Cameră de familie</span></div><div class="row"><h5>Ce este</h5><p>Concepută pentru familii: o cameră spațioasă sau două camere separate cu ușă interioară.</p></div><div class="row"><h5>Capacitate</h5><p>2 adulți + 1–2 copii</p></div><div class="row"><h5>Suprafață</h5><p>de la 30–45 m²</p></div><div class="row"><h5>Configurație</h5><p>1 dormitor sau 2 dormitoare cu ușă interioară</p></div></div><div class="cc" style="--c:#c2185b"><div class="cc-h"><h3>Suită</h3><span>Suite</span></div><div class="row"><h5>Ce este</h5><p>Cea mai spațioasă și elegantă opțiune, de obicei cu dormitor și living separat.</p></div><div class="row"><h5>Capacitate</h5><p>2–4 persoane</p></div><div class="row"><h5>Suprafață</h5><p>de la 40 m² în sus</p></div><div class="row"><h5>Avantaje</h5><p>Spațiu generos, confort de lux, servicii și beneficii extra</p></div></div></div>
+    <div class="grid-2" style="margin-top:24px;max-width:980px">
+      <div class="sfat" style="margin-top:0"><strong>De reținut:</strong><ul class="check" style="margin-top:8px"><li>Dimensiunea camerei variază de la un hotel la altul.</li><li>Vederea camerei influențează prețul.</li><li>Pentru familii, alege camera după numărul de persoane și confortul dorit.</li></ul></div>
+      <div class="sfat" style="margin-top:0"><strong>Sfatul meu:</strong><ul class="check" style="margin-top:8px"><li>Cere detalii despre cameră înainte de rezervare.</li><li>Verifică pozele reale și recenziile recente ale turiștilor.</li><li>Asigură-te că se potrivește nevoilor și bugetului tău.</li></ul></div>
+    </div>
+    <div class="concluzie"><h4>Pe scurt</h4><p>O cameră potrivită înseamnă o vacanță reușită. Spune-mi ce îți dorești de la vacanță și alegem împreună camera potrivită.</p></div>
+    <figure class="fig"><img src="ghid-tipuri-camera.jpeg" alt="Infografic: tipuri de cameră — Standard, Superior, Deluxe, Family Room, Suită" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 11 -->
+<section class="s" id="tipuri-vacanta">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 11</div>
+    <h2>Circuit, croazieră, charter sau doar cazare: care e diferența?</h2>
+    <p class="intro">Vrei să vezi 5 orașe într-o săptămână? Vrei să te trezești în fiecare dimineață în alt port? Sau vrei doar zborul direct, hotelul și transferul, fără bătăi de cap? Alege tipul de vacanță potrivit pentru tine.</p>
+    <div class="cmp" style="--n:4"><div class="cc" style="--c:#6b3fa0"><div class="cc-h"><h3>Circuit</h3><span>Tour</span></div><div class="row"><h5>Ce este</h5><p>Descoperi mai multe locuri într-o singură vacanță, după un itinerar bine stabilit.</p></div><div class="row"><h5>Avantaje</h5><ul><li>Mai multe orașe și obiective în aceeași călătorie</li><li>Transport inclus: autocar, avion sau tren</li><li>Ghid însoțitor</li><li>Program organizat</li></ul></div><div class="row"><h5>De obicei include</h5><ul><li>Cazare</li><li>Mic dejun sau pensiune completă, în funcție de program</li><li>Vizite și excursii conform programului</li></ul></div><div class="row"><h5>Ideal pentru</h5><p>Cei care vor să descopere locuri noi și să aibă parte de experiențe culturale și organizare completă.</p></div></div><div class="cc" style="--c:#1f8a9e"><div class="cc-h"><h3>Croazieră</h3><span>Cruise</span></div><div class="row"><h5>Ce este</h5><p>O vacanță pe mare, în care te bucuri de confortul unui hotel care călătorește cu tine.</p></div><div class="row"><h5>Avantaje</h5><ul><li>Nave moderne și confortabile</li><li>Vizite în mai multe porturi</li><li>Mese și divertisment la bord</li><li>Peisaje spectaculoase</li></ul></div><div class="row"><h5>De obicei include</h5><ul><li>Cazare în cabină</li><li>Pensiune completă la bord</li><li>Divertisment și activități la bord</li><li>Porturile și taxele portuare</li></ul></div><div class="row"><h5>Ideal pentru</h5><p>Cei care vor relaxare, confort și experiențe variate, fără să își facă griji pentru logistică.</p></div></div><div class="cc" style="--c:#d9822b"><div class="cc-h"><h3>Pachet charter</h3><span>Zbor + cazare + transfer</span></div><div class="row"><h5>Ce este</h5><p>Zbor special (charter) către destinații de vacanță, la pachet cu cazare și transferuri.</p></div><div class="row"><h5>Avantaje</h5><ul><li>Zbor direct către destinație</li><li>Prețuri atractive</li><li>Transfer aeroport–hotel–aeroport inclus</li><li>Operator turistic responsabil de pachet</li></ul></div><div class="row"><h5>De obicei include</h5><ul><li>Zbor charter dus-întors</li><li>Cazare</li><li>Transferuri</li><li>Asistență turistică</li></ul></div><div class="row"><h5>Ideal pentru</h5><p>Cei care vor o vacanță complet organizată, fără bătăi de cap, la un preț bun.</p></div></div><div class="cc" style="--c:#2f8a4f"><div class="cc-h"><h3>Doar cazare</h3><span>Hotel</span></div><div class="row"><h5>Ce este</h5><p>Rezervi doar cazarea, iar de restul te ocupi tu: transport, masă, activități.</p></div><div class="row"><h5>Avantaje</h5><ul><li>Flexibilitate totală</li><li>Alegi zborul, transportul și masa cum dorești</li><li>Ideal pentru city break sau vacanțe personalizate</li></ul></div><div class="row"><h5>De obicei include</h5><ul><li>Doar cazarea, cu tipul de masă ales</li></ul></div><div class="row"><h5>Ideal pentru</h5><p>Cei care preferă libertatea de a-și organiza vacanța exact cum vor.</p></div></div></div>
+    <div class="atentie" role="note"><div class="big">⚠️</div><div><h4>Important</h4><p>Conținutul pachetelor variază în funcție de operator și destinație. Citește întotdeauna detaliile ofertei înainte de rezervare.</p></div></div>
+    <div class="tips">
+      <div><b>1. Stilul tău</b>Cum îți place să călătorești?</div>
+      <div><b>2. Bugetul</b>Cât vrei să investești în vacanță?</div>
+      <div><b>3. Perioada</b>Când poți pleca?</div>
+      <div><b>4. Spune-mi</b>Ce îți dorești, iar eu te ajut să alegi.</div>
+    </div>
+    <figure class="fig"><img src="ghid-tipuri-vacanta.jpeg" alt="Infografic: circuit, croazieră, pachet charter sau doar cazare — care este diferența" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 12 -->
+<section class="s" id="riviera-turca">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 12 · Turcia</div>
+    <h2>Antalya, Side, Belek sau Alanya: ce stațiune ți se potrivește?</h2>
+    <p class="intro">Vrei oraș și shopping? Vrei ruine antice la 5 minute de plajă? Vrei golf și resorturi de 5★? Sau vrei viață de noapte și peisaje cu munți? Patru stațiuni pe Riviera Turcească, patru experiențe diferite.</p>
+    <div class="cmp" style="--n:4"><div class="cc" style="--c:#d9822b"><div class="cc-h"><h3>Antalya</h3><span>Oraș și viață vibrantă</span></div><div class="row"><h5>Despre stațiune</h5><p>Combinația dintre oraș și vacanță. Aeroportul e foarte aproape, iar opțiunile de cazare sunt foarte variate.</p></div><div class="row"><h5>Plajă</h5><p>Plaje publice cu pietriș sau nisip, aproape de oraș. Unele hoteluri au plajă privată cu shuttle.</p></div><div class="row"><h5>Hoteluri</h5><p>De la hoteluri de oraș la resorturi mari, cu toate facilitățile.</p></div><div class="row"><h5>Ideal pentru</h5><p>Cei care vor să îmbine marea cu shopping, restaurante, viață de noapte și obiective turistice.</p></div><div class="row"><h5>Transfer de la aeroport</h5><p>10–30 min</p></div></div><div class="cc" style="--c:#2f8a4f"><div class="cc-h"><h3>Side</h3><span>Istorie și relaxare</span></div><div class="row"><h5>Despre stațiune</h5><p>Locul unde istoria întâlnește marea: ruine antice, străduțe cochete și o atmosferă relaxată.</p></div><div class="row"><h5>Plajă</h5><p>Nisip fin, intrare lină în mare. Multe hoteluri au plajă privată excelentă.</p></div><div class="row"><h5>Hoteluri</h5><p>Majoritatea sunt resorturi mari, perfecte pentru familii, cu servicii All Inclusive.</p></div><div class="row"><h5>Ideal pentru</h5><p>Familii cu copii, cupluri și cei care vor relaxare, plaje frumoase și puțină istorie.</p></div><div class="row"><h5>Transfer de la aeroport</h5><p>50–70 min</p></div></div><div class="cc" style="--c:#1d5fb4"><div class="cc-h"><h3>Belek</h3><span>Lux și natură</span></div><div class="row"><h5>Despre stațiune</h5><p>Destinația premium a Rivierei Turcești: lux, natură, golf și resorturi exclusiviste.</p></div><div class="row"><h5>Plajă</h5><p>Nisip fin, plaje late și îngrijite, apă cristalină. Resorturile au plajă privată.</p></div><div class="row"><h5>Hoteluri</h5><p>Resorturi de 5★, foarte luxoase, cu facilități de top și servicii impecabile.</p></div><div class="row"><h5>Ideal pentru</h5><p>Cei care caută lux, confort maxim, golf, wellness și servicii premium.</p></div><div class="row"><h5>Transfer de la aeroport</h5><p>25–40 min</p></div></div><div class="cc" style="--c:#6b3fa0"><div class="cc-h"><h3>Alanya</h3><span>Distracție și peisaje</span></div><div class="row"><h5>Despre stațiune</h5><p>Animată, plină de viață, cu peisaje spectaculoase: munte și mare în același loc.</p></div><div class="row"><h5>Plajă</h5><p>Nisip și pietriș, ape clare, multe plaje cu Steag Albastru. Hoteluri pe plajă și pe stâncă.</p></div><div class="row"><h5>Hoteluri</h5><p>Pentru toate bugetele, de la hoteluri bune la resorturi mari.</p></div><div class="row"><h5>Ideal pentru</h5><p>Tineri, grupuri de prieteni și cei care vor distracție, excursii și viață de noapte.</p></div><div class="row"><h5>Transfer de la aeroport</h5><p>110–130 min (din Antalya)</p></div></div></div>
+    <div class="pick"><div style="--c:#d9822b"><span>Oraș + mare + shopping?</span><b>Alege Antalya</b></div><div style="--c:#2f8a4f"><span>Istorie + plajă + relaxare?</span><b>Alege Side</b></div><div style="--c:#1d5fb4"><span>Lux + natură + golf?</span><b>Alege Belek</b></div><div style="--c:#6b3fa0"><span>Distracție + peisaje + viață de noapte?</span><b>Alege Alanya</b></div></div>
+    <div class="sfat"><strong>Sfatul consultantului:</strong> pentru Alanya, transferul de aproape 2 ore din Antalya contează mai ales cu copii mici. Merită să verificăm și zborurile spre aeroportul Gazipaşa, mult mai aproape, când sunt disponibile. Fiecare stațiune are farmecul ei: alege în funcție de stilul tău de vacanță și de ce contează cel mai mult pentru tine.</div>
+    <figure class="fig"><img src="ghid-riviera-turca.jpeg" alt="Infografic: Antalya vs Side vs Belek vs Alanya — ce stațiune ți se potrivește" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 13 -->
+<section class="s" id="marea-rosie">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 13 · Egipt</div>
+    <h2>Hurghada, Sharm el-Sheikh sau Marsa Alam?</h2>
+    <p class="intro">Vrei sporturi nautice și viață de noapte? Vrei recif de corali la câțiva metri de țărm? Sau vrei liniște și delfini în larg? Trei destinații de vis la Marea Roșie, trei experiențe diferite.</p>
+    <div class="cmp" style="--n:3"><div class="cc" style="--c:#d9822b"><div class="cc-h"><h3>Hurghada</h3><span>Distracție și accesibilitate</span></div><div class="row"><h5>Despre destinație</h5><p>Cea mai cunoscută stațiune de pe coasta Mării Roșii. Atmosferă animată, potrivită pentru orice tip de turist.</p></div><div class="row"><h5>Plajă și mare</h5><ul><li>Nisip fin, intrare lină în mare</li><li>Apă caldă, ideală pentru copii</li><li>Plaje publice și plaje private la hoteluri</li></ul></div><div class="row"><h5>Ce poți face</h5><ul><li>Sporturi nautice: kitesurf, windsurf, jet ski, parasailing</li><li>Excursii: Luxor, Cairo, Insula Utopia, Orange Bay</li><li>Viață de noapte și shopping în Hurghada Marina</li></ul></div><div class="row"><h5>Pentru cine e ideală</h5><ul><li>Familii cu copii</li><li>Cupluri și grupuri de prieteni</li><li>Cei care vor distracție și activități diverse</li></ul></div><div class="row"><h5>Transfer de la aeroport</h5><p>10–25 min</p></div><div class="row"><h5>Prețuri</h5><p>€ · cele mai accesibile dintre cele trei</p></div></div><div class="cc" style="--c:#c2185b"><div class="cc-h"><h3>Sharm el-Sheikh</h3><span>Natură și aventură</span></div><div class="row"><h5>Despre destinație</h5><p>La poalele munților Sinai: peisaje spectaculoase, recif de top și un mix între relaxare și aventură.</p></div><div class="row"><h5>Plajă și mare</h5><ul><li>Plaje superbe, apă cristalină</li><li>Recif aproape de țărm în multe zone</li><li>Perfect pentru snorkeling și scufundări</li></ul></div><div class="row"><h5>Ce poți face</h5><ul><li>Scufundări și snorkeling în Parcul Național Ras Mohammed</li><li>Excursii: Muntele Sinai și Mănăstirea Sf. Ecaterina, Dahab, Blue Hole</li><li>Safari în deșert cu buggy, ATV sau cămilă</li></ul></div><div class="row"><h5>Pentru cine e ideală</h5><ul><li>Cupluri și lună de miere</li><li>Iubitori de natură și aventură</li><li>Cei care vor experiențe subacvatice și în deșert</li></ul></div><div class="row"><h5>Transfer de la aeroport</h5><p>15–30 min</p></div><div class="row"><h5>Prețuri</h5><p>€€ · medii spre ridicate, în funcție de zonă și sezon</p></div></div><div class="cc" style="--c:#2f8a4f"><div class="cc-h"><h3>Marsa Alam</h3><span>Relaxare și natură sălbatică</span></div><div class="row"><h5>Despre destinație</h5><p>Mai liniștită și mai autentică. Pentru iubitorii de natură, recifuri virgine și relaxare totală în resorturi de top.</p></div><div class="row"><h5>Plajă și mare</h5><ul><li>Plaje cu nisip fin, neaglomerate</li><li>Recifuri spectaculoase și variate</li><li>Snorkeling direct de la mal în unele zone</li></ul></div><div class="row"><h5>Ce poți face</h5><ul><li>Snorkeling și scufundări în recifuri puțin atinse</li><li>Excursii: El Quseir, Wadi El Gemal, Sataya (delfini)</li><li>Relaxare în resort, departe de agitație</li></ul></div><div class="row"><h5>Pentru cine e ideală</h5><ul><li>Iubitori de liniște și natură</li><li>Pasionați de snorkeling și scufundări</li><li>Cei care vor relaxare totală în resorturi de lux</li></ul></div><div class="row"><h5>Transfer de la aeroport</h5><p>45–90 min</p></div><div class="row"><h5>Prețuri</h5><p>€€ · medii, raport calitate-preț excelent, mai ales în afara vârfului de sezon</p></div></div></div>
+    <div class="pick"><div style="--c:#d9822b"><span>Distracție, viață de noapte și activități?</span><b>Alege Hurghada</b></div><div style="--c:#c2185b"><span>Natură, recifuri și aventură?</span><b>Alege Sharm el-Sheikh</b></div><div style="--c:#2f8a4f"><span>Liniște, relaxare și peisaje sălbatice?</span><b>Alege Marsa Alam</b></div></div>
+    <div class="tips">
+      <div><b>Cel mai bun sezon</b>Martie–iunie și septembrie–noiembrie</div>
+      <div><b>Soare</b>Cremă cu protecție solară, pălărie și hidratare</div>
+      <div><b>Snorkeling</b>Echipamentul propriu face diferența</div>
+      <div><b>Foto</b>Un aparat foto subacvatic e aproape obligatoriu</div>
+      <div><b>Siguranță</b>Asigurarea medicală de călătorie e întotdeauna importantă</div>
+    </div>
+    <p style="margin-top:22px">🛝 Pleci cu copiii? Vezi <a href="#aquapark-egipt">top hoteluri cu aquapark din Egipt</a>.</p>
+    <figure class="fig"><img src="ghid-marea-rosie.jpeg" alt="Infografic: Hurghada vs Sharm el-Sheikh vs Marsa Alam" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 14 -->
+<section class="s" id="insule-grecesti">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 14 · Grecia</div>
+    <h2>Creta, Rhodos, Zakynthos sau Corfu: ce insulă ți se potrivește?</h2>
+    <p class="intro">Vrei plaje cu nisip roz și situri minoice? Vrei un oraș medieval al cavalerilor? Vrei apă turcoaz ca în pozele de pe Instagram? Sau vrei cea mai verde insulă a Greciei? Patru insule superbe, patru experiențe diferite.</p>
+    <div class="cmp" style="--n:4"><div class="cc" style="--c:#1d5fb4"><div class="cc-h"><h3>Creta</h3><span>Diversitate și istorie</span></div><div class="row"><h5>Despre insulă</h5><p>Cea mai mare insulă grecească, plină de contraste: plaje superbe, munți, sate tradiționale, istorie și gastronomie.</p></div><div class="row"><h5>Plaje</h5><p>Nisip fin (Elafonissi, Vai), lagune (Balos), golfulețe ascunse și plaje lungi, organizate.</p></div><div class="row"><h5>Ideal pentru</h5><p>Familii, cupluri, aventurieri, iubitori de natură, istorie și gastronomie.</p></div><div class="row"><h5>Atracții de top</h5><ul><li>Palatul Knossos</li><li>Laguna Balos</li><li>Plaja Elafonissi</li><li>Defileul Samaria</li><li>Chania și Rethymnon</li></ul></div><div class="row"><h5>Transfer de la aeroport</h5><ul><li>Heraklion – stațiunile principale: 1–2 h</li><li>Chania – stațiunile principale: 30 min – 1 h 30</li></ul></div><div class="row"><h5>Perioada ideală</h5><p>Mai–octombrie: sezon lung, climă blândă și în extrasezon</p></div><div class="row"><h5>Prețuri</h5><p>$$ · medii, pentru toate bugetele</p></div></div><div class="cc" style="--c:#2f8a4f"><div class="cc-h"><h3>Rhodos</h3><span>Soare și cultură</span></div><div class="row"><h5>Despre insulă</h5><p>Insula cavalerilor: plaje frumoase, monumente istorice și viață de noapte animată.</p></div><div class="row"><h5>Plaje</h5><p>Nisip sau pietriș, ape cristaline, multe plaje organizate și premiate (Tsambika, Faliraki).</p></div><div class="row"><h5>Ideal pentru</h5><p>Cupluri, familii, iubitori de istorie, petrecăreți și căutători de confort.</p></div><div class="row"><h5>Atracții de top</h5><ul><li>Orașul medieval Rhodos</li><li>Lindos și Acropola</li><li>Valea Fluturilor</li><li>Plaja Tsambika</li><li>Satul tradițional Embona</li></ul></div><div class="row"><h5>Transfer de la aeroport (RHO)</h5><ul><li>Faliraki: 20–30 min</li><li>Lindos: 45–60 min</li><li>Rhodos Town: 20–30 min</li></ul></div><div class="row"><h5>Perioada ideală</h5><p>Mai–octombrie; vârful sezonului: iulie–august</p></div><div class="row"><h5>Prețuri</h5><p>$$–$$$ · de la hoteluri accesibile la resorturi de lux</p></div></div><div class="cc" style="--c:#c2185b"><div class="cc-h"><h3>Zakynthos</h3><span>Natură și peisaje spectaculoase</span></div><div class="row"><h5>Despre insulă</h5><p>Cunoscută pentru plajele spectaculoase, apa turcoaz și faimoasa plajă a Epavei (Navagio). Pentru iubitorii de natură.</p></div><div class="row"><h5>Plaje</h5><p>Unele dintre cele mai fotografiate plaje din lume: Navagio, Porto Limnionas, Gerakas, Laganas.</p></div><div class="row"><h5>Ideal pentru</h5><p>Tineri, cupluri, iubitori de natură și peisaje spectaculoase.</p></div><div class="row"><h5>Atracții de top</h5><ul><li>Plaja Navagio (Epava)</li><li>Blue Caves</li><li>Porto Limnionas</li><li>Parcul Marin Zakynthos</li><li>Excursii cu barca</li></ul></div><div class="row"><h5>Transfer de la aeroport (ZTH)</h5><ul><li>Laganas: 10–20 min</li><li>Tsilivi: 15–20 min</li><li>Alykes: 20–30 min</li></ul></div><div class="row"><h5>Perioada ideală</h5><p>Mai–septembrie; iunie și septembrie, ideale pentru liniște și prețuri bune</p></div><div class="row"><h5>Prețuri</h5><p>$$ · accesibile, cu opțiuni pentru toate bugetele</p></div></div><div class="cc" style="--c:#6b3fa0"><div class="cc-h"><h3>Corfu</h3><span>Verde și autentic</span></div><div class="row"><h5>Despre insulă</h5><p>Cea mai verde insulă a Greciei, cu influențe venețiene, peisaje pitorești, sate fermecătoare și plaje liniștite.</p></div><div class="row"><h5>Plaje</h5><p>Multe golfuri ascunse, ape limpezi: Paleokastritsa, Glyfada, Sidari, Barbati.</p></div><div class="row"><h5>Ideal pentru</h5><p>Cupluri, familii și cei care caută relaxare, autenticitate și peisaje verzi.</p></div><div class="row"><h5>Atracții de top</h5><ul><li>Paleokastritsa</li><li>Cetatea veche din Corfu Town</li><li>Palatul Achilleion</li><li>Canal d'Amour</li><li>Sate tradiționale (Lakones)</li></ul></div><div class="row"><h5>Transfer de la aeroport (CFU)</h5><ul><li>Corfu Town: 15–20 min</li><li>Paleokastritsa: 25–35 min</li><li>Kavos: 45–60 min</li></ul></div><div class="row"><h5>Perioada ideală</h5><p>Mai–septembrie; mai, iunie și septembrie pentru temperaturi plăcute</p></div><div class="row"><h5>Prețuri</h5><p>$$–$$$ · medii spre ridicate în zonele populare</p></div></div></div>
+    <div class="pick"><div style="--c:#1d5fb4"><span>Varietate, istorie, natură, plaje pentru toate gusturile?</span><b>Alege Creta</b></div><div style="--c:#2f8a4f"><span>Soare, obiective istorice și viață de noapte?</span><b>Alege Rhodos</b></div><div style="--c:#c2185b"><span>Peisaje de carte poștală și vacanță activă?</span><b>Alege Zakynthos</b></div><div style="--c:#6b3fa0"><span>Relaxare, natură și atmosferă romantică?</span><b>Alege Corfu</b></div></div>
+    <div class="sfat"><strong>Sfatul consultantului:</strong> plaja Navagio se admiră de obicei de pe punctul de belvedere de pe faleză sau din barcă. Accesul pe plajă a fost restricționat în ultimii ani din motive de siguranță, așa că verificăm situația la momentul rezervării. În Creta, alegerea aeroportului (Heraklion sau Chania) poate scurta transferul cu o oră. Fiecare insulă are farmecul ei, iar eu te ajut să găsești oferta potrivită pentru stilul tău de vacanță.</div>
+    <figure class="fig"><img src="ghid-insule-grecesti.jpeg" alt="Infografic: Creta vs Rhodos vs Zakynthos vs Corfu — ce insulă grecească ți se potrivește" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 15 -->
+<section class="s" id="top10-nisipurile">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 15 · Bulgaria 🇧🇬</div>
+    <h2>Top 10 hoteluri cu plajă privată în Nisipurile de Aur</h2>
+    <p class="intro">Vrei Bulgaria, dar unul dintre criteriile tale principale e să ai plajă amenajată, cât mai aproape de hotel? Pleci cu copiii și nu vrei să cari umbrela și gențile 15 minute până la mare? Sau vrei liniște, doar în doi, într-un hotel Adults Only? Iată 10 hoteluri pe care merită să le iei în calcul.</p>
+
+    <div class="filters" role="group" aria-label="Filtrează hotelurile">
+      <button type="button" data-f="all" aria-pressed="true">Toate (10)</button>
+      <button type="button" data-f="fam" aria-pressed="false">👨‍👩‍👧‍👦 Familii cu copii</button>
+      <button type="button" data-f="cup" aria-pressed="false">❤️ Pentru cupluri</button>
+      <button type="button" data-f="prem" aria-pressed="false">⭐ Premium</button>
+    </div>
+    <ol class="top10" id="top10">
+      <li data-tags="fam"><div><h4>SENTIDO Marea<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Lângă plajă</span><span class="chip book">📚 bibliotecă în română</span></div><p>Plajă privată, 3 piscine, animație pentru copii, mâncare variată și băuturi premium.</p></div><div class="beach">🏖️ Plajă privată cu șezlonguri și umbrele incluse</div></li>
+      <li data-tags="fam prem"><div><h4>GRIFID Encanto Beach<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Lângă plajă</span><span class="chip book">📚 bibliotecă în română</span></div><p>Design modern, plajă privată, piscine, SPA și gastronomie de top.</p></div><div class="beach">🏖️ Plajă privată amenajată la doar câțiva pași</div></li>
+      <li data-tags="fam"><div><h4>GRIFID Vistamar<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Foarte aproape de mare</span><span class="chip book">📚 bibliotecă în română</span></div><p>Plajă privată, piscine pentru copii și adulți, sport și divertisment zi și noapte.</p></div><div class="beach">🏖️ Șezlonguri și umbrele incluse pe plaja privată</div></li>
+      <li data-tags="fam prem"><div><h4>GRIFID Noa<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Premium</span><span class="chip book">📚 bibliotecă în română</span></div><p>Concept modern, facilități premium, SPA, plajă privată și servicii Signature.</p></div><div class="beach">🏖️ Servicii premium pe plaja privată</div></li>
+      <li data-tags="cup"><div><h4>GRIFID Metropol<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip adult">Adults Only 16+</span><span class="chip book">📚 bibliotecă în română</span></div><p>Atmosferă elegantă, vedere superbă la mare, plajă privată, cocktail bar pe plajă.</p></div><div class="beach">🏖️ Zonă de plajă privată pentru relaxare totală</div></li>
+      <li data-tags="fam"><div><h4>Meliá Grand Hermitage<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Ideal pentru familii</span></div><p>Resort mare, grădini spectaculoase, plajă privată, mini club, activități și divertisment.</p></div><div class="beach">🏖️ Plajă privată cu bar și servicii All Inclusive</div></li>
+      <li data-tags="fam prem"><div><h4>HVD Riviera Beach<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Premium</span></div><p>În complexul Riviera Holiday Club, pe malul mării: plajă privată, SPA și zone de relaxare.</p></div><div class="beach">🏖️ Plajă privată liniștită, într-un cadru natural</div></li>
+      <li data-tags="cup"><div><h4>HVD Nympha<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip aic">All Inclusive</span><span class="chip adult">Adults Only</span></div><p>Pe malul mării, plajă privată, atmosferă relaxantă, piscină infinity și confort premium.</p></div><div class="beach">🏖️ Plajă privată exclusivă pentru oaspeții hotelului</div></li>
+      <li data-tags="fam"><div><h4>GRIFID Club Hotel Bolero<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Ideal pentru familii</span><span class="chip book">📚 bibliotecă în română</span></div><p>Aquapark, club pentru copii, sporturi și plajă privată cu șezlonguri incluse.</p></div><div class="beach">🏖️ Plajă privată potrivită pentru întreaga familie</div></li>
+      <li data-tags="fam"><div><h4>Palm Beach<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip aic">All Inclusive</span><span class="chip">Raport calitate/preț</span></div><p>Foarte aproape de mare, plajă privată cu șezlonguri și umbrele incluse, atmosferă relaxantă.</p></div><div class="beach">🏖️ Acces direct la plaja privată, fără costuri extra</div></li>
+    </ol>
+
+    <h3>De ce contează accesul la o plajă rezervată oaspeților?</h3>
+    <div class="tips">
+      <div><b>☀️ Confort</b>Mai mult spațiu și mai puțină aglomerație</div>
+      <div><b>⛱️ Șezlonguri și umbrele</b>În funcție de conceptul hotelului</div>
+      <div><b>👨‍👩‍👧‍👦 Familii</b>Comoditate pentru cei care pleacă cu copii</div>
+      <div><b>🍹 Bar pe plajă</b>La unele resorturi, servicii direct pe plajă</div>
+      <div><b>🌊 Timp câștigat</b>Mai puțin drum până la mare</div>
+    </div>
+
+    <div class="atentie" role="note"><div class="big">💡</div><div><h4>Atenție</h4><p>Serviciile oferite pe plajă diferă de la hotel la hotel și se pot modifica de la un sezon la altul. La rezervare verificăm exact ce e inclus în pachetul ales, inclusiv diferența dintre <a href="#all-inclusive">All Inclusive și Ultra All Inclusive</a>.</p></div></div>
+
+    <div class="sfat"><strong>Sfatul consultantului:</strong> 6 din cele 10 hoteluri au și <a href="#grifid">bibliotecă cu peste 500 de cărți în română</a>. GRIFID Metropol (16+) și HVD Nympha sunt Adults Only, deci nu sunt o opțiune pentru familiile cu copii.</div>
+
+    <div class="concluzie"><h4>Pe scurt</h4><p>Nu există un singur „cel mai bun hotel”. Există hotelul potrivit pentru familia, bugetul și stilul tău de vacanță. Spune-mi perioada, numărul de adulți și vârsta copiilor, regimul de masă dorit și bugetul aproximativ, iar eu îți caut variantele potrivite.</p></div>
+    <p class="btns"><a class="btn" href="tel:+40759012119">📞 Sună-mă: 0759 012 119</a><a class="btn btn-alt" href="https://gherasimmarius.com/solicita-oferta.html">✉️ Solicită oferta</a></p>
+    <figure class="fig"><img src="ghid-top10-nisipurile-de-aur.jpeg" alt="Infografic: top 10 hoteluri cu plajă privată în Nisipurile de Aur" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 16 -->
+<section class="s" id="top-sunny-beach">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 16 · Bulgaria 🇧🇬</div>
+    <h2>Top hoteluri cu plajă privată în Sunny Beach</h2>
+    <p class="intro">Pleci cu familia și nu vrei să pierzi o jumătate de oră în fiecare dimineață până găsești loc pe plajă? Vrei șezlongul și umbrela incluse? Vrei aquapark pentru copii și liniște pentru tine? Un hotel bun contează, dar un hotel cu acces rapid la o plajă amenajată pentru oaspeți face vacanța și mai comodă.</p>
+
+    <h3 style="margin-top:0">Criteriile selecției</h3>
+    <div class="tips" style="margin-bottom:26px">
+      <div><b>👨‍👩‍👧‍👦 Familii</b>Hoteluri potrivite familiilor cu copii</div>
+      <div><b>🌊 Poziționare</b>Foarte aproape de mare</div>
+      <div><b>🍹 Concept</b>All Inclusive sau Ultra All Inclusive</div>
+      <div><b>⭐ Premium</b>Resorturi cu servicii premium</div>
+      <div><b>🏖️ Plajă</b>Zone dedicate oaspeților, în funcție de hotel și pachet</div>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filtrează hotelurile din Sunny Beach">
+      <button type="button" data-f="all" aria-pressed="true">Toate (8)</button>
+      <button type="button" data-f="fam" aria-pressed="false">👨‍👩‍👧‍👦 Familii cu copii</button>
+      <button type="button" data-f="prem" aria-pressed="false">⭐ Premium</button>
+    </div>
+    <ol class="top10">
+      <li data-tags="fam prem"><div><h4>Barceló Royal Beach<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip aic">All Inclusive</span><span class="chip">Lângă plajă</span></div><p>Arhitectură deosebită, restaurante variate, centru SPA și servicii de top.</p></div><div class="beach">🏖️ Plajă privată amenajată, servicii și bar pe plajă</div></li>
+      <li data-tags="fam prem"><div><h4>Majestic Beach Resort<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Lângă plajă</span></div><p>Resort impresionant, camere spațioase, grădini superbe și facilități pentru toate vârstele.</p></div><div class="beach">🏖️ Plajă privată lată, șezlonguri și umbrele incluse</div></li>
+      <li data-tags="fam"><div><h4>DIT Majestic Beach Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Lângă plajă</span></div><p>Locație excelentă, servicii de calitate, piscine și animație pentru întreaga familie.</p></div><div class="beach">🏖️ Acces direct la plaja privată, cu șezlonguri și umbrele incluse</div></li>
+      <li data-tags="fam prem"><div><h4>Viking Star Beach Resort<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Lângă plajă</span></div><p>Design modern, camere confortabile, parc acvatic și centre de relaxare.</p></div><div class="beach">🏖️ Plajă privată cu bar, șezlonguri și umbrele incluse</div></li>
+      <li data-tags="fam"><div><h4>Pirin Beach Hotel<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip aic">All Inclusive</span><span class="chip">Lângă plajă</span></div><p>Hotel îndrăgit de familii, animație pentru copii, piscină mare și facilități multiple.</p></div><div class="beach">🏖️ Plajă privată amenajată, șezlonguri și umbrele incluse</div></li>
+      <li data-tags="fam"><div><h4>HVD Club Bor<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Lângă plajă</span></div><p>Atmosferă prietenoasă, camere confortabile, activități pentru copii și adulți.</p></div><div class="beach">🏖️ Plajă privată cu acces direct, șezlonguri și umbrele incluse</div></li>
+      <li data-tags="fam prem"><div><h4>Sol Nessebar Palace<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Lângă plajă</span></div><p>Resort elegant, grădini frumoase, centre SPA, activități și divertisment de calitate.</p></div><div class="beach">🏖️ Plajă privată cu servicii premium și bar pe plajă</div></li>
+      <li data-tags="fam"><div><h4>Neptun Beach Hotel<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip aic">All Inclusive</span><span class="chip">Lângă plajă</span></div><p>Hotel cu tradiție, poziție excelentă, piscină, sport și divertisment.</p></div><div class="beach">🏖️ Plajă privată cu șezlonguri și umbrele incluse</div></li>
+    </ol>
+    <!-- DE VERIFICAT înainte de publicare (scoase temporar din listă):
+         - "SENTIDO Marea Beach" 5★: SENTIDO Marea este hotel GRIFID 4★ din Nisipurile de Aur (deja în Secțiunea 15), nu din Sunny Beach.
+         - "Flamingo Grand Hotel & Spa" 5★: este în Albena, la ~400 m de plajă, nu în Sunny Beach.
+    -->
+
+    <div class="atentie" role="note"><div class="big">💡</div><div><h4>Important</h4><p>Conceptul de plajă și serviciile incluse pot diferi de la un hotel la altul și de la un sezon la altul. Înainte de rezervare verificăm exact ce e inclus în oferta aleasă.</p></div></div>
+
+    <div class="sfat"><strong>Nu alege vacanța doar după numărul de stele.</strong> Spune-mi ce contează pentru tine: plajă, aquapark, mâncare bună, camere pentru familie, liniște sau distracție, iar eu îți caut varianta potrivită. Dacă eziți între Sunny Beach și Nisipurile de Aur, compară și <a href="#top10-nisipurile">topul din Nisipurile de Aur</a>.</div>
+
+    <div class="concluzie"><h4>Pentru o ofertă personalizată, trimite-mi</h4><p>📅 perioada dorită · 👨‍👩‍👧‍👦 numărul de adulți și vârsta copiilor · 🍽️ tipul de masă dorit · 💶 bugetul aproximativ</p></div>
+    <p class="btns"><a class="btn" href="tel:+40759012119">📞 Sună-mă: 0759 012 119</a><a class="btn btn-alt" href="https://gherasimmarius.com/solicita-oferta.html">✉️ Solicită oferta</a></p>
+    <div class="quote">Sunny Beach poate fi aproape de casă, dar vacanța potrivită se poate simți departe de toate grijile.</div>
+    <figure class="fig"><img src="ghid-top-sunny-beach.jpeg" alt="Infografic: top hoteluri cu plajă privată în Sunny Beach" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 17 -->
+<section class="s" id="top5-albena">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 17 · Bulgaria 🇧🇬</div>
+    <h2>Top 5 hoteluri cu zonă de plajă dedicată în Albena</h2>
+    <p class="intro">Ieși din hotel și ești la câțiva pași de mare? Copiii se joacă pe nisip fin, într-o apă cu intrare lină? Șezlongul și umbrela te așteaptă fără să plătești în plus? Dacă așa arată vacanța ta perfectă, Albena merită să fie pe listă, mai ales dacă pleci cu familia.</p>
+
+    <ol class="top10">
+      <li><div><h4>Maritim Hotel Paradise Blue Albena<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Direct pe plajă</span><span class="chip">👨‍👩‍👧‍👦 Familii</span><span class="chip book">⭐ Premium</span></div><p>Alegerea premium: camere elegante, piscine multiple, aquapark și servicii de top.</p></div><div class="beach">🏖️ Sector de plajă dedicat, șezlonguri și umbrele incluse (conform pachetului și disponibilității)</div></li>
+      <li><div><h4>Hotel Gergana<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Pe malul mării, lângă rezervația Baltata</span><span class="chip">👨‍👩‍👧‍👦 Familii</span></div><p>Multă verdeață, liniște, servicii excelente și atmosferă relaxantă.</p></div><div class="beach">🏖️ Sector de plajă dedicat: 1 umbrelă și 2 șezlonguri pe cameră, începând cu rândul 3, în limita disponibilității</div></li>
+      <li><div><h4>Kaliakra Beach<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip uai">Ultra All Inclusive</span><span class="chip">Direct pe plajă</span><span class="chip">👨‍👩‍👧‍👦 Familii</span></div><p>Hotel îndrăgit de familii, cu animație, piscine și multe activități.</p></div><div class="beach">🏖️ Plajă amenajată pentru oaspeți, șezlonguri și umbrele incluse (conform pachetului și disponibilității)</div></li>
+      <li><div><h4>Boryana<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip aic">All Inclusive</span><span class="chip">Pe malul mării</span><span class="chip">👨‍👩‍👧‍👦 Familii</span></div><p>Hotel confortabil, servicii bune și poziție excelentă.</p></div><div class="beach">🏖️ Zonă de plajă dedicată, șezlonguri și umbrele incluse (conform pachetului și disponibilității)</div></li>
+      <li><div><h4>Arabella Beach<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip aic">All Inclusive</span><span class="chip">Direct pe plajă</span><span class="chip">👨‍👩‍👧‍👦 Familii</span></div><p>Aproape de centru, camere confortabile și atmosferă plăcută.</p></div><div class="beach">🏖️ Sector de plajă dedicat, șezlonguri și umbrele incluse (conform pachetului și disponibilității)</div></li>
+    </ol>
+
+    <h3>De ce îmi place Albena pentru familii?</h3>
+    <div class="tips">
+      <div><b>☀️ Plaja</b>Lată, cu nisip fin</div>
+      <div><b>🌊 Marea</b>Intrare plăcută în apă</div>
+      <div><b>👨‍👩‍👧‍👦 Atmosfera</b>Potrivită pentru familii</div>
+      <div><b>🍽️ Concepte</b>Multe variante All Inclusive și Ultra All Inclusive</div>
+      <div><b>⛱️ Plajă dedicată</b>La multe hoteluri, cu șezlonguri și umbrelă incluse, conform conceptului rezervat</div>
+    </div>
+
+    <div class="atentie" role="note"><div class="big">💡</div><div><h4>Important</h4><p>Condițiile de folosire a plajei, rândurile disponibile și numărul de șezlonguri incluse diferă în funcție de hotel și pachet. Le verificăm înainte de rezervare.</p></div></div>
+
+    <div class="sfat"><strong>Sfatul consultantului:</strong> nu confunda Arabella Beach din Albena cu GRIFID Arabella din Nisipurile de Aur (cel cu <a href="#grifid">bibliotecă în română</a>). Sunt hoteluri diferite, în stațiuni diferite. Vrei să compari Albena cu celelalte stațiuni? Vezi și topurile din <a href="#top10-nisipurile">Nisipurile de Aur</a> și <a href="#top-sunny-beach">Sunny Beach</a>.</div>
+
+    <div class="concluzie"><h4>Care dintre cele 5 se potrivește familiei tale?</h4><p>Trimite-mi perioada, numărul de adulți și vârsta copiilor, masa dorită și bugetul aproximativ, iar eu îți caut oferta potrivită. Tu alegi când vrei să pleci. De restul ne ocupăm împreună.</p></div>
+    <p class="btns"><a class="btn" href="tel:+40759012119">📞 Sună-mă: 0759 012 119</a><a class="btn btn-alt" href="https://gherasimmarius.com/solicita-oferta.html">✉️ Solicită oferta</a></p>
+    <figure class="fig"><img src="ghid-top5-albena.jpeg" alt="Infografic: top 5 hoteluri cu plajă privată în Albena" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 18 -->
+<section class="s" id="top10-albania">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 18 · Albania 🇦🇱</div>
+    <h2>Top 10 hoteluri cu plajă privată în Albania</h2>
+    <p class="intro">Apă turcoaz la mai puțin de o zi de mers cu mașina din România? Plajă privată fără prețurile din Grecia? Hotel direct la mare, în Durrës, Vlorë sau Ksamil? Albania e marea pe care nu te aștepți s-o găsești atât de aproape. Iată 10 hoteluri cu plajă privată sau sector dedicat oaspeților, de pe tot litoralul albanez.</p>
+
+    <h3 style="margin-top:0">Unde sunt, pe scurt</h3>
+    <div class="grid-3" style="margin-bottom:26px">
+      <div class="item place"><h4>📍 Durrës și Gjiri i Lalëzit</h4><p>Pentru familii și resorturi cu multe facilități.</p></div>
+      <div class="item place"><h4>📍 Golem</h4><p>Foarte căutat pentru vacanțele cu copii.</p></div>
+      <div class="item place"><h4>📍 Vlorë și Radhimë</h4><p>Mare superbă și peisaje spectaculoase.</p></div>
+      <div class="item place"><h4>📍 Sarandë și Ksamil</h4><p>Apa turcoaz care a făcut Albania celebră.</p></div>
+      <div class="item place"><h4>📍 Dhërmi</h4><p>Riviera Albaneză, peisaje superbe și atmosferă aparte.</p></div>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filtrează hotelurile din Albania">
+      <button type="button" data-f="all" aria-pressed="true">Toate (10)</button>
+      <button type="button" data-f="fam" aria-pressed="false">👨‍👩‍👧‍👦 Familii cu copii</button>
+      <button type="button" data-f="cup" aria-pressed="false">❤️ Pentru cupluri</button>
+      <button type="button" data-f="prem" aria-pressed="false">⭐ Premium</button>
+    </div>
+    <ol class="top10">
+      <li data-tags="fam cup"><div><h4>Meliá Durrës Albania<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Gjiri i Lalëzit</span></div><p>Resort modern, plajă privată, servicii premium.</p></div><div class="beach">🏖️ Plajă privată cu șezlonguri și umbrele · ideal pentru familii</div></li>
+      <li data-tags="fam cup"><div><h4>Adriatik Hotel, BW Premier Collection<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Durrës</span></div><p>Plajă privată generoasă, piscine, servicii excelente.</p></div><div class="beach">🏖️ Plajă privată · potrivit pentru familii</div></li>
+      <li data-tags="fam prem"><div><h4>Maritim Marina Bay Resort Spa &amp; Casino<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Vlorë</span><span class="chip book">⭐ Premium</span></div><p>Plajă privată, infinity pool, priveliște superbă asupra golfului.</p></div><div class="beach">🏖️ Plajă privată · atmosferă premium</div></li>
+      <li data-tags="fam cup"><div><h4>Arameras Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Ksamil</span></div><p>Resort cu plajă privată, la câteva minute de insulele Ksamil și de Butrint.</p></div><div class="beach">🏖️ Plajă privată · apă turcoaz</div></li>
+      <li data-tags="fam cup"><div><h4>Sandy Beach Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Golem</span></div><p>Hotel modern, direct la mare, cu plajă privată.</p></div><div class="beach">🏖️ Plajă privată · piscine · ideal pentru familii</div></li>
+      <li data-tags="fam cup"><div><h4>Amelia Mare Hotel<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Golem</span></div><p>Plajă privată, nisip fin, facilități pentru copii.</p></div><div class="beach">🏖️ Plajă privată · piscină · potrivit pentru familii</div></li>
+      <li data-tags="fam cup prem"><div><h4>Elite Bay Hotel Lalez Durrës<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Gjiri i Lalëzit</span><span class="chip book">⭐ Premium</span></div><p>Zonă privată de plajă, liniște și confort.</p></div><div class="beach">🏖️ Plajă privată · atmosferă relaxantă · ideal pentru cupluri</div></li>
+      <li data-tags="fam cup prem"><div><h4>Santa Quaranta Premium Resort<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Sarandë</span><span class="chip book">⭐ Premium</span></div><p>Plajă privată și peisaje spectaculoase.</p></div><div class="beach">🏖️ Plajă privată · priveliște superbă · potrivit pentru cupluri</div></li>
+      <li data-tags="cup prem"><div><h4>Empire Beach Resort<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Dhërmi</span><span class="chip adult">Adults Only</span><span class="chip book">⭐ Premium</span></div><p>Resort pe Riviera Albaneză, cu plajă privată și atmosferă exclusivistă.</p></div><div class="beach">🏖️ Plajă privată · Riviera Albaneză</div></li>
+      <li data-tags="fam cup"><div><h4>Morina Beach Hotel<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Radhimë / Vlorë</span></div><p>Plajă privată, mare și relaxare.</p></div><div class="beach">🏖️ Plajă privată · liniște și confort · ideal pentru familii</div></li>
+    </ol>
+
+    <div class="atentie" role="note"><div class="big">💡</div><div><h4>Un sfat important</h4><p>Nu alege hotelul doar după fotografii sau numărul de stele. În Albania pot exista diferențe mari între zone și hoteluri, iar serviciile oferite pe plajă diferă în funcție de proprietate și pachet. Mai multe despre asta în <a href="#albania">ghidul Albaniei</a>.</p></div></div>
+
+    <div class="sfat"><strong>Sfatul consultantului:</strong> când îți recomand o variantă, mă uit la plajă, poziționare, tipul camerei, masă, facilități și nevoile familiei tale. Empire Beach Resort din Dhërmi e Adults Only, deci e o alegere pentru cupluri, nu pentru familii cu copii.</div>
+
+    <div class="concluzie"><h4>Vrei o ofertă pentru Albania 2027?</h4><p>Trimite-mi perioada dorită, numărul de persoane și vârsta copiilor, regimul de masă dorit și bugetul aproximativ, iar eu îți caut variantele potrivite.</p></div>
+    <p class="btns"><a class="btn" href="tel:+40759012119">📞 Sună-mă: 0759 012 119</a><a class="btn btn-alt" href="https://gherasimmarius.com/solicita-oferta.html">✉️ Solicită oferta</a></p>
+    <div class="quote">Albania te poate surprinde. Trebuie doar să alegi locul potrivit.</div>
+    <!-- Infograficul arată Empire Beach Resort ca hotel pentru familii și Arameras cu 5★; se reactivează după corectare:
+    <figure class="fig"><img src="ghid-top10-albania.jpeg" alt="Infografic: top 10 hoteluri cu plajă privată în Albania" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+    -->
+  </div>
+</section>
+
+<!-- SECȚIUNEA 19 -->
+<section class="s" id="aquapark-egipt">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 19 · Egipt 🇪🇬</div>
+    <h2>Top hoteluri cu aquapark din Egipt</h2>
+    <p class="intro">„Vreau un hotel în Egipt unde copiii să nu se plictisească!” Cel mic întreabă de 20 de ori pe zi „mai mergem o dată pe tobogan?” Tu vrei măcar o oră liniștită pe șezlong? Și te întrebi dacă piscina e încălzită în februarie? Iată o selecție de resorturi din Hurghada, Makadi Bay și Sharm el-Sheikh în care copiii se distrează, iar părinții apucă să se relaxeze.</p>
+
+    <div class="filters" role="group" aria-label="Filtrează după stațiune">
+      <button type="button" data-f="all" aria-pressed="true">Toate (9)</button>
+      <button type="button" data-f="hrg" aria-pressed="false">📍 Hurghada</button>
+      <button type="button" data-f="mak" aria-pressed="false">📍 Makadi Bay</button>
+      <button type="button" data-f="ssh" aria-pressed="false">📍 Sharm el-Sheikh</button>
+    </div>
+    <ol class="top10">
+      <li data-tags="hrg"><div><h4>Pickalbatros Jungle Aqua Park Neverland<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip">🛝 Aquapark</span></div><p>Aquapark imens, cu peste 30 de tobogane, tematizat pentru copii; piscine multiple și activități.</p></div><div class="beach">🏖️ Ideal pentru familii</div></li>
+      <li data-tags="mak"><div><h4>JAZ Aquaviva<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Makadi Bay</span><span class="chip">🛝 Aquapark</span></div><p>Aquapark cu tobogane pentru toate vârstele, camere spațioase pentru familii, All Inclusive de calitate.</p></div><div class="beach">🏖️ Plajă privată cu nisip fin</div></li>
+      <li data-tags="hrg"><div><h4>JAZ Aquamarine<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip">🛝 Aquapark</span></div><p>Mare varietate de tobogane, activități și animație zilnică.</p></div><div class="beach">🏖️ Potrivit pentru familii cu copii · plajă foarte frumoasă</div></li>
+      <li data-tags="ssh"><div><h4>Rixos Premium Seagate<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Sharm el-Sheikh</span><span class="chip">🛝 Aquapark</span></div><p>Aquapark impresionant, multiple piscine încălzite, activități pentru toate vârstele.</p></div><div class="beach">🏖️ Servicii premium All Inclusive</div></li>
+      <li data-tags="ssh"><div><h4>Pickalbatros Aqua Blu Sharm<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Sharm el-Sheikh</span><span class="chip">🛝 Aquapark</span></div><p>Aquapark cu tobogane pentru toate vârstele, distracție garantată pentru copii, All Inclusive variat.</p></div><div class="beach">🏖️ Acces la plajă privată</div></li>
+      <li data-tags="hrg"><div><h4>Steigenberger Aqua Magic<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip">🛝 Aquapark</span></div><p>Aquapark cu tobogane multiple, atmosferă de poveste, club pentru copii.</p></div><div class="beach">🏖️ Plajă privată și piscine</div></li>
+      <li data-tags="hrg"><div><h4>Albatros Aqua Park Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip">🛝 Aquapark</span></div><p>Unul dintre cele mai mari aquaparkuri din Hurghada, cu tobogane variate și sigure; All Inclusive complet.</p></div><div class="beach">🏖️ Ideal pentru familii</div></li>
+      <li data-tags="mak"><div><h4>Sunrise Royal Makadi Resort<span class="st" aria-label="5 stele">★★★★★</span></h4><div class="meta"><span class="chip">📍 Makadi Bay</span><span class="chip">🛝 Aquapark</span></div><p>Aquapark mare și modern, Kids Club și activități, servicii excelente.</p></div><div class="beach">🏖️ Plajă cu nisip și lagună</div></li>
+      <li data-tags="hrg"><div><h4>Titanic Beach Spa &amp; Aqua Park<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip">🛝 Aquapark</span></div><p>Aquapark cu multe tobogane, piscine pentru toate vârstele, All Inclusive de top.</p></div><div class="beach">🏖️ Plajă privată superbă</div></li>
+    </ol>
+    <!-- DE VERIFICAT: infograficul are la #10 „Jungle Aqua Park – Hurghada”, care pare același resort cu #1 (Pickalbatros Jungle Aqua Park Neverland). Scos temporar. -->
+
+    <h3>De ce un hotel cu aquapark?</h3>
+    <div class="tips">
+      <div><b>👨‍👩‍👧‍👦 Toată familia</b>Distracție pentru toate vârstele</div>
+      <div><b>🛝 Tobogane și piscine</b>Pentru copii mici, mari și adulți</div>
+      <div><b>🎯 Animație</b>Activități pentru copii în fiecare zi</div>
+      <div><b>🍹 All Inclusive</b>Multe variante, fără griji la buget</div>
+      <div><b>🏖️ 3 în 1</b>Mare, piscină și aquapark în aceeași vacanță</div>
+      <div><b>❤️ Părinții</b>Au și ei șansa la puțină relaxare</div>
+    </div>
+
+    <div class="sfat"><strong>Pont important:</strong> când alegem un hotel cu aquapark, nu ne uităm doar la numărul toboganelor. Contează vârsta și înălțimea copilului (multe tobogane au o înălțime minimă), plaja, intrarea în mare, distanța de la cameră până la aquapark și, pentru vacanțele de iarnă, ce piscine și tobogane sunt încălzite. Un hotel extraordinar pentru o familie poate să nu fie alegerea ideală pentru alta. Compară și stațiunile în <a href="#marea-rosie">Hurghada vs. Sharm vs. Marsa Alam</a>.</div>
+
+    <div class="concluzie"><h4>Vrei să-ți recomand hotelul potrivit familiei tale?</h4><p>Trimite-mi perioada dorită, orașul de plecare, numărul de adulți și vârsta copiilor și bugetul aproximativ, iar eu îți caut variantele potrivite.</p></div>
+    <p class="btns"><a class="btn" href="tel:+40759012119">📞 Sună-mă: 0759 012 119</a><a class="btn btn-alt" href="https://gherasimmarius.com/solicita-oferta.html">✉️ Solicită oferta</a></p>
+    <div class="quote">Egipt: locul unde copiii întreabă „mai mergem o dată pe tobogan?”, iar părinții se gândesc deja la următoarea vacanță.</div>
+    <!-- Infograficul conține duplicatul de la #10; se reactivează după corectare:
+    <figure class="fig"><img src="ghid-top-aquapark-egipt.jpeg" alt="Infografic: top 10 hoteluri cu aquapark din Egipt" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+    -->
+  </div>
+</section>
+
+<!-- SECȚIUNEA 20 -->
+<section class="s" id="calitate-pret-egipt">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 20 · Egipt 🇪🇬</div>
+    <h2>Top 10 hoteluri din Egipt cu raport bun calitate/preț</h2>
+    <p class="intro">Ai găsit Egiptul cu 100 de euro mai ieftin și te gândești să rezervi pe loc? Dar plaja e la 10 minute cu shuttle-ul? Bufetul se repetă din a treia zi? Și camera de familie are, de fapt, 22 m²? Cel mai ieftin nu e întotdeauna cea mai bună afacere. Eu mă uit la ce primești pentru banii plătiți: hotel, plajă, mâncare, camere, piscine, servicii și facilități.</p>
+
+    <div class="tips" style="margin-bottom:26px">
+      <div><b>🏖️ Plaje</b>Frumoase, multe cu nisip</div>
+      <div><b>🍹 All Inclusive</b>La toate cele 10 hoteluri</div>
+      <div><b>🏊 Piscine</b>Și activități pentru toată ziua</div>
+      <div><b>👨‍👩‍👧‍👦 Familii și cupluri</b>Opțiuni potrivite pentru amândouă</div>
+      <div><b>🐠 Recif</b>La unele hoteluri, snorkeling de la plajă</div>
+      <div><b>💰 Valoare</b>Servicii și facilități bune raportate la preț</div>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filtrează după zonă">
+      <button type="button" data-f="all" aria-pressed="true">Toate (10)</button>
+      <button type="button" data-f="hrg" aria-pressed="false">📍 Hurghada</button>
+      <button type="button" data-f="sud" aria-pressed="false">📍 Makadi și Safaga</button>
+      <button type="button" data-f="msa" aria-pressed="false">📍 Marsa Alam</button>
+    </div>
+    <ol class="top10">
+      <li data-tags="hrg"><div><h4>Hurghada Long Beach Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip aic">All Inclusive</span></div><p>Camere spațioase și curate, All Inclusive variat, aproape de centru.</p><p style="color:var(--green);font-weight:600;margin-top:4px">✔ Preț excelent pentru facilitățile oferite</p></div><div class="beach">🏖️ Plajă privată cu nisip</div></li>
+      <li data-tags="sud"><div><h4>Amarina Abu Soma Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Safaga</span><span class="chip aic">All Inclusive</span></div><p>Camere confortabile, All Inclusive de calitate, perfect pentru relaxare.</p><p style="color:var(--green);font-weight:600;margin-top:4px">✔ Un resort complet la un preț corect</p></div><div class="beach">🏖️ Plajă splendidă și lagună</div></li>
+      <li data-tags="hrg"><div><h4>Sunrise Garden Beach Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip aic">All Inclusive</span></div><p>Grădini frumoase și îngrijite, All Inclusive variat, activități pentru toată familia.</p><p style="color:var(--green);font-weight:600;margin-top:4px">✔ Servicii bune, preț accesibil</p></div><div class="beach">🏖️ Plajă privată și ponton</div></li>
+      <li data-tags="hrg"><div><h4>Albatros Aqua Park Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip aic">All Inclusive</span><a class="chip book" href="#aquapark-egipt">🛝 și în topul aquapark</a></div><p>Aquapark pentru toate vârstele, piscine multiple, All Inclusive complet.</p><p style="color:var(--green);font-weight:600;margin-top:4px">✔ Distracție maximă la un preț corect</p></div><div class="beach">🏖️ Plajă și piscine multiple</div></li>
+      <li data-tags="sud"><div><h4>Jaz Dar El Madina<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Madinat Makadi</span><span class="chip aic">All Inclusive</span></div><p>Resort curat și bine întreținut, All Inclusive de calitate, perfect pentru familii.</p><p style="color:var(--green);font-weight:600;margin-top:4px">✔ Relaxare și confort la un preț corect</p></div><div class="beach">🏖️ Plajă privată cu nisip</div></li>
+      <li data-tags="hrg"><div><h4>Sea Star Beau Rivage<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip aic">All Inclusive</span></div><p>Mâncare bună și variată, piscine și animație zilnică, ideal pentru familii.</p><p style="color:var(--green);font-weight:600;margin-top:4px">✔ Calitate bună la un preț foarte bun</p></div><div class="beach">🏖️ Plajă privată frumoasă</div></li>
+      <li data-tags="hrg"><div><h4>Desert Rose Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip aic">All Inclusive</span></div><p>Camere mari și confortabile, mâncare diversificată.</p><p style="color:var(--green);font-weight:600;margin-top:4px">✔ O alegere inspirată pentru orice buget</p></div><div class="beach">🏖️ Plajă privată cu nisip</div></li>
+      <li data-tags="hrg"><div><h4>Alexander The Great Hotel<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip aic">All Inclusive</span></div><p>Locație centrală, camere confortabile, mâncare gustoasă.</p><p style="color:var(--green);font-weight:600;margin-top:4px">✔ Poziție excelentă, preț foarte bun</p></div><div class="beach">🏖️ Plajă privată</div></li>
+      <li data-tags="hrg"><div><h4>Giftun Azur Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Hurghada</span><span class="chip aic">All Inclusive</span></div><p>Camere spațioase, mâncare variată și gustoasă, ideal pentru snorkeling.</p><p style="color:var(--green);font-weight:600;margin-top:4px">✔ Calitate foarte bună la preț accesibil</p></div><div class="beach">🏖️ Plajă privată și recif superb</div></li>
+      <li data-tags="msa"><div><h4>Bliss Nada Beach Resort<span class="st" aria-label="4 stele">★★★★</span></h4><div class="meta"><span class="chip">📍 Marsa Alam</span><span class="chip aic">All Inclusive</span></div><p>Camere confortabile, All Inclusive variat, liniște și relaxare.</p><p style="color:var(--green);font-weight:600;margin-top:4px">✔ Un colț de paradis la preț excelent</p></div><div class="beach">🏖️ Plajă și recif spectaculos</div></li>
+    </ol>
+
+    <div class="vs" style="margin-top:28px">
+      <div class="side no"><strong>❌ Nu compara</strong><br>două vacanțe doar după suma finală</div>
+      <div class="mid">VS</div>
+      <div class="side yes"><strong>✅ Compară</strong><br>plaja, mâncarea, camerele și serviciile incluse pentru banii plătiți</div>
+    </div>
+
+    <div class="sfat"><strong>Sfatul meu:</strong> un hotel poate costa puțin mai mult, dar dacă are plajă mai bună, mâncare mai variată, camere mai confortabile sau mai multe servicii incluse, diferența poate merita din plin. Și încă ceva: raportul calitate/preț se schimbă în funcție de perioada călătoriei și de oferta disponibilă la momentul rezervării. Vezi și <a href="#hoteluri-5-stele">cele 8 criterii după care compar hotelurile</a>.</div>
+
+    <div class="concluzie"><h4>Vrei să-ți spun ce hotel aș alege pentru bugetul tău?</h4><p>Trimite-mi perioada dorită, orașul de plecare, numărul de persoane și vârsta copiilor și bugetul maxim, iar eu îți caut variantele care chiar merită.</p></div>
+    <p class="btns"><a class="btn" href="tel:+40759012119">📞 Sună-mă: 0759 012 119</a><a class="btn btn-alt" href="https://gherasimmarius.com/solicita-oferta.html">✉️ Solicită oferta</a></p>
+    <div class="quote">În Egipt nu căutăm doar cel mai mic preț. Căutăm vacanța care îți oferă cel mai mult pentru banii tăi.</div>
+    <figure class="fig"><img src="ghid-top10-calitate-pret-egipt.jpeg" alt="Infografic: top 10 hoteluri cu cel mai bun raport calitate/preț din Egipt" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- SECȚIUNEA 21 -->
+<section class="s" id="prima-linie">
+  <div class="wrap">
+    <div class="s-num">Secțiunea 21 · Știi ce rezervi?</div>
+    <h2>Prima linie la mare, hotel pe plajă sau plajă privată?</h2>
+    <p class="intro">Par același lucru? Nu sunt. „Prima linie” garantează că vezi marea din cameră? „Beachfront” înseamnă că ai șezlongul inclus? Iar „plajă privată” înseamnă nisip fin și intrare lină pentru cel mic? Este una dintre confuziile pe care le întâlnesc cel mai des atunci când alegem un hotel.</p>
+
+    <div class="cmp" style="--n:3">
+      <div class="cc" style="--c:#1f8a9e"><div class="cc-h"><h3>🌊 Prima linie la mare</h3></div>
+        <div class="row"><h5>Ce înseamnă</h5><p>Hotelul e foarte aproape de mare, în prima linie de construcții.</p></div>
+        <div class="row"><h5>Ce nu înseamnă automat</h5><ul><li>Că toate camerele au vedere la mare</li><li>Că hotelul are plajă privată</li></ul></div>
+      </div>
+      <div class="cc" style="--c:#1d5fb4"><div class="cc-h"><h3>🏨 Hotel pe plajă</h3><span>Beachfront</span></div>
+        <div class="row"><h5>Ce înseamnă</h5><p>Hotelul e amplasat direct la plajă sau are acces foarte facil către ea. Între clădire și mare pot exista grădini, piscine, alei sau promenada resortului.</p></div>
+        <div class="row"><h5>Ce nu înseamnă automat</h5><ul><li>Că și camera ta are Sea View</li></ul></div>
+      </div>
+      <div class="cc" style="--c:#c89b3c"><div class="cc-h"><h3>⛱️ Plajă privată</h3><span>Private beach</span></div>
+        <div class="row"><h5>Ce înseamnă</h5><p>Hotelul dispune de o zonă de plajă destinată oaspeților săi.</p></div>
+        <div class="row"><h5>Ce verificăm</h5><ul><li>Nisip, pietriș sau recif?</li><li>Intrare lină în mare sau ponton?</li><li>Șezlongurile și umbrelele sunt incluse?</li><li>Cât de departe e, efectiv, plaja de cameră?</li></ul></div>
+      </div>
+    </div>
+
+    <div class="atentie" role="note"><div class="big">💡</div><div><h4>„Vedere la mare” și „hotel pe plajă” sunt două lucruri diferite</h4><p>Poți avea un hotel excelent pe plajă, dar camera rezervată să aibă vedere la grădină, la piscină sau lateral spre mare. Tipul de vedere apare în denumirea camerei, așa că merită citit înainte de rezervare. Mai multe despre asta la <a href="#camere">tipurile de cameră</a>.</p></div></div>
+
+    <h3>„Vreau hotel pe plajă.” Ce înseamnă asta pentru tine?</h3>
+    <p>Când un client îmi spune asta, prefer să mai pun câteva întrebări, pentru că fiecare înțelege altceva:</p>
+    <div class="pick">
+      <div style="--c:#2f8a4f"><span>Familie cu copii mici</span><b>Intrarea lină în apă e esențială</b></div>
+      <div style="--c:#1d5fb4"><span>Cuplu care vrea priveliștea</span><b>Camera cu vedere frontală la mare</b></div>
+      <div style="--c:#c89b3c"><span>Turist care vrea liniște</span><b>Intimitatea unei plaje private</b></div>
+    </div>
+
+    <div class="concluzie"><h4>Pe scurt</h4><p>Vacanța potrivită nu se alege doar după fotografia hotelului, ci după detalii. Spune-mi destinația, perioada, configurația familiei și ce e cel mai important pentru tine, iar eu te ajut să alegi hotelul potrivit.</p></div>
+    <p class="btns"><a class="btn" href="tel:+40759012119">📞 Sună-mă: 0759 012 119</a><a class="btn btn-alt" href="https://gherasimmarius.com/solicita-oferta.html">✉️ Solicită oferta</a></p>
+    <p style="margin-top:14px">🏖️ Vezi și topurile cu plajă privată din <a href="#top10-nisipurile">Nisipurile de Aur</a>, <a href="#top-sunny-beach">Sunny Beach</a>, <a href="#top5-albena">Albena</a> și <a href="#top10-albania">Albania</a>.</p>
+    <figure class="fig"><img src="ghid-prima-linie-plaja-privata.jpeg" alt="Infografic: prima linie la mare, hotel pe plajă sau plajă privată" loading="lazy"><figcaption>Infograficul complet, de salvat sau de trimis cuiva cu care pleci în vacanță.</figcaption></figure>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="wrap">
+    <h2>Spune-mi 4 lucruri și îți găsesc vacanța potrivită</h2>
+    <p>Compar variantele pentru tine, explic diferențele care nu se văd în stele și preț, și rămân alături de tine pe toată durata vacanței.</p>
+    <div class="ask">
+      <div><span>✈️</span><b>Aeroportul de plecare</b></div>
+      <div><span>📅</span><b>Perioada</b></div>
+      <div><span>👨‍👩‍👧</span><b>Cine călătorește</b></div>
+      <div><span>💶</span><b>Bugetul aproximativ / persoană</b></div>
+    </div>
+    <a class="btn" href="https://gherasimmarius.com/solicita-oferta.html">Solicită oferta personalizată</a>
+  </div>
+</section>
+
+</main>
+
+<div class="tagline">Vacanța potrivită nu e întotdeauna cea mai ieftină. E cea aleasă corect. ❤️</div>
+
+<footer>
+  © 2026 Destine Holidays · Vacanțe Topic · <a href="https://gherasimmarius.com">gherasimmarius.com</a>
+</footer>
+
+<script>
+(function(){
+  var D = {
+    ian:["Maldive","decembrie – aprilie"], sey:["Seychelles","aprilie – mai / octombrie – noiembrie"],
+    ksm:["Thailanda – Koh Samui","ianuarie – august"], dxb:["Emiratele Arabe Unite (Dubai)","noiembrie – martie"],
+    mau:["Mauritius","mai – noiembrie"], zan:["Zanzibar","iunie – octombrie"], zanw:["Zanzibar","ianuarie – februarie"],
+    slsv:["Sri Lanka (sud și vest)","decembrie – martie"], sle:["Sri Lanka (est)","mai – septembrie"],
+    rd:["Caraibe (Republica Dominicană)","decembrie – aprilie"], can:["Cancún și Riviera Maya","decembrie – aprilie"],
+    cub:["Cuba","noiembrie – aprilie"], phu:["Thailanda – Phuket","noiembrie – aprilie"], bal:["Bali (Indonezia)","aprilie – octombrie"],
+    cv:["Capul Verde","noiembrie – iunie"], ken:["Kenya (safari și plajă)","iunie – octombrie"],
+    car:["Caraibe (RD, Cancún, Cuba)","noiembrie – aprilie"], dom:["Dubai și Oman","noiembrie – aprilie"]
+  };
+  var W = {
+    car6:["Caraibe (mai puțin recomandat)","începe sezonul uraganelor (1 iunie – 30 noiembrie)"],
+    dom7:["Dubai și Oman (nerecomandat)","prea cald: mai – septembrie"]
+  };
+  var M = [
+    ["Ianuarie",["ian","sey","ksm","dxb"]],
+    ["Februarie",["mau","zanw","slsv","rd"]],
+    ["Martie",["ian","can","mau","cub"]],
+    ["Aprilie",["sey","phu","bal","cv"]],
+    ["Mai",["mau","zan","sle","bal"]],
+    ["Iunie",["zan","ksm","ken","!car6"]],
+    ["Iulie",["bal","ksm","ken","!dom7"]],
+    ["August",["ksm","bal","sle","cv"]],
+    ["Septembrie",["sle","bal","zan","ken"]],
+    ["Octombrie",["sey","ian","zan","phu"]],
+    ["Noiembrie",["ian","car","phu","dom"]],
+    ["Decembrie",["ian","car","phu","dxb"]]
+  ];
+  var panel = document.getElementById('monthPanel');
+  var btns = document.querySelectorAll('.months button');
+  function show(i){
+    var html = '<h4>' + M[i][0] + '</h4>';
+    M[i][1].forEach(function(k){
+      var warn = k.charAt(0) === '!';
+      var d = warn ? W[k.slice(1)] : D[k];
+      html += '<div class="dest' + (warn ? ' warn' : '') + '"><b>' + (warn ? '⚠️ ' : '📍 ') + d[0] + '</b><small>' + (warn ? '' : 'Sezon ideal: ') + d[1] + '</small></div>';
+    });
+    panel.innerHTML = html;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-m') == i ? 'true' : 'false'); });
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(+b.getAttribute('data-m')); }); });
+  show(new Date().getMonth());
+})();
+
+(function(){
+  document.querySelectorAll('.filters').forEach(function(group){
+    var sec=group.closest('section');
+    var bs=group.querySelectorAll('button');
+    var items=sec.querySelectorAll('.top10 li');
+    bs.forEach(function(b){b.addEventListener('click',function(){
+      var f=b.getAttribute('data-f');
+      bs.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+      items.forEach(function(li){li.hidden=!(f==='all'||li.getAttribute('data-tags').split(' ').indexOf(f)>-1);});
+    });});
+  });
+})();
+</script>
+</body>
+</html>
