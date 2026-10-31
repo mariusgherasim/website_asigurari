@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vacanțe și croaziere | Destine Holidays · Gherasim Marius</title>
+<meta name="description" content="Croaziere și sejururi actualizate zilnic, ghiduri gratuite de vacanță și consultanță personalizată. Alegi oferta, iar noi te ajutăm cu restul.">
+<link rel="canonical" href="https://gherasimmarius.com/vacante.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gherasimmarius.com/vacante.html">
+<meta property="og:title" content="Vacanțe și croaziere actualizate zilnic | Destine Holidays">
+<meta property="og:description" content="Croaziere, sejururi și ghiduri gratuite de vacanță. Alegi oferta, iar noi te ajutăm cu restul.">
+<meta property="og:image" content="https://gherasimmarius.com/images/vacanta-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HS59YL4Y3D"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HS59YL4Y3D');
+window.trackEvent = window.trackEvent || function(name, params){
+  if (typeof gtag === 'function') gtag('event', name, params || {});
+};
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<style>
+[hidden]{display:none !important;}
+/* ===== HERO ===== */
+.v-hero{
+  position:relative;
+  padding:110px 0 90px;
+  background:
+    linear-gradient(180deg,rgba(15,43,91,.55),rgba(15,43,91,.80)),
+    url("images/vacanta-hero.jpg") center/cover no-repeat;
+  color:#fff;
+}
+.v-hero h1{color:#fff;font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.15;max-width:760px;margin-bottom:18px;}
+.v-hero p{max-width:620px;font-size:1.08rem;color:#e6ecf7;margin-bottom:28px;}
+.v-hero .btn-ghost{display:inline-block;margin-left:10px;padding:13px 26px;border:2px solid #fff;border-radius:10px;color:#fff;text-decoration:none;font-weight:600;}
+.v-jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;}
+.v-jump a{color:#fff;text-decoration:none;font-size:.92rem;font-weight:500;padding:7px 15px;border-radius:100px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);}
+.v-jump a:hover{background:rgba(255,255,255,.26);}
+
+/* ===== SECTIONS ===== */
+.v-section{padding:80px 0;}
+.v-section h2{margin-bottom:14px;}
+.v-intro{text-align:center;max-width:720px;margin:0 auto 34px;color:#555;}
+
+/* ===== FILTERS ===== */
+.v-filters{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:30px;}
+.v-filters label{display:flex;flex-direction:column;font-size:.8rem;font-weight:600;color:#0F2B5B;gap:5px;}
+.v-filters select{min-width:200px;padding:11px 12px;border:1px solid #d7dce6;border-radius:10px;font-family:inherit;font-size:.95rem;background:#fff;color:#333;}
+.v-count{text-align:center;color:#666;font-size:.9rem;margin:-14px 0 24px;}
+
+/* ===== CARDS ===== */
+.v-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:24px;}
+.v-card{display:flex;flex-direction:column;background:#fff;border-radius:18px;overflow:hidden;
+  box-shadow:0 6px 22px rgba(15,43,91,.09);text-decoration:none;color:inherit;transition:transform .25s,box-shadow .25s;}
+.v-card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(15,43,91,.15);}
+.v-card:focus-visible{outline:3px solid #F28C28;outline-offset:3px;}
+.v-img{height:180px;background:linear-gradient(135deg,#0F2B5B,#1d4a8f);position:relative;display:flex;align-items:center;justify-content:center;color:#fff;font-size:42px;}
+.v-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.v-date{position:absolute;left:12px;top:12px;background:#fff;color:#0F2B5B;font-size:.8rem;font-weight:600;padding:5px 11px;border-radius:100px;box-shadow:0 2px 8px rgba(0,0,0,.15);}
+.v-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1;}
+.v-kicker{font-size:.78rem;font-weight:600;color:#F28C28;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px;}
+.v-body h3{font-size:1.12rem;line-height:1.35;margin-bottom:6px;}
+.v-route{font-size:.86rem;color:#666;line-height:1.5;margin-bottom:12px;}
+.v-meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;}
+.v-meta span{font-size:.8rem;background:#f1f4fa;color:#0F2B5B;padding:4px 10px;border-radius:100px;}
+.v-foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:10px;border-top:1px solid #eef1f6;padding-top:14px;}
+.v-price small{display:block;font-size:.75rem;color:#777;}
+.v-price strong{font-size:1.35rem;color:#0F2B5B;}
+.v-go{font-size:.88rem;font-weight:600;color:#fff;background:#F28C28;padding:9px 14px;border-radius:9px;white-space:nowrap;}
+
+.v-more{display:block;margin:30px auto 0;padding:12px 26px;border:2px solid #0F2B5B;background:#fff;color:#0F2B5B;border-radius:10px;font-family:inherit;font-weight:600;font-size:.95rem;cursor:pointer;}
+.v-more:hover{background:#0F2B5B;color:#fff;}
+
+.v-empty{max-width:640px;margin:0 auto;text-align:center;background:#fff;border:1px dashed #c9d1e0;border-radius:18px;padding:34px 26px;color:#555;}
+.v-empty strong{display:block;color:#0F2B5B;font-size:1.1rem;margin-bottom:8px;}
+.v-empty .btn{margin-top:18px;}
+
+/* ===== GHIDURI ===== */
+.v-guides{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;}
+.v-guide{display:flex;flex-direction:column;background:#0F2B5B;color:#dce4f5;border-radius:18px;padding:28px 26px;text-decoration:none;transition:transform .25s;}
+.v-guide:hover{transform:translateY(-4px);}
+.v-guide .flag{font-size:2.4rem;line-height:1;margin-bottom:14px;}
+.v-guide h3{color:#fff;font-size:1.2rem;margin-bottom:8px;}
+.v-guide p{font-size:.92rem;line-height:1.6;margin-bottom:20px;}
+.v-guide span{margin-top:auto;color:#F28C28;font-weight:600;}
+
+/* ===== ARTICOLE ===== */
+.v-article{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;background:#fff;border-radius:18px;padding:26px 28px;box-shadow:0 6px 22px rgba(15,43,91,.08);text-decoration:none;color:inherit;max-width:900px;margin:0 auto 16px;}
+.v-article h3{font-size:1.15rem;margin-bottom:6px;}
+.v-article p{color:#555;font-size:.93rem;}
+.v-article .v-go{align-self:center;}
+
+/* ===== CTA ===== */
+.v-cta{background:#0F2B5B;color:#fff;text-align:center;}
+.v-cta h2{color:#fff;}
+.v-cta p{color:#dce4f5;max-width:640px;margin:0 auto 26px;}
+.v-cta .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.v-cta .btn-ghost{display:inline-block;padding:13px 24px;border:2px solid #fff;border-radius:10px;color:#fff;text-decoration:none;font-weight:600;}
+
+.menu a.active{color:#F28C28;}
+
+@media(max-width:768px){
+  .v-hero{padding:80px 0 64px;}
+  .v-hero .btn-ghost{margin:12px 0 0;}
+  .v-section{padding:60px 0;}
+  .v-filters select{min-width:0;width:100%;}
+  .v-filters label{flex:1 1 100%;}
+  .v-article{grid-template-columns:1fr;}
+}
+@media(prefers-reduced-motion:reduce){
+  .v-card,.v-guide{transition:none;}
+  .v-card:hover,.v-guide:hover{transform:none;}
+}
+</style>
+
+<!-- MailerLite Universal -->
+<script>
+(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+.push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+ml('account', '1999265');
+</script>
+<!-- End MailerLite Universal -->
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">Gherasim Marius</div>
+<ul class="menu">
+<li><a href="index.html#despre">Despre</a></li>
+<li><a href="index.html#servicii">Servicii</a></li>
+<li><a href="vacante.html" class="active" aria-current="page">Vacanțe</a></li>
+<li><a href="index.html#analiza">Analiză</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="index.html#recrutare">Carieră</a></li>
+<li><a href="https://copywriting.gherasimmarius.com/" target="_blank" rel="noopener">Copywriting</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+<div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="v-hero">
+<div class="container">
+  <h1>Vacanța potrivită pentru tine, nu cea mai ieftină de pe internet</h1>
+  <p>Croaziere și sejururi verificate și actualizate zilnic. Alegi oferta care îți place, iar noi îți confirmăm prețul, disponibilitatea și te ajutăm cu restul.</p>
+  <a href="#croaziere" class="btn">Vezi ofertele</a>
+  <a href="solicita-oferta.html" class="btn-ghost" onclick="trackEvent('travel_offer',{source:'vacante_hero'})">Solicită ofertă personalizată</a>
+  <div class="v-jump" role="navigation" aria-label="Secțiuni">
+    <a href="#croaziere">🚢 Croaziere</a>
+    <a href="#sejururi">🏖️ Sejururi</a>
+    <a href="#ghiduri">📘 Ghiduri gratuite</a>
+    <a href="#articole">📰 Articole</a>
+  </div>
+</div>
+</section>
+
+<!-- CROAZIERE -->
+<section id="croaziere" class="v-section alt">
+<div class="container">
+  <h2>Croaziere</h2>
+  <p class="v-intro">Mediterana, nordul Europei, Caraibe și nu numai. Prețurile sunt „de la”, per persoană, în cabină interioară, și se confirmă la rezervare.</p>
+
+  <div class="v-filters" id="cruise-filters" hidden>
+    <label>Luna plecării
+      <select id="f-month"><option value="">Toate lunile</option></select>
+    </label>
+    <label>Destinația
+      <select id="f-dest"><option value="">Toate destinațiile</option></select>
+    </label>
+    <label>Ordonează
+      <select id="f-sort">
+        <option value="date">Cele mai apropiate plecări</option>
+        <option value="price">Preț crescător</option>
+      </select>
+    </label>
+  </div>
+  <p class="v-count" id="cruise-count" aria-live="polite"></p>
+
+  <div class="v-grid" id="cruise-grid"></div>
+  <button type="button" class="v-more" id="cruise-more" hidden>Arată mai multe croaziere</button>
+
+  <div class="v-empty" id="cruise-empty" hidden>
+    <strong>Lista de croaziere se actualizează</strong>
+    Spune-ne în ce lună ai vrea să pleci și ce zonă te tentează, iar noi îți trimitem croazierele disponibile acum.
+    <br><a class="btn" href="solicita-oferta.html?tip=croaziera&oferta=Croazier%C4%83" onclick="trackEvent('travel_offer',{source:'vacante_cruise_empty'})">Cere oferte de croazieră</a>
+  </div>
+</div>
+</section>
+
+<!-- SEJURURI -->
+<section id="sejururi" class="v-section">
+<div class="container">
+  <h2>Sejururi</h2>
+  <p class="v-intro">Ofertele găsite azi, grupate pe destinații. Prețurile sunt totale, pentru 2 persoane.</p>
+  <div class="v-grid" id="stay-grid"></div>
+  <div class="v-empty" id="stay-empty" hidden>
+    <strong>Ofertele de sejur se actualizează</strong>
+    Spune-ne destinația, perioada și bugetul, iar noi îți trimitem variantele disponibile acum.
+    <br><a class="btn" href="solicita-oferta.html?tip=sejur&oferta=Sejur" onclick="trackEvent('travel_offer',{source:'vacante_stay_empty'})">Cere oferte de sejur</a>
+  </div>
+</div>
+</section>
+
+<!-- GHIDURI -->
+<section id="ghiduri" class="v-section alt">
+<div class="container">
+  <h2>Ghiduri gratuite de vacanță</h2>
+  <p class="v-intro">Zone, plaje, bugete și sfaturi practice, adunate de un consultant care compară oferte în fiecare zi. Le primești gratuit pe email.</p>
+  <div class="v-guides">
+    <a class="v-guide" href="ghid-croatia-gratuit.html" onclick="trackEvent('guide_click',{guide:'croatia'})">
+      <div class="flag">🇭🇷</div>
+      <h3>Ghidul Croației</h3>
+      <p>Istria sau Dalmația, Split sau Dubrovnik, insule, plaje, Croația cu mașina și cu copiii.</p>
+      <span>Primește ghidul gratuit →</span>
+    </a>
+    <a class="v-guide" href="ghid-grecia-gratuit.html" onclick="trackEvent('guide_click',{guide:'grecia'})">
+      <div class="flag">🇬🇷</div>
+      <h3>Ghidul Greciei</h3>
+      <p>Insule, stațiuni și plaje, ce să alegi în funcție de cine pleacă și cât vrei să cheltui.</p>
+      <span>Primește ghidul gratuit →</span>
+    </a>
+    <a class="v-guide" href="ghid-spania-gratuit.html" onclick="trackEvent('guide_click',{guide:'spania'})">
+      <div class="flag">🇪🇸</div>
+      <h3>Ghidul Spaniei</h3>
+      <p>Cele 10 zone, Barcelona sau Madrid, Baleare sau Canare, gastronomie, bugete și zboruri directe.</p>
+      <span>Primește ghidul gratuit →</span>
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- ARTICOLE -->
+<section id="articole" class="v-section">
+<div class="container">
+  <h2>Articole de vacanță</h2>
+  <p class="v-intro">Ce să știi înainte să alegi.</p>
+  <a class="v-article" href="blog-city-break-vs-all-inclusive.html" onclick="trackEvent('blog_click',{article:'city_break_vs_all_inclusive'})">
+    <div>
+      <h3>City break sau all inclusive: ce ți se potrivește</h3>
+      <p>Durată, buget și organizare, plus trei întrebări care lămuresc alegerea.</p>
+    </div>
+    <span class="v-go">Citește</span>
+  </a>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="v-section v-cta">
+<div class="container">
+  <h2>Nu găsești exact ce cauți?</h2>
+  <p>Spune-ne destinația, perioada, cine pleacă și bugetul. Consultanța e gratuită, iar în majoritatea cazurilor primești răspuns în aceeași zi lucrătoare.</p>
+  <div class="row">
+    <a class="btn" href="solicita-oferta.html" onclick="trackEvent('travel_offer',{source:'vacante_cta'})">Solicită ofertă personalizată</a>
+    <a class="btn-ghost" href="tel:+40759012119" onclick="trackEvent('click_tel',{location:'vacante'})">📞 0759 012 119</a>
+  </div>
+</div>
+</section>
+
+<footer>
+<p>Toate drepturile rezervate © 2026 Gherasim Marius | Consultant în Asigurări și Servicii Financiare | Partener Destine Broker</p>
+<p style="margin-top:10px;"><a href="index.html">Pagina principală</a> · <a href="blog.html">Blog</a> · <a href="solicita-oferta.html">Solicită ofertă</a></p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/40759012119" onclick="trackEvent('click_whatsapp')" aria-label="Scrie-ne pe WhatsApp"> 💬 </a>
+
+<script src="script.js"></script>
+<script>
+(function(){
+  var PAGE = 9;
+  var today = new Date().toISOString().slice(0,10);
+
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function eur(n){ return Math.round(n).toLocaleString('ro-RO').replace(/\s/g,'.') + ' €'; }
+  var MONTHS = ['ianuarie','februarie','martie','aprilie','mai','iunie','iulie','august','septembrie','octombrie','noiembrie','decembrie'];
+  function monthLabel(ym){ var p = ym.split('-'); return MONTHS[+p[1]-1] + ' ' + p[0]; }
+  function roDate(iso){ var p = iso.split('-'); return +p[2] + ' ' + MONTHS[+p[1]-1] + ' ' + p[0]; }
+  function load(url){
+    return fetch(url, {cache:'no-store'}).then(function(r){ return r.ok ? r.json() : {items:[]}; })
+      .catch(function(){ return {items:[]}; });
+  }
+  function img(src, alt, fallback){
+    return src ? '<img src="' + esc(src) + '" alt="' + esc(alt) + '" loading="lazy" onerror="this.remove()">' : fallback;
+  }
+
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('[data-track]');
+    if (a) trackEvent(a.getAttribute('data-track'), {label: a.getAttribute('data-label') || ''});
+  });
+
+  /* ---------- CROAZIERE ---------- */
+  var cruises = [], shown = PAGE;
+  var grid = document.getElementById('cruise-grid');
+  var fMonth = document.getElementById('f-month'), fDest = document.getElementById('f-dest'), fSort = document.getElementById('f-sort');
+
+  function cruiseCard(c){
+    var route = (c.route || []).slice(0,5).join(' → ') + ((c.route || []).length > 5 ? ' → …' : '');
+    var meta = [];
+    if (c.nights) meta.push('🌙 ' + c.nights + ' nopți');
+    if (c.ports) meta.push('⚓ ' + c.ports + ' porturi');
+    if (c.countries) meta.push('🌍 ' + c.countries + ' țări');
+    var when = c.date ? roDate(c.date) : (c.month ? monthLabel(c.month) : 'dată la cerere');
+    return '<a class="v-card" href="' + esc(c.url) + '" data-track="cruise_click" data-label="' + esc(c.ship || c.title) + '">' +
+      '<div class="v-img">' + img(c.image, c.ship || c.title, '⚓') + '<span class="v-date">🗓️ ' + esc(when) + '</span></div>' +
+      '<div class="v-body">' +
+        '<div class="v-kicker">' + esc([c.line, c.ship].filter(Boolean).join(' · ') || 'Croazieră') + '</div>' +
+        '<h3>' + esc(c.title) + '</h3>' +
+        (route ? '<div class="v-route">' + esc(route) + '</div>' : '') +
+        '<div class="v-meta">' + meta.map(function(m){ return '<span>' + esc(m) + '</span>'; }).join('') + '</div>' +
+        '<div class="v-foot"><div class="v-price"><small>de la, per persoană</small><strong>' + eur(c.price) + '</strong></div>' +
+        '<span class="v-go">Vezi croaziera</span></div>' +
+      '</div></a>';
+  }
+
+  function renderCruises(){
+    var m = fMonth.value, d = fDest.value;
+    var list = cruises.filter(function(c){
+      return (!m || c.month === m) && (!d || c.destination === d);
+    });
+    list.sort(fSort.value === 'price'
+      ? function(a,b){ return a.price - b.price; }
+      : function(a,b){ return (a.date || a.expires || '').localeCompare(b.date || b.expires || '') || a.price - b.price; });
+    grid.innerHTML = list.slice(0, shown).map(cruiseCard).join('');
+    document.getElementById('cruise-count').textContent =
+      list.length ? (list.length === 1 ? '1 croazieră' : list.length + ' croaziere') : 'Nicio croazieră pentru filtrele alese.';
+    document.getElementById('cruise-more').hidden = list.length <= shown;
+  }
+
+  load('oferte/croaziere/index.json').then(function(data){
+    cruises = (data.items || []).filter(function(c){ return !c.expires || c.expires >= today; });
+    if (!cruises.length){ document.getElementById('cruise-empty').hidden = false; return; }
+
+    var months = {}, dests = {};
+    cruises.forEach(function(c){
+      if (c.month) months[c.month] = (months[c.month] || 0) + 1;
+      if (c.destination) dests[c.destination] = (dests[c.destination] || 0) + 1;
+    });
+    Object.keys(months).sort().forEach(function(k){
+      fMonth.insertAdjacentHTML('beforeend', '<option value="' + esc(k) + '">' + esc(monthLabel(k)) + ' (' + months[k] + ')</option>');
+    });
+    Object.keys(dests).sort().forEach(function(k){
+      fDest.insertAdjacentHTML('beforeend', '<option value="' + esc(k) + '">' + esc(k) + ' (' + dests[k] + ')</option>');
+    });
+    document.getElementById('cruise-filters').hidden = false;
+    [fMonth, fDest, fSort].forEach(function(s){ s.addEventListener('change', function(){ shown = PAGE; renderCruises(); }); });
+    document.getElementById('cruise-more').addEventListener('click', function(){ shown += PAGE; renderCruises(); });
+    renderCruises();
+  });
+
+  /* ---------- SEJURURI ---------- */
+  load('oferte/sejururi/index.json').then(function(data){
+    var stays = (data.items || []).filter(function(s){ return !s.expires || s.expires >= today; });
+    var g = document.getElementById('stay-grid');
+    if (!stays.length){ document.getElementById('stay-empty').hidden = false; return; }
+    stays.sort(function(a,b){ return (a.price || 1e9) - (b.price || 1e9); });
+    g.innerHTML = stays.map(function(s){
+      var meta = [s.count === 1 ? '1 ofertă' : s.count + ' oferte'];
+      if (s.first_start) meta.push('plecări din ' + roDate(s.first_start));
+      return '<a class="v-card" href="' + esc(s.url) + '" data-track="stay_click" data-label="' + esc(s.title) + '">' +
+        '<div class="v-img">' + img(s.image, s.title, '🏖️') + '</div>' +
+        '<div class="v-body">' +
+          '<div class="v-kicker">' + esc(s.country || 'Sejur') + '</div>' +
+          '<h3>' + esc(s.region || s.title) + '</h3>' +
+          '<div class="v-meta">' + meta.map(function(m){ return '<span>' + esc(m) + '</span>'; }).join('') + '</div>' +
+          '<div class="v-foot"><div class="v-price"><small>' + (s.price ? 'de la, total 2 persoane' : '') + '</small><strong>' +
+            (s.price ? eur(s.price) : 'preț la cerere') + '</strong></div><span class="v-go">Vezi ofertele</span></div>' +
+        '</div></a>';
+    }).join('');
+  });
+})();
+</script>
+
+</body>
+</html>

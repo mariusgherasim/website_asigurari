@@ -248,3 +248,21 @@ footer a:hover{
     .magazine-card{flex:0 0 220px;}
 
 }
+
+
+/* ====================================
+   PACHETE TURISTICE — card clickabil + mobil
+==================================== */
+
+a.service-card-link{display:block;color:inherit;text-decoration:none;}
+a.service-card-link:focus-visible{outline:3px solid #F28C28;outline-offset:4px;}
+a.service-card-link:focus-visible .overlay{height:100%;}
+a.service-card-link:focus-visible .overlay p{opacity:1;}
+
+/* Pe telefon / tabletă nu există „hover”: textul și butoanele cardurilor
+   se văd direct, iar poza rămâne vizibilă deasupra */
+@media (hover:none){
+    .service-card .overlay{height:auto;max-height:100%;}
+    .service-card .overlay p{opacity:1;}
+    .service-card:hover{transform:none;}
+}
