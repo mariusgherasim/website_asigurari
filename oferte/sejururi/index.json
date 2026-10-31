@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T12:06",
+  "updated": "2026-10-31T16:01",
   "items": [
     {
       "id": "oferte_bulgaria_nisipurile_de_aur.html",
@@ -7,14 +7,14 @@
       "title": "Bulgaria, Nisipurile de Aur",
       "country": "Bulgaria",
       "region": "Nisipurile de Aur",
-      "count": 2,
-      "price": 1213.85,
+      "count": 48,
+      "price": 511.65,
       "currency": "EUR",
       "price_basis": "total 2 persoane",
-      "image": "https://images.sphinx.christiantour.ro/hotel-images/1087540-boutique-hotel-oasis/9186098-boutique-hotel-oasis.jpg",
-      "first_start": "2026-11-20",
-      "expires": "2026-11-25",
-      "updated": "2026-10-31T12:06"
+      "image": "https://www.vazut.ro/resources/vazut/2023/0805/438526473.webp",
+      "first_start": "2027-06-20",
+      "expires": "2027-06-20",
+      "updated": "2026-10-31T16:01"
     }
   ]
 }
