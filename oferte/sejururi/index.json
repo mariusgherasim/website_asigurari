@@ -1,6 +1,21 @@
 {
-  "updated": "2026-10-31T16:01",
+  "updated": "2026-11-10T19:55",
   "items": [
+    {
+      "id": "oferte_thailanda_phuket.html",
+      "url": "oferte/sejururi/oferte_thailanda_phuket.html",
+      "title": "Thailanda, Phuket",
+      "country": "Thailanda",
+      "region": "Phuket",
+      "count": 11,
+      "price": 4758.0,
+      "currency": "EUR",
+      "price_basis": "total 2 persoane",
+      "image": "https://www.vazut.ro/resources/vazut/2026/0408/2133035156.webp",
+      "first_start": "2026-12-13",
+      "expires": "2026-12-13",
+      "updated": "2026-11-10T19:55"
+    },
     {
       "id": "oferte_bulgaria_nisipurile_de_aur.html",
       "url": "oferte/sejururi/oferte_bulgaria_nisipurile_de_aur.html",
