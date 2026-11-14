@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T19:55",
+  "updated": "2026-11-14T13:05",
   "items": [
     {
       "id": "oferte_thailanda_phuket.html",
@@ -30,6 +30,21 @@
       "first_start": "2027-06-20",
       "expires": "2027-06-20",
       "updated": "2026-10-31T16:01"
+    },
+    {
+      "id": "oferte_turcia_antalya.html",
+      "url": "oferte/sejururi/oferte_turcia_antalya.html",
+      "title": "Turcia, Antalya",
+      "country": "Turcia",
+      "region": "Antalya",
+      "count": 27,
+      "price": 1522.31,
+      "currency": "EUR",
+      "price_basis": "total 2 persoane",
+      "image": "https://www.vazut.ro/resources/vazut/2024/0125/2509560809.webp",
+      "first_start": "2027-06-20",
+      "expires": "2027-06-20",
+      "updated": "2026-11-14T13:05"
     }
   ]
 }
